@@ -1,0 +1,54 @@
+.socialNetworks {
+
+	border-top: 1px solid rgba(255, 255, 255, 0.12);
+	margin: 3rem 0 1rem;
+	padding-top: 2rem;
+
+	color: #f0f0f0;
+
+	h3, p {
+		color: #f0f0f0;
+	}
+	
+}
+
+.circle{
+	border-radius: 50%;
+	margin: 0 0.25em;
+	font-size: 1em;
+}
+
+.fa-twitter{
+	background: #6cc;
+	color: #FFFFFF;
+	padding: 0.05em 0.07em;
+	border: 0.5rem solid #6cc;
+}
+
+.fa-google-plus{
+	color: #FFFFFF;
+	background: #dd4b39;
+	padding: 0.1em 0.1em;
+	border: 0.5rem solid #dd4b39;
+}  
+
+.fa-facebook{
+	background: #3B5998;
+	color: #FFFFFF;
+	padding: 0.05em 0.3em;
+	border: 0.5rem solid #3B5998;
+}
+
+.fa-youtube{
+	background: #bb0000;
+	color: #FFFFFF;
+	padding: 0.1em 0.14em;
+	border: 0.5rem solid #bb0000;
+
+}
+
+p.copyright {
+	margin-top: 2rem;
+	color: #999;
+	font-family: "Raleway";
+}

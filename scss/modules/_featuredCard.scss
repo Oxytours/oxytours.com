@@ -1,0 +1,26 @@
+.featuredCard {
+
+	text-align: center;
+
+	img {
+		margin: 1rem;
+		transition: all 0.3s ease 0s;
+		display: inline-block;
+		height: 100px;
+		width: 100px;
+	}
+
+	&:hover {
+
+
+	}
+
+}
+
+@media #{$large-up} { 
+
+	.featuredCard {
+
+		margin-top: -8rem;
+	}
+}

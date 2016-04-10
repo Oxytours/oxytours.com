@@ -1,0 +1,117 @@
+---
+category: route
+tag: roots
+lang: es
+title: El pequeño Alpes de la Costa Blanca
+shortname: Sierra de Serella
+Area: Sierra de Serella
+
+Price: 75€
+Length: 4h
+Distance: 9km
+Difficulty: Alta
+Slope: 650m
+
+Schedule:
+- item: "08:30-09:30 Recogida en el lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado. "
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se sitúe su alojamiento."
+
+Included:
+- item: "Traslados desde el alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante. "
+
+Notincluded:
+- item: "Visita a almazara (contratación opcional)."
+
+PriceVariation: "75 € por persona. IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: r0801.jpg
+- item: r0802.jpg
+- item: r0803.jpg
+- item: r0804.jpg
+- item: r0805.jpg
+
+Thumbnail: r08thumb.jpg
+
+Map:
+	lat: 38.714334
+	long: -0.278807
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				Paraíso montañoso en el corazón de Alicante, la sierra de Serrella es conocida como el “pequeño” Alpes de la Costa Blanca debido a que en sus apenas 15 kilómetros de longitud concentra hasta 7 cimas de más de 1.300 metros de altura. Una auténtica cordillera en miniatura.
+			</p>
+			<p> 
+				Recorrer la Serrella es un placer para los sentidos pues todos ellos son seducidos por esta montaña: el sonido cristalino del agua en los manantiales o el canto de las Chovas piquirrojas, el olor de las flores aromáticas, ver a los arruís pastar con calma en los llanos o sentir el frío tacto de la roca caliza de los espectaculares bloques de piedra de los “Frares”.
+			</p>
+			<p>
+				Esta montaña anima a su visitante a que la disfrute con calma y atención. Sólo así descubrirá la historia que cuentan sus pozos de nieve o las múltiples especies de arbustos, utilizados por sus pobladores desde la antigüedad para sanar enfermos o espantar a los malos espíritus.
+			</p>
+			<p>
+				Reservamos el sentido del gusto para la posterior comida en el restaurante seleccionado por Oxytours en esta zona, donde descubrirá el sabor de la tradición gastronómica de esta región, resultado de la fusión de las distintas culturas que pasaron por aquí y de sabores de ingredientes producidos en estas tierras desde hace siglos. 
+			</p>
+			<p>
+				Para finalizar la jornada podremos contratar de manera opcional la visita a las instalaciones de una almazara de aceite de oliva donde realizaremos una cata de sus excelentes aceites, galardonados con premios internacionales en numerosas ocasiones.
+			</p>
+			<p>
+				Montaña y tradición. Paisajes infinitos desde Serrella, en el corazón de la Costa Blanca. Disfrútelos con Oxytours.
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

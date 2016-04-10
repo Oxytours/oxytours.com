@@ -1,0 +1,120 @@
+﻿---
+category: route
+tag: roots
+lang: en
+title: The Forada Arc of stone
+shortname: Gallinera Valley
+Area: Gallinera Valley
+
+Price: 75€
+Length: 3.5 / 4h
+Distance: 6km
+Difficulty: Medium
+Slope: 400m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *."
+- item: "10:00 Start guided hike by our Tour leader. "
+- item: "11:30 Break for snack. "
+- item: "14:00 Lunch at our selected restaurant. "
+- item: "18:00 Transfer to accommodation of client and end of the journey."
+- item: "* Exact time to be determined depending of your location."
+
+Included:
+- item: "Transfers from your accommodation * to the area to visit."
+- item: "Full guide service throughout."
+- item: "5 course traditional lunch (set menu)."
+- item: "Mid morning snack."
+- item: "Personal insurance. "
+
+Notincluded:
+- item: "Visit to the cherry Co-operative (Additional extra. Booking optional)"
+
+PriceVariation: "75 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0401.jpg
+- item: r0402.jpg
+- item: r0403.jpg
+- item: r0404.jpg
+- item: r0405.jpg
+- item: r0406.jpg
+
+Thumbnail: r04thumb.jpg
+
+Map:
+	lat: 38.819224
+	long: -0.221460
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				There has always been magic in the air as we explore mountain paths. This sensation is difficult to explain but it’s exactly what is felt as we hike through <i>Penya Foradà</i>.
+			</p>
+			<p> 
+				Our route tell the tale of ancient villages and their inhabitants, working the land and cultivating it opening tiny paths to unite the valleys. The <b>majestic stone arc of Forada</b> spectacularly appears before us, inviting us to scale its 700 metres. Our reward is a <b>unique panorama</b> not to be found elsewhere on the Costa Blanca. Most visitors never will witness its beauty.
+			</p>
+			<p>
+				In addition, you will discover why this area is included within <b>Natura 2000 Network</b>, an ecological network of European protected areas, thanks to its numerous <b>important environmental values</b>. Among these are rock plants, protected eagles and the Stone arc to name a few. The arc in particular is <b>one of nature’s miracles</b>, twice a year the sun shines through to reveal the now disappeared site of the Franciscan convent in Benitaia.
+			</p>
+			<p>
+				There is no better way to end the morning than speaking about what you have seen and experienced in these wonderful surroundings while tasting the <b>excellent cuisine</b>. We have selected a restaurant which upholds not only <b>artisan traditions</b> but also the <b>quality of produce</b> found in this unique valley.
+			</p>
+			<p>
+				To end the trip journey excursion you might wish to extend your day by booking a visit to a <b>Cherry Co-operative</b>. This is available at a small extra charge. Here we will sample their produce, discovering its social and economic important.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+		
+	</div>
+</div>	
+
+{{>map this}}

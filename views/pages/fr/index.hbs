@@ -1,0 +1,164 @@
+---
+category: index
+lang: fr
+title: Sortir des sentiers battus
+shortname: Randonnées, Nature, Culture et Gastronomie sur la Costa Blanca
+
+description: "Bienvenue à Oxytours. Nous vous offrons un tourisme de nature, innovateur et hors des sentiers battus, respectueux  de  l’environnement pour mieux  en  apprécier ses saveurs et ses nuances extraordinaires. Routes pour découvrir  la réelle Costa Blanca."
+
+Photos:
+- item: home_01.jpg
+- item: home_02.jpg
+- item: home_03.jpg
+---
+
+<div class="content content--index">
+	<div class="row featured">
+		<div class="column medium-6">
+			<div class="featuredCard box box--double text-center">
+				
+				<img src="../img/icon_roots.png" alt="">
+				<h3>Tourisme avec Racines</h3>
+				<p>Découvrez la richesse culturelle, la tradition gastronomique des montagnes et vallées cachées de la Costa Blanca</p>
+				
+				<a href="roots.html" class="button small">
+					Choisissez votre expérience
+				</a>
+			</div>
+		</div>
+		<div class="column medium-6">
+			<div class="featuredCard box box--double text-center">
+
+				<img src="../img/icon_wings.png" alt="">
+				<h3>Tourisme avec Ailes</h3>				
+				<p>Explorez l’exceptionnel Patrimoine naturel de la Costa Blanca : la flore unique, les refuges des oiseaux,  les Parcs Naturels, la mer ou la côte</p>
+
+				<a href="wings.html" class="button small">
+					Choisissez votre expérience
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<h3 class="section-title text-center">
+				Cette année le meilleur cadeau sera des émotions
+			</h3>
+			<div class="row u-mgt">
+
+				{{#each pages}}
+
+				{{#is data.category 'route'}}
+
+					{{#if data.featured}}
+
+						<div class="column medium-4 large-3 route">
+							<a href="{{filename}}">
+								<div class="itemCard box">
+
+									<div class="ribbon">
+										<img class="ribbon-icon" src="../img/icon_{{data.tag}}.png" alt="">
+									</div>		
+	
+									<img src="../img/{{data.Thumbnail}}" alt="">
+									<div class="itemCard-content">
+										<p class="itemCard-location">
+											{{data.shortname}}
+										</p>						
+
+										<h4 class="itemCard-title">
+											{{data.title}}
+										</h4>
+									</div>
+									
+								</div>
+							</a>
+						</div>
+
+					{{/if}}
+
+				{{/is}}
+
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+<a name="whoweare"></a>
+	<div class="row">
+		<div class="column">
+			<h3 class="section-title text-center">
+				Qui sommes-nous
+			</h3>
+			<div class="row">
+				<div class="column large-6">
+					<img class="u-mgb box" src="../img/fran.jpg" alt="">
+					<cite>
+						En sortant des sentiers battus: La réelle Costa Blanca.
+					</cite>
+					<p>
+						Oxytours est une société de services touristiques installée dans la province d’Alicante. Sa principale activité est située autour de la Costa Blanca. Toutefois, elle offre ses services dans les provinces avoisinantes (la Castille-Mancha et l’Andalousie).
+
+					</p>
+					<p>
+						L’équipe d’Oxytours est composée de professionnels de l’environnement et de la conservation de la nature. Une équipe passionnée par son travail.  
+					</p>
+					<p>
+						Son but est de sensibiliser l’homme à son environnement, de mettre la nature en exergue dans chacune de ses excursions. Elle souhaite enrichir vos connaissances en matière de biodiversité. 
+					</p>
+					<p>
+						La Costa Blanca présente une façade extraordinaire  mais il est encore plus intéressant et instructif de la découvrir de l’intérieur où sont présentes une faune et une flore insoupçonnées.
+					</p>
+					<cite>
+						La Costa Blanca présente une façade extraordinaire  mais il est encore intéressant et instructif de la découvrir de l’intérieur où sont présentes une faune et une flore insoupçonnées
+					</cite>
+
+				</div>			
+				<div class="column large-6">
+					<img class="u-mgb box" src="../img/anabel.jpg" alt="">
+				</div>
+
+				<div class="column large-6">
+					<cite>
+						Que peut vous offrir Oxytours?
+					</cite>
+					<ul>
+						<li>
+							1. Qualité et professionnalisme. L’équipe d’Oxytours se veut exigeante sur la qualité de ses excursions afin de vous offrir une expérience unique. 
+
+						</li>
+						<li>
+							2. Passion et créativité. l’équipe d’Oxytours  vous fera partager sa passion pour ce territoire aux richesses inconnues. Traditions, histoires et nature n’auront plus aucun secret pour vous.
+
+						</li>
+						<li>
+							3. Découverte: Oxytours vous révélera les histoires oubliées de la Costa Blanca, les lieux enfouis connus de peu de monde. Et vous dégusterez l’authentique cuisine régionale.  
+
+						</li>
+				
+						<li>
+							4. La sauvegarde de la culture territoriale. Oxytours s’investit dans la conservation du patrimoine régional.
+						</li>
+					</ul>
+					<cite>
+						Un tourisme vert de qualité, novateur offrant l’opportunité de sortir des sentiers battus, respectueux de l’environnement pour mieux en apprécier ses richesses
+					</cite> 
+					
+				</div>
+
+			</div>
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="column text-center section-title">
+			<img src="../img/oxytours_inverse.svg" alt=""><br>
+			<a class="button" href="form.html">
+				Choisissez votre expérience
+			</a>
+		</div>
+	</div>	
+
+</div>
+

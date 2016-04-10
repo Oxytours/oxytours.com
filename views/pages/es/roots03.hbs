@@ -1,0 +1,128 @@
+---
+category: route
+tag: roots
+lang: es
+title: "Los últimos castillos de Al-Azraq, fortaleza de Benissili"
+shortname: "Valle de la Gallinera"
+Area: Valle de la Gallinera
+
+Price: 75€
+Length: 3.5 / 4h.
+Distance: 7km.
+Difficulty: Media
+Slope: 350m.
+
+
+Schedule:
+- item: "08:30-09:30 Recogida en el lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado. "
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se sitúe su alojamiento."
+
+Included:
+- item: "Traslados desde el alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante. "
+
+Notincluded:
+- item: "Visita a cooperativa de cerezas (contratación opcional)."
+
+PriceVariation: "75 € por persona. IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: r0301.jpg
+- item: r0302.jpg
+- item: r0303.jpg
+- item: r0304.jpg
+
+Thumbnail: r03thumb.jpg
+
+Map:
+	lat: 38.819224
+	long: -0.221460
+
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				Situado en la entrada occidental del Valle, los restos del castillo de Benissili (siglo XIII),uno de los últimos que retuvo el último visir árabe de estas montañas, Al-Azraq, continúan en pie, desafiando al paso del tiempo y dominando majestuoso esta parte del valle.
+
+			</p>
+			<p> 
+				Oxytours le ofrece la posibilidad de conocerlo a través de un itinerario por campos de cerezos para continuar después hasta los restos del poblado íbero de Xarpolar, a más de 900 metros de altura en una zona de gran valor paisajístico.
+
+			</p>
+			<p>
+				Son muchos los elementos patrimoniales existentes que nos permitirán conocer la vida de los antiguos pobladores del Valle gracias a los hornos de cal o sus espectaculares bancales en anfiteatro. En una zona de gran valor ambiental por las gran variedad de especies botánicas que allí se encuentran, utilizadas de manera tradicional para usos medicinales o domésticos.
+				
+			</p>
+			<p>
+				Acompáñenos y descubrirá esta bella zona escondida de la Costa Blanca donde disfrutará de espectaculares vistas y tendrá a sus pies castillos de época califal, valles enteros e incluso al fondo, la belleza del mar mediterráneo...una experiencia que no olvidará facilmente.
+
+			</p>
+			<p>
+				No hay mejor manera de acabar la mañana que hablando de lo visto y vivido en la montaña alrededor de una buena mesa. Para ello Oxytours ha seleccionado un restaurante en la zona en el que tendrá la oportunidad de degustar la excelente gastronomía del lugar donde la tradición de siglos, la calidad de los productos locales y el trabajo pausado en la cocina ofrecen como resultado platos con personalidad propia, como la de cada rincón de este valle.
+
+			</p>
+			<p>
+				Como opción para finalizar la jornada podrá contratar la visita a las instalaciones de una cooperativa de cerezas donde, además de realizar una degustación de sus productos, descubriremos la importancia económica y social de su cultivo para el valle.	
+			</p>
+			<p>
+				Un valle increíble. Descúbralo con Oxytours.
+			</p>
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>	
+	</div>
+</div>
+
+{{>map this}}

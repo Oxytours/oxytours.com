@@ -1,0 +1,121 @@
+---
+category: route
+
+tag: wings
+lang: en
+title: "Medieval remains and botanical paradise"
+shortname: "Peñon de Ifach Natural Reserve"
+Area: "Peñon de Ifach"
+
+Price: 40€
+Length: 3h
+Distance: 3/6km
+Difficulty: Low/Medium
+Slope: 130/250m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *"
+- item: "10:00 Start guided hike by our Tour leader"
+- item: "11:30 Break for snack"
+- item: "14:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+
+Notincluded:
+- item: "Lunch: 5 course traditional lunch (set menu). (Additional extra. Booking optional)"
+
+PriceVariation: "40 € by person. Children under 12 years: 25 € (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: w0401.jpg
+- item: w0402.jpg
+- item: w0403.jpg
+- item: w0404.jpg
+- item: w0405.jpg
+- item: w0406.jpg
+
+Thumbnail: w04thumb.jpg
+
+Map:
+	lat: 38.639541
+	long: 0.073145
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				This Natural Reserve in Calp is without doubt one of the landmarks of the Costa Blanca thanks to its <b>unmistakeable silhouette</b> against the Mediterranean due to its steep structure. One of the most visited attractions in the area it is surprisingly not as well known as you would expect.
+			</p>
+			<p> 
+				With Oxytours you can discover its secrets. One main attraction is the existence of <b>medieval remains</b>, the entrance to the old city, its walls and defensive towers, the necropolis and of course the church of our lady of Angels. This site is currently under archaeological excavation and we will see this in progress.
+			</p>
+			<p>
+				We will hike to a <b>tunnel</b> 180 metres in height and cross the mountain until we reach its peak. On our way we will encounter <b>species of protected vegetation</b> among which we will find the extremely rare <i>Silene de Ifach</i>. 
+			</p>
+			<p>
+				Continuing onto the Peñon peak (according to the fitness level) at 332 metres above sea level from where we can see both north and south of the Costa Blanca as well as the island of Ibiza. An <b>incomparable sight</b> which explains the transformation the province of Alicante has experienced during the last 60 years, making it one of the <b>main tourist destinations in Europe</b>. 
+			</p>
+			<p>
+				A <b>great cultural and environmental legacy</b> with a unsurpassed views in 45 hectares of this small Natural Reserve. While it may be small in size it is a giant in possibility offering the richest of experiences.
+			</p>
+			<p>
+				To end our trip you might wish to extend your day by booking optionally visit a selected restaurant to enjoy the flavours of <b>traditional gastronomy</b> from the Costa Blanca, respecting the original methods used to create exceptional dishes. This is available at a extra charge.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

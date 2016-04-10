@@ -1,0 +1,129 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: fr
+title: "La grande forêt humide de la Costa Blanca"
+shortname: "Parc Naturel de Font Roja"
+Area: "Parc Naturel de Font Roja"
+
+Price: 85€
+Lenght: 3h
+Distance: 7 km.
+Difficulty: Basse
+Slope: 350 m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la cave. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "85 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: w0101.jpg
+- item: w0102.jpg
+- item: w0103.jpg
+- item: w0104.jpg
+- item: w0105.jpg
+- item: w0106.jpg
+- item: w0107.jpg
+
+Thumbnail: w01thumb.jpg
+
+Map:
+	lat: 38.657810
+	long: -0.532359
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Le but de cette escapade est de vous offrir une des plus belles zones de la province d’Alicante : l’Alcoià. Ici, vous plongez dans une forêt culturellement riche, à la gastronomie traditionnelle faite de produits locaux. 
+
+			</p>
+			<p> 
+				Vous visiterez le Parc Naturel de la Font Roja, situé au nord de la province. Cette enclave est la représentation idéale des forêts méditerranéennes. Vous y observerez une spectaculaire végétation des forêts de feuillus.  
+
+			</p>
+			<p>
+				La population profite des nombreuses ressources naturelles de la montagne. Ici, nous pouvons trouver un excellent exemple de patrimoine culturel comme les puits de neige, qui ont été utilisés à partir du XVIIIe au début du XXe siècle pour la fabrication de la glace, ou des fours pour produire du charbon de bois. 
+
+			</p>
+			<p>
+				Après avoir atteint le sommet du Parc Naturel, le Menejador, avec 1.356 metres et après trois heures d’immersion dans cette nature luxuriante, vous rependrez des forces dans un excellent restaurant sélectionné par Oxytours. Vous profiterez de la généreuse cuisine locale et sa tradition. 
+				
+			</p>
+			<p>
+				Après le déjeuner, vous pouvez découvrir une cave à vin élaborant les meilleures productions régionales. Grâce à cet artisanat, les habitants entretiennent, embellissent et protègent  leur vallée. Une économie essentielle pour la région (Visite facultative. Prix hors forfait).
+
+			
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

@@ -1,0 +1,131 @@
+---
+category: route
+tag: wings
+
+lang: fr
+title: "Terre de l’eau, berceau du riz"
+shortname: "Parc Naturel Marais Pego - Oliva"
+Area: "Parc Naturel Marais Pego - Oliva"
+
+Price: 40€ 
+Length: 3 h.
+Distance: 8 km.
+Difficulty: Basse
+Slope: 300 m
+
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "40 € par personne. Enfants de moins de 12 ans : 25 €  (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: w0501.jpg
+- item: w0502.jpg
+- item: w0503.jpg
+- item: w0504.jpg
+- item: w0505.jpg
+- item: w0506.jpg
+
+
+Thumbnail: w05thumb.jpg
+
+Map:
+	lat: 38.869491
+	long: -0.066537
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Au nord de la Costa Blanca, se trouve un espace naturel protégé, un lieu où l’eau est essentielle à cette culture du riz commencée à l’époque des arabes. Cet élément indispensable à notre vie est présent dans chacun des recoins. Mais l’eau n’a pas toujours été présente dans ce lieu, c’est pourquoi notre guide vous racontera cette histoire passionnante lors de votre excursion. Les maladies associées aux zones humides, les processus de séchage, et plus près de nous, au XXème siècle le riz que l’on donné aux enfants lors de la guerre civile espagnole. 
+
+			</p>
+			<p> 
+				Parler de la culture du riz, c’est parler du dur labeur des travailleurs de Marjal de Pego. Les journées éreintantes, les efforts continus dans de difficiles conditions de travail ont forgé le caractère des autochtones durant des décennies.
+
+			</p>
+			<p>
+				Mais parler du riz, c’est aussi évoquer la cuisine. Ici, on produit une des variétés les plus appréciée d’Europe ; le riz bomba. Il est à la base d’une foultitude de recettes de la gastronomie espagnole.
+			
+			</p>
+			<p>
+
+				L’eau de Marjal provient en grande partie des montagnes de la vallée de Gallinera. Elle arrive dans la plaine avec une force et une transparence unique. Sa qualité permet l’existence d’espèces végétales et animales de grande importance. Vous y trouverez des nénuphars, le petit Samaruc, un poisson osseux vivant dans le sud de la catalogne et la communauté valencienne et d’importantes colonies de hérons. Oxytours sera très heureux de vous les faire découvrir toutes ces espèces se doivent d’être protégées.
+				
+			</p>
+			<p>
+				Ici, un jour l’eau a surgit et a inondé la terre Nous vous accompagnerons au travers des canaux, des lagunes de la Marjal découvrant la biodiversité du lieu. Nous traverserons les rizières, nous vous conterons leurs histoires cachées. Nous voulons vous faire connaitre une des plus belles enclaves inconnue de la Costa Blanca. 
+
+			</p>
+			<p>
+				Oxytours sélectionne des petits restaurants où vous découvrirez les saveurs traditionnelles de la Costa Blanca, un mélange de cultures gastronomiques léguées au fil du temps par des hommes qui sont entrés dans notre région et vous pouvez connaître facultativement sur cette tournée (Prix hors forfait).
+
+			
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

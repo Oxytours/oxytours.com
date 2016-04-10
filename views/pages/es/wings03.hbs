@@ -1,0 +1,116 @@
+---
+category: route
+tag: wings
+lang: es
+title: El Faro y las minas de ocre de l’Albir
+shortname: Parque Natural de la Serra Gelada
+Area: Serra Gelada
+
+Price: 40€
+Length: 3h
+Distance: 6km
+Difficulty: Baja
+Slope: 110m
+
+Schedule:
+- item: "08:30-09:30 Recogida en el lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se sitúe el alojamiento."
+
+Included:
+- item: "Traslados desde el alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+
+Notincluded:
+- item: "Comida: Menú concertado con el restaurante (contratación opcional)."
+
+PriceVariation: "40 € por persona. Menores de 12 años: 25 € IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: w0301.jpg
+- item: w0302.jpg
+- item: w0303.jpg
+- item: w0304.jpg
+- item: w0305.jpg
+
+Thumbnail: w03thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Los espectaculares acantilados de las sierras litorales de la Costa Blanca cuentan en el Parque Natural de la Serra Gelada con su máximo exponente, una imponente zona acantilada de más de 6 kilómetros de longitud que causa admiración entre los visitantes. 
+			</p>
+			<p> 
+				En el extremo norte de esta montaña se encuentra el Faro de l’Albir, único faro visitable de la región y que conocerá durante este itinerario de la mano de nuestros guías. Una suave pista  conduce desde la playa de l’Albir hasta el Faro junto a calas de gran belleza con bellas vistas de la bahía de Altea, incluida en este Espacio Protegido. 
+			</p>
+			<p>
+				Durante esta ruta descubrirá por qué especies como los delfines mulares o la Posidonia oceánica, planta marina vital para la conservación del Mar Mediterráneo, se encuentran en esta bahía, conociendo además el singular origen geológico de esta zona. Indagará en su historia visitando las minas de ocre o los restos de las torres vigía que alertaban de los ataques piratas durante los siglos XV-XVIII.
+			</p>
+			<p>
+				Dunas fósiles, aves marinas, delfines, flora única, espectaculares vistas, ...Una ruta accesible para todos junto al Mar mediterráneo.
+			</p>
+			<p>
+				Y no olvide que si desea terminar la jornada de una manera inmejorable tiene la opción de contratar la comida en un restaurante seleccionado por Oxytours, donde descubrirá la auténtica y tradicional gastronomía de la Costa Blanca. Un establecimiento donde la calidad de los ingredientes, el buen hacer en la cocina y el cuidado y mimo en la presentación de los platos convierten la comida en una experiencia para recordar. 
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

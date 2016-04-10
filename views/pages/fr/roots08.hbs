@@ -1,0 +1,117 @@
+---
+category: route
+tag: roots
+lang: fr
+title: "Les petites Alpes de la Costa Blanca"
+shortname: "Montagnes de Serrella"
+Area: "Sierra de Serrella"
+
+Price: 75€
+Length: 4h
+Distance: 9km
+Difficulty: Haute
+Slope: 650m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion ."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la fabrique d’huile d’olive. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "75 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r0801.jpg
+- item: r0802.jpg
+- item: r0803.jpg
+- item: r0804.jpg
+- item: r0805.jpg
+
+Thumbnail: r08thumb.jpg
+
+Map:
+	lat: 38.714334
+	long: -0.278807
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				Connue comme les petites alpes de la Costa Blanca, la sierra de Serrella se révèle être un vrai paradis montagneux. Avec ses 15 kilomètres de long et ses 7 sommets culminant à 1300 mètres d’altitude cet endroit vous surprendra.
+			</p>
+			<p> 
+				Parcourir la Serrella a toujours été un plaisir pour les randonneurs en quête de séduction. Le son cristallin des sources, le chant du crave à bec rouge, l’odeur des fleurs aromatiques qui parsèment les chemins, les mouflons à manchettes flânant dans les plaines, font de cette montagne un endroit paradisiaque pour tous les amoureux de la nature. 
+			</p>
+			<p>
+				Cette montagne invite ses visiteurs à profiter du calme ambiant. Si vous prêtez attention, la Serrella vous dévoilera ses puits de neige, la grande beauté géologique des blocs de pierre des Frares (Frères),  ses arbustes ancestraux utilisés par les autochtones pour guérir certaines maladies ou pour chasser les mauvais esprits. 
+			</p>
+			<p>
+				Vous emprunterez ensuite le sentier de la dégustation. Oxytours sélectionne le meilleur restaurant des alentours. Vous découvrirez les saveurs régionales, un mélange de cultures gastronomiques léguées au fil du temps par des hommes qui sont entrés dans la vallée. 
+			</p>
+			<p>
+				Et bien sûr vous avez la possibilité de contracter une visite facultative à une fabrique d’huiles d’olives dont certaines ont gagné différents prix internationaux. Vous aurez la chance d’en déguster quelques unes (Prix hors forfait).
+			</p>
+			<p>
+				Montagne et traditions, paysages infinis, venez vivre cette expérience avec Oxytours.
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

@@ -1,0 +1,17 @@
+.ox-cookies {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    padding: 20px;
+    color: #fff;
+    left: 0;
+    z-index: 10;
+
+    &-button {
+      background: #fff;
+      color: #333;
+      padding: 10px 20px;
+      margin: 0 20px;
+    }
+}

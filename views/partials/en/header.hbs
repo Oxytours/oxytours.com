@@ -1,0 +1,181 @@
+{{#is category 'index'}}
+<header class="header">
+
+	<div class="row">
+		<div class="header-cta">
+			<h1 class="display3">{{title}}</h1>
+			<h2 class="display3-subhead">{{shortname}}</h2>
+		</div>
+	</div>
+	<div class="header-videoContainer">
+		<div class="header-video">
+
+			<div id="player"></div>
+
+
+			<script>
+				var tag = document.createElement('script');
+
+				tag.src = "https://www.youtube.com/iframe_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+				var player;
+
+				function onYouTubeIframeAPIReady() {
+					player = new YT.Player('player', {
+						videoId: 'EzqER8FdBWI',
+						playerVars: {
+							height: '1920',
+							width: '1080',
+							controls: 0,
+							showinfo: 0,
+						},
+						events: {
+							'onReady': onPlayerReady
+						}
+					});
+				}
+
+				function onPlayerReady(event) {
+					event.target.playVideo();
+					event.target.mute();
+					event.target.setPlaybackQuality('hd720');
+
+					event.target.addEventListener('onStateChange', replayVideo);
+				}
+
+				function replayVideo(event) {
+					if(event.data === 0)
+					event.target.playVideo();
+				}
+
+				function stopVideo() {
+					player.stopVideo();
+				}
+
+				window.onscroll = scroll;
+
+				function scroll() {
+					if (window.pageYOffset > 0) {
+						player.pauseVideo();
+					}
+
+					else {
+						player.playVideo();
+					}
+
+				};
+			</script>
+		</div>
+	</div>
+
+</header>
+{{/is}}
+
+
+{{#is category 'category'}}
+
+	<header class="header header--category">
+
+		<div class="header-cta">
+			<h1 class="display3">{{title}}</h1>
+		</div>
+
+		<div class="header-photoContainer">
+			<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+				<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+			</div>
+		</div>
+
+	</header>
+
+
+{{/is}}
+
+{{#is category 'route'}}
+
+	<header class="header">
+
+		<div class="header-photoContainer">
+			<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+				<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+			</div>
+		</div>
+
+	</header>
+<div class="header-route">
+	<div class="row">
+		<div class="large-7 column">
+			<img class="route-category ribbon-icon" src="../img/icon_{{tag}}.png" alt="">
+			<h1 class="header-route-title">{{title}}</h1>
+			<h2 class="header-route-subtitle">{{shortname}}</h2>
+		</div>
+
+		<div class="large-5 column">
+			<div class="header-route-cta header-route-cta--{{tag}} ">
+				<a class="button" href="form.html">
+					More info and booking
+				</a>
+				<div class="route-price">
+					{{Price}}
+				</div>
+			</div>
+			<table class="route-properties">
+				<tr>
+					<td>
+						<i class="fa fa-clock-o fa-3x route-item"></i>
+						Length
+					</td>
+					<td>
+						<i class="fa fa-arrows-h fa-3x route-item"></i>
+						Distance
+					</td>
+					<td>
+						<i class="fa fa-child fa-3x route-item"></i>
+						Difficulty
+					</td>
+					<td>
+						<i class="fa fa-signal fa-3x route-item"></i>
+						Slope
+					</td>
+				</tr>
+				<tr>
+					<td>{{Length}}</td>
+					<td>{{Distance}}</td>
+					<td>{{Difficulty}}</td>
+					<td>{{Slope}}</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</div>
+
+{{/is}}
+
+{{#is category 'form'}}
+
+	<header class="header header--category">
+
+		<div class="header-cta">
+			<h1 class="display3">{{title}}</h1>
+			<h2 class="display3-subhead">{{shortname}}</h2>
+		</div>
+
+		<div class="header-photoContainer">
+			<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+				<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+			</div>
+		</div>
+
+	</header>
+
+
+{{/is}}

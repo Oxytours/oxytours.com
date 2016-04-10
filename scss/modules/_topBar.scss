@@ -1,0 +1,74 @@
+.topBar-container {
+
+	background: transparent;
+	height: 13rem;
+	position: relative;	
+
+	&-container {
+
+	}
+
+	.logo {
+		display: block;
+	}
+
+	.logo--small {
+		display: none;
+	}
+
+}
+
+
+@media #{$large-up} { 
+
+	.topBar-container {
+		position: fixed;
+
+		.mainMenu {
+			margin-top: 2.5rem;
+		}		
+	}
+}
+
+
+.topBar-container.fixed {
+	background: $main-color;
+	height: 5rem;
+	position: fixed;
+	animation: revealTopBar 0.5s forwards;
+	-webkit-animation: revealTopBar 0.5s forwards;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.1);
+
+	.logo {
+		display: none;
+	}
+
+	.logo--small {
+		display: block;
+	}
+
+	.mainMenu {
+		margin-top: 1.4rem;
+	}	
+
+}
+
+@-webkit-keyframes revealTopBar {
+	0% {
+		top: -150px;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+@keyframes revealTopBar {
+	0% {
+		top: -150px;
+	}
+
+	100% {
+		top: 0;
+	}
+}

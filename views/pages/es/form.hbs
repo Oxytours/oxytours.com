@@ -1,0 +1,92 @@
+---
+category: form
+lang: es
+title: Reserva tu ruta
+shortname: Estás a un paso de vivir una experiencia única
+
+Photos:
+- item: r0201.jpg
+- item: r0202.jpg
+- item: r0203.jpg
+- item: r0204.jpg
+- item: r0205.jpg
+- item: r0206.jpg
+---
+
+<div class="content content--index">
+
+	<div class="row">
+		<div class="column large-5">
+
+			<form action="http://www.oxytours.com/mail/mailto_es.php" method="post">
+				<div class="row">
+					<div class="column">
+						<label for="">Nombre
+							<input type="text" name="name" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Apellidos
+							<input type="text" name="surname" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Correo electrónico
+							<input type="email" name="email" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Teléfono
+							<input type="text" name="phone">
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Ciudad
+							<input type="text" name="city">
+						</label>
+					</div>
+					<div class="column">
+						<label for="">País
+							<input type="text" name="country">
+						</label>
+					</div>
+
+					<div class="column">
+						<label for="">Ruta escogida
+							<select name="route">
+								{{#each pages}}
+									{{#is data.category 'route'}}
+										<option value="{{data.title}}: {{data.shortname}}">{{data.title}}: {{data.shortname}}</option>
+									{{/is}}
+								{{/each}}
+							</select>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Fecha</label>
+						<input id="datepicker" type="text" name="date" required />
+					</div>
+					<div class="column">
+						<label for="">Número de personas
+							<input type="text" name="people" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Comentarios
+							<textarea type="text" name="comments"></textarea>
+						</label>
+					</div>					
+				</div>
+				<button class="button expand">Enviar</button>
+			</form>	
+
+		</div>
+		<div class="column large-7 form-info">
+			<h3>Información Relevante</h3>
+			Una vez rellene este formulario nos pondremos en contacto con usted por correo electrónico o teléfono
+			lo antes posible para confirmarle las fechas y las instrucciones de pago.
+		</div>
+	</div>
+
+</div>
+

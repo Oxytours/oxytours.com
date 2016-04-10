@@ -1,0 +1,132 @@
+---
+category: route
+tag: roots
+
+lang: fr
+title: "Les derniers châteaux d'Al-Azraq: la forteresse de Benissili"
+shortname: "La vallée de Gallinera"
+Area: "La vallée de Gallinera"
+
+Price: 75€
+Length: 3.5 / 4h.
+Distance: 7km.
+Difficulty: Moyenne
+Slope: 350m.
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion ."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile."
+
+Notincluded:
+- item: "Visite à la coopérative de cerises. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "75 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r0301.jpg
+- item: r0302.jpg
+- item: r0303.jpg
+- item: r0304.jpg
+
+Thumbnail: r03thumb.jpg
+
+Map:
+	lat: 38.819224
+	long: -0.221460
+
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Situé à l'entrée ouest de la vallée, le château de Benissili (XIe siècle), est l'un des derniers à avoir connu la présence de l’ultime vizir au sein de ces montagnes. Ses vestiges défient le temps et dominent la majestueuse vallée.
+
+			</p>
+			<p> 
+				Oxytours vous offre l’opportunité de connaitre ce superbe édifice. Pour vous y rendre, vous traverserez de superbes champs de cerisiers, arriverez au les vestiges du village de Xarpolar qui culmine à 900 mètres d’altitude au milieu de fantastiques paysages.
+
+			</p>
+			<p>
+				Ici, les traces du passé ne sont pas effacées. En témoignent  un four a chaux ou les spectaculaires bancs installés en amphithéâtre.  Témoins d’une époque lointaine, ils relatent la vie des anciens habitants de la montagne.
+
+			</p>
+			<p>
+				Coté nature, vous serez ravis. Dans ces lieux, se trouvent de nombreuses variétés de plantes utilisées aujourd’hui encore de façon traditionnelle pour les usages domestiques ou médicinales des autochtones. Ces petits secrets vous seront livrés sur place par nos guides.  
+				
+			</p>
+			<p>
+				Oxytours vous dévoilera de magnifiques endroits cachés de la Costa, généreux  en panoramas exceptionnels.  A vos pieds, les châteaux de l’époque mauresque, de profondes vallées et plus au loin, la beauté de la mer méditerranéenne.  
+				
+
+			</p>
+			<p>
+				Vous vous souviendrez de ces magnifiques paysages, attablés dans un des meilleurs restaurants de la vallée selectionné par Oxytours. L’occasion de déguster l’excellente gastronomie locale propre à chacun des villages de la vallée. 
+				
+			</p>
+			<p>
+				Vous terminerez cette excursion avec la visite d’une coopérative de cerises. Durant la dégustation, les hommes passionnés par ce métier vous feront comprendre l’enjeu économique et social de cette culture. (Visite facultative. Prix hors forfait.) 
+				
+			</p>
+			<!-- EO Description -->
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>	
+	</div>
+</div>
+
+{{>map this}}

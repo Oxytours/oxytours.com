@@ -1,0 +1,117 @@
+﻿---
+category: route
+tag: roots
+lang: en
+title: "The Giant Roldan’s mountain"
+shortname: "Puig Campana mountain"
+Area: "Puig Campana mountain"
+
+Price: 70€
+Length: 6.5 / 7h
+Distance: 15km
+Difficulty: High
+Slope: 900m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *."
+- item: "10:00 Start guided hike by our Tour leader. "
+- item: "11:30 Break for snack. "
+- item: "14:00 Break for picnic."
+- item: "18:30 Transfer to accommodation of client and end of the journey."
+- item: "* Exact time to be determined depending of your location."
+
+Included:
+- item: "Transfers from your accommodation * to the area to visit."
+- item: "Full guide service throughout."
+- item: "Lunch, picnic with traditional dishes."
+- item: "Mid morning snack."
+- item: "Personal insurance. "
+
+PriceVariation: "70 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0701.jpg
+- item: r0702.jpg
+- item: r0703.jpg
+- item: r0704.jpg
+- item: r0705.jpg
+
+Thumbnail: r07thumb.jpg
+
+Map:
+	lat: 38.606249
+	long: -0.190992
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Visible from almost anywhere along the Costa Blanca coastline, <b>Puig Campana</b> emerges as an imposing colossus at a height of <b>1.410</b> metres and only <b>8</b> kilometres from the Mediterranean sea it draws you like a magnet. 
+			</p>
+			<p> 
+				Visitors wonder at <b>Roldan’s cleft</b>, a spectacular cut in the mountain’s silhouette. There are those who say that Roldan’s cleft was created naturally, however legend says otherwise. A <b>giant’s rage</b> and his desperation to protect his loved one caused the cleft hundreds of years ago. It is still said today that at night under the moonlight you can hear Roldan’s sobs among the solitary slopes.
+			</p>
+			<p>
+				Puig Campana is considered a <b>hiker’s Paradise</b> for those who visit the Costa Blanca can contemplate the <b>best views</b> from its top. Without doubt on this excursion with Oxytours you will discover it is so much more, a place where rare <b>botanical species find shelter</b>, where we can easily observe <b>Barbary sheep</b> and <b>Peregrine hawks</b> amaze you with their spectacular flight.
+			</p>
+			<p>
+				We will spend approximately 6 hours exploring this imposing mountain, naturally with breaks to recharge our batteries and take in the breathtaking scenery. We shall of course provide <b>snacks and homemade picnic food</b> using delicious products typical of this area.
+			</p>
+			<p>
+				Roldan’s mountain tells us the tale of Marina Baixa, an agriculture and fishing area which has turned into one of the main tourist destinations. Close to La Nucia, Guadalest and Benidorm with <b>abundant sunshine, unique gastronomy, exceptional environments and a culture legacy which</b> has given rise to this astonishing region.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+
+	</div>
+</div>	
+
+{{>map this}}

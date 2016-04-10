@@ -1,0 +1,152 @@
+---
+category: index
+lang: es
+title: Turismo con raices y alas
+shortname: "Rutas, Naturaleza, Cultura y Gastronomía en la Costa Blanca"
+
+description: "Bienvenido a Oxytours. Te ofrecemos turismo de naturaleza, innovador, fuera de los circuitos turísticos, respetuoso con su entorno y lleno de sabor y matices extraordinarios. Rutas que te descubrirán la auténtica Costa Blanca."
+
+Photos:
+- item: home_01.jpg
+- item: home_02.jpg
+- item: home_03.jpg
+---
+
+<div class="content content--index">
+	<div class="row featured">
+		<div class="column medium-6">
+			<div class="featuredCard box box--double text-center">
+				
+				<img src="../img/icon_roots.png" alt="">
+				<h3>Rutas con Raíces</h3>
+				<p>Descubre la riqueza cultural y la tradición gastronómica de las montañas y valles escondidos de la Costa Blanca</p>
+				
+				<a href="roots.html" class="button small">
+					Elige tu experiencia
+				</a>
+			</div>
+		</div>
+		<div class="column medium-6">
+			<div class="featuredCard box box--double text-center">
+
+			<img src="../img/icon_wings.png" alt="">
+				<h3>Rutas con Alas</h3>				
+				<p>Explora el excepcional patrimonio natural de la Costa Blanca. Flora única, refugio de aves, parques naturales, mar y costa...</p>
+
+				<a href="wings.html" class="button small">
+					Elige tu experiencia
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column">
+			<h3 class="section-title text-center">
+				Este año ¿Por qué no regalas emociones?
+			</h3>
+			<div class="row u-mgt">
+
+				{{#each pages}}
+
+				{{#is data.category 'route'}}
+
+					{{#if data.featured}}
+
+						<div class="column medium-4 large-3 route">
+							<a href="{{filename}}">
+								<div class="itemCard box">
+
+									<div class="ribbon">
+										<img class="ribbon-icon" src="../img/icon_{{data.tag}}.png" alt="">
+									</div>		
+
+									<img src="../img/{{data.Thumbnail}}" alt="">
+									<div class="itemCard-content">
+										<p class="itemCard-location">
+											{{data.shortname}}
+										</p>						
+
+										<h4 class="itemCard-title">
+											{{data.title}}
+										</h4>
+									</div>
+									
+								</div>
+							</a>
+						</div>
+
+					{{/if}}
+
+				{{/is}}
+
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+<a name="whoweare"></a>
+	<div class="row">
+		<div class="column">
+			<h3 class="section-title text-center">
+				Nosotros
+			</h3>
+			<div class="row">
+				<div class="column large-6">
+					<img class="u-mgb box" src="../img/fran.jpg" alt="">
+					<cite>
+						Le descubrimos las montañas y valles escodidos de la Costa Blanca
+					</cite>
+					<p>
+						Oxytours es una empresa de servicios turísticos ubicada en Alicante que desarrolla su actividad principalmente en la Costa Blanca, aunque también ofrecemos experiencias en otras regiones vecinas como Castilla la Mancha y Andalucía.
+					</p>
+					<p>
+						Nuestro equipo está formado por profesionales de la educación e interpretación ambiental  y de la conservación de la naturaleza. Profesionales experimentados que han convertido su pasión en su trabajo.
+					</p>
+					<p>
+						Nos mueve la ambición de posicionar la naturaleza y la cultura de nuestra región como lo que son: recursos turísticos de primer orden, recursos que sin duda debemos cuidar por el valor que tienen en sí mismos y por lo que pueden enriquecer la experiencia de los viajeros, que como usted, desean disfrutar de un clima envidiable en un entorno costero único.
+					</p>
+					<cite>
+						Porque tras la conocida y espectacular fachada litoral Alicantina, hay mucho más y estamos deseando mostrárselo
+					</cite>
+
+				</div>			
+				<div class="column large-6">
+					<img class="u-mgb box" src="../img/anabel.jpg" alt="">
+					<cite>
+						¿Qué le ofrece Oxytours para enriquecer su estancia en la Costa Blanca?						
+					</cite>
+				</div>
+
+				<div class="column large-6">
+					<ul>
+						<li>
+							1. Calidad y profesionalidad: No somos conformistas. Cuidamos al máximo los detalles de nuestros tours para ofrecerles un experiencia única que cumpla con sus expectativas.
+						</li>
+						<li>
+							2. Pasión y Creatividad: No somos meros intérpretes. Le conectamos con la pasión que sentimos por nuestro territorio y utilizamos todos los medios y herramientas necesarios para que usted se sumerja en nuestra tradición, historia y naturaleza.
+						</li>
+						<li>
+							3. Descubrimiento: No somos turismo de masas. Le mostramos lo que muy pocos conocen. Rescatamos apasionantes historias olvidadas, recorremos lugares poco frecuentados y les acompañamos a disfrutar dónde saben ofrecer la auténtica y exquisita cocina Alicantina.
+						</li>
+						<li>
+							4. Salvaguarda de nuestra cultura y territorio: No sólo somos negocio. Invertimos parte del coste de la actividad en la conservación de nuestro patrimonio y usted será partícipe de ello. Descubra cómo.
+						</li>
+					</ul>
+					<cite>Oxytours les ofrece turismo de naturaleza de calidad, innovador, fuera de los circuitos turísticos, respetuoso con su entorno y lleno de sabor y matices extraordinarios</cite>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="column text-center section-title">
+			<img src="../img/oxytours_inverse.svg" alt=""><br>
+			<a class="button" href="form.html">
+				Planifica tu experiencia con nosotros
+			</a>
+		</div>
+	</div>	
+
+</div>
+

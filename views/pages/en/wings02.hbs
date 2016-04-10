@@ -1,0 +1,126 @@
+---
+category: route
+tag: wings
+lang: en
+title: "Hiking between magical Yews and snow wells"
+shortname: "Mariola mountain Natural Reserve"
+Area: "Sierra de Mariola"
+
+Price: 85€
+Length: 4h
+Distance: 10km
+Difficulty: Medium
+Slope: 900m 
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *"
+- item: "10:00 Start guided hike by our Tour leader"
+- item: "11:30 Break for snack"
+- item: "14:00 Lunch at our selected restaurant"
+- item: "18:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+- item: "5 course traditional lunch (set menu)."
+
+Notincluded:
+- item: "Visit at Olive groves (Additional extra. Booking optional)"
+
+PriceVariation: "85 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: w0201.jpg
+- item: w0202.jpg
+- item: w0203.jpg
+- item: w0204.jpg
+- item: w0205.jpg
+- item: w0206.jpg
+
+Thumbnail: w02thumb.jpg
+
+Map:
+	lat: 38.764770
+	long: -0.501166
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				The Costa Blanca mountains tell us hidden stories from time immemorial via their peaks, hills and ravines. One example of this is <b>Mariola mountain</b>, with its amazing <b>cave paintings</b>, created by the original inhabitants more than 10.000 years ago. As well as the <b>castles</b> of the region, they have stood the test of time to tell us the tale of battles between the Kingdoms of Castilla and Aragon.
+			</p>
+			<p> 
+				The importance of its <b>heritage</b> is only comparable to its environmental worth. You will encounter an extraordinary <b>variety of aromatic and medicinal plants</b>, the possibility of witnessing the rare flight of <b>Bonelli’s eagle</b> and <b>Griffon vulture</b> all of which helped the establishment of this Natural Reserve in 2002.
+			</p>
+			<p>
+				We will take you to the impressive <b>snow wells</b> where you will see exceptionally preserved examples of these constructions such as the <i>Cava Gran</i>. We learn about their function and economic influence during the middle of the 18th century. 
+			</p>
+			<p>
+				We enter a forest of <b>Yew trees</b> discovering why European mythology considered the Yew as the most <b>magical of trees</b>. Considered as the oldest species in Europe, with more than <b>3.000 years</b> of age and its incredible properties you will be enchanted. 
+
+			</p>
+			<p>
+				We finish our hike by ascending Mont Cabrer, the mountains peak at 1.390 metres high. From here you will have the most extraordinary panoramic views.
+			</p>
+			<p>
+				We move to a <b>specially selected restaurant</b> where delicious <b>mountain cuisine</b> awaits you. You meal will be prepared using <b>traditional</b> methods and <b>locally grown</b> produce plus an excellent wine list, of course!
+			</p>
+			<p>
+				Last but by no means least on our return trip you might wish to extend your day by booking a visit to an <b>olive oil press</b>. This is available at a small extra charge. Here we will visit olive groves for a tasting session of its international award winning oils.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

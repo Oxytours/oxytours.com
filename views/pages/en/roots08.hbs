@@ -1,0 +1,120 @@
+﻿---
+category: route
+tag: roots
+lang: en
+title: "The little Alps of the Costa Blanca"
+shortname: "Serrella mountain"
+Area: "Serrella mountain"
+
+Price: 75€
+Length: 4h
+Distance: 9km
+Difficulty: High
+Slope: 650m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *."
+- item: "10:00 Start guided hike by our Tour leader. "
+- item: "11:30 Break for snack. "
+- item: "14:00 Lunch at our selected restaurant."
+- item: "18:00 Transfer to accommodation of client and end of the journey."
+- item: "* Exact time to be determined depending of your location."
+
+Included:
+- item: "Transfers from your accommodation * to the area to visit."
+- item: "Full guide service throughout."
+- item: "5 course traditional lunch (set menu)."
+- item: "Mid morning snack."
+- item: "Personal insurance. "
+
+Notincluded:
+- item: "Visit at Olive groves (Additional extra. Booking optional)."
+
+PriceVariation: "75 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0801.jpg
+- item: r0802.jpg
+- item: r0803.jpg
+- item: r0804.jpg
+- item: r0805.jpg
+
+Thumbnail: r08thumb.jpg
+
+Map:
+	lat: 38.714334
+	long: -0.278807
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				A mountain of Paradise in the heart of Alicante, <b>Serrella</b> is known as the Little Alps of the Costa Blanca due to its impressive 15 kilometres in length leading to <b>7 peaks of more than 1.300 metres</b> in height. All in all an authentic mountain range in miniature.
+			</p>
+			<p>
+				Visiting Serrella is indeed a <b>pleasure for the senses</b> as they are seduced by this mountain. The crystal sound of its waters or the song of <b>Red-billed Chough</b>, the delightful smell of <b>aromatics flowers</b>, the sight of <b>Barbary sheep</b> or even the cold touch of the chalky rocks <b>spectacular blocks of stone</b> known as els <i>Frares</i> (the friars).
+			</p>
+			<p>
+				This mountain encourages you to enjoy yourself at your leisure. Only in this way will you discover the <b>history</b> that its <b>snow wells</b> narrate, together with the many species of <b>bushes used by ancient inhabitants</b> to cure illness or banish evil spirits.
+			</p>
+			<p>
+				We continue with this delight of the senses by visiting a specially <b>selected restaurant</b> to enjoy the flavours of <b>traditional gastronomy</b> from this region. Cuisine that has been brought about by a <b>fusion</b> of the various cultures passing through the area and its <b>locally grown produces</b>.
+			</p>
+			<p>
+				You might wish to extend your day by booking a visit to an <b>olive oil press</b>. This is available at a small extra charge. Here, we will sample its excellent oils which have one won numerous international awards.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+
+	</div>
+</div>
+
+{{>map this}}

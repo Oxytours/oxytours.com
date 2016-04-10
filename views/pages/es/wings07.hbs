@@ -1,0 +1,124 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: es
+title: Entre delfines y piratas, los secretos del Acantilado
+shortname: Ruta marina Parque Natural de la Serra Gelada
+Area: Parque Natural Serra Gelada
+
+Price: 65€
+Length: "4h"
+Distance: 45km
+Difficulty: Baja
+Slope: 0m
+
+Schedule:
+- item: "10:00 Salida desde el puerto de Altea para ruta marina interpretativa entre las bahías de Altea y Benidorm, acantilados de Serra Gelada y Toix. "
+- item: "11:30 Almuerzo a bordo."
+- item: "14:00 Regreso a puerto y fin de la actividad."
+
+Included:
+- item: "Alquiler de embarcación en exclusiva y servicio de patrón."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Almuerzo con productos tradicionales."
+- item: "Seguros."
+
+Notincluded:
+- item: "Traslados desde el alojamiento del cliente ni comida en restaurante tradicional."
+
+PriceVariation: "65 € por persona. IVA incluido (Grupos de 6 personas). Precio promocional del 15/06/2015 al 30/09/2015. Precio con traslados hasta el puerto de Altea y comida en restaurante tradicional: 140 € por persona. IVA incluido (Grupos de 6 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: w0701.jpg
+- item: w0702.jpg
+- item: w0703.jpg
+- item: w0704.jpg
+- item: w0705.jpg
+- item: w0706.jpg
+- item: w0707.jpg
+- item: w0708.jpg
+- item: w0709.jpg
+
+Thumbnail: w07thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Sólo desde el mar es posible entender la excepcionalidad del Parque Natural de la Serra Gelada. Visitarlo a bordo de una embarcación es una oportunidad única, descubrirlo de manera guiada por Oxytours resultará una fascinante experiencia.
+			</p>
+			<p> 
+				Embarcando en Altea navegará a los pies de increíbles acantilados donde conocerá la flora y fauna de la Serra Gelada y las dunas fósiles más altas de Europa, recorriendo en embarcación uno lugares con mayor presencia de delfines mulares (Tursiops truncatus) del Mediterráneo español.
+			</p>
+			<p>
+				Podrá contemplar las Pesqueras de Cingle en Toix, testimonio veraz de las tremendas dificultades por las que atravesaba la población local durante mediados del siglo XX. O los restos de las torres vigías que alertaban de los ataques de piratas berberiscos en el siglo XVI, como el temido Dragut el turco.
+			</p>
+			<p>
+				Además tendrá la oportunidad de conocer la avifauna marina de la bahía de Altea y Benidorm, donde dependiendo de la época del año será posible avistar  diferentes especies, muchas de ellas protegidas, como las Pardelas balear (Puffinus mauretanicus) y cenicienta (Calonectris diomedea), el Paiño (Hydrobates pelagicus), la Gaviota de Audouin (Larus audouinii), el Cormorán moñudo (Phalacrocorax aristotelis) o los Alcatraces (Morus bassanus). 
+			</p>
+			<p>
+				Y como siempre con Oxytours disfrutará de la deliciosa gastronomía de la zona. Por ello, al acabar la mañana, nos desplazaremos al restaurante seleccionado por Oxytours donde no sólo le espera el excelente sabor de su cocina tradicional sino que además abandonará el establecimiento con la agradable sensación de haber comido como en casa.
+			</p>
+			<p>
+				Sin duda, una forma inmejorable de descubrir la Costa Blanca. Desde Oxytours estaremos encantados de acompañarle.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

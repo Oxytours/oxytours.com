@@ -1,0 +1,39 @@
+.logo {
+
+
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+
+
+	img {
+		width: 7rem;
+	}
+
+}
+
+.logo--small {
+	float: left;
+	display: inline-block;
+}
+
+
+.topBar-container.fixed .logo {
+	width: 5rem;
+}
+
+
+@media #{$medium-up} { 
+
+
+	.logo {
+
+		width: auto;
+		float: left;
+		display: inline-block;
+		margin-top: 0.5rem;
+
+	}
+
+
+}

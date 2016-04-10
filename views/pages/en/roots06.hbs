@@ -1,0 +1,127 @@
+﻿---
+category: route
+
+featured: true
+
+tag: roots
+lang: en
+title: "The arc of Atanços, a wonder of nature"
+shortname: "Xortà mountain"
+Area: "Xortà mountain"
+
+Price: 75€
+Length: 3.5 / 4h
+Distance: 6 km
+Difficulty: Low/Medium
+Slope: 200/400m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *."
+- item: "10:00 Start guided hike by our Tour leader. "
+- item: "11:30 Break for snack. "
+- item: "14:00 Lunch at our selected restaurant. "
+- item: "18:00 Transfer to accommodation of client and end of the journey."
+- item: "* Exact time to be determined depending of your location."
+
+Included:
+- item: "Transfers from your accommodation * to the area to visit."
+- item: "Full guide service throughout."
+- item: "5 course traditional lunch (set menu)."
+- item: "Mid morning snack."
+- item: "Personal insurance. "
+
+Notincluded:
+- item: "Artisan workshop handmade meat (Additional extra. Booking optional)"
+
+PriceVariation: "75 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0601.jpg
+- item: r0602.jpg
+- item: r0603.jpg
+- item: r0604.jpg
+- item: r0605.jpg
+- item: r0606.jpg
+- item: r0607.jpg
+- item: r0608.jpg
+
+Thumbnail: r06thumb.jpg
+
+Map:
+	lat: 38.701006
+	long: -0.180530
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Among the great mountains of the Costa Blanca lies a small jewel known as <b>Xorta mountain</b>. Due to its 1.220 metres in height and imposing profile this is often overshadowed by Serrella, Aitana or Bernia mountains.
+			</p>
+			<p> 
+				That is perhaps why its richness is only sampled by these lucky enough to pass through its trails. <b>The arch</b> itself is hidden but soon appears to surprised hikers. Some <b>20 meters in height</b> with two openings separated by a narrow column which looks as if it is about to fall into the Foies ravine. This is without doubt a <b>natural wonder</b> of great geological and botanical importance. 
+
+			</p>
+			<p>
+				Let <b>Oxytours</b> take you along <b>almond and olive groves</b>, at the feet of the enormous vertical walls of Xorta.  We then ascend to the top (according to the fitness level) giving us <b>exceptional views</b> of Mediterranean sea, Guadalest valley and neighbouring Aitana mountain. <b>Countryside of great beauty</b> immortalised by the exceptional Works of the painter <b>Emilio Varela</b>, one of the most important Alicante artists of the XX<sup>th</sup> century. 
+			</p>
+			<p>
+				At the end of the hike <b>extraordinary cuisine</b> awaits you. As we visit a restaurant hand selected by Oxytours. Here you will sample <b>traditional flavours</b> which have evolved with time thanks to traditions and new trends preserving the quality of products of this area.
+			</p>
+			<p>
+				After lunch you might wish to extend your day by booking a visit to an <b>artisan workshop</b> to learn are prepared its famous handmade meat product named <i>Sobrasada</i>.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+
+	</div>
+</div>	
+
+{{>map this}}

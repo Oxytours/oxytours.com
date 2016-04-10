@@ -1,0 +1,69 @@
+---
+category: category
+lang: es
+title: Tourisme avec Racines
+shortname: Découvrez la richesse culturelle, la tradition gastronomique des montagnes et vallées cachées de la Costa Blanca
+
+Photos:
+- item: r0202.jpg
+- item: r0602.jpg
+- item: r1107.jpg
+- item: r1103.jpg
+- item: r0406.jpg
+- item: r0605.jpg
+- item: r1001.jpg
+- item: r0905.jpg
+---
+
+<div class="content content--index">
+
+	<div class="row">
+		<div class="column">
+			<div class="row u-mgt">
+
+				{{#each pages}}
+
+					{{#is data.tag 'roots'}}
+
+						<div class="column medium-4 large-3 route">
+							<a href="{{filename}}">
+								<div class="itemCard box">
+
+									<div class="ribbon">
+										<img class="ribbon-icon" src="../img/icon_{{data.tag}}.png" alt="">
+									</div>		
+
+									<img src="../img/{{data.Thumbnail}}" alt="">
+									<div class="itemCard-content">
+										<p class="itemCard-location">
+											{{data.shortname}}
+										</p>						
+
+										<h4 class="itemCard-title">
+											{{data.title}}
+										</h4>
+									</div>
+									
+								</div>
+							</a>
+						</div>
+
+				{{/is}}
+
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column text-center section-title">
+			<img src="../img/oxytours_inverse.svg" alt=""><br>
+			<a class="button" href="form.html">
+				Choisissez votre expérience
+			</a>
+		</div>
+	</div>	
+
+</div>
+

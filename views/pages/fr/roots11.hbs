@@ -1,0 +1,121 @@
+---
+category: route
+
+featured: true
+
+tag: roots
+lang: es
+title: "L’ascension au lion dormant  de la Costa Blanca"
+shortname: "Le Mont Ponoig"
+Area: "Le Mont Ponoig"
+
+Price: 85€
+Length: 3,5 / 4h
+Distance: 8km
+Difficulty: Moyenne
+Slope: 450m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion ."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la cave. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "85 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r1101.jpg
+- item: r1102.jpg
+- item: r1103.jpg
+- item: r1104.jpg
+- item: r1105.jpg
+- item: r1106.jpg
+- item: r1107.jpg
+- item: r1108.jpg
+
+Thumbnail: r11thumb.jpg
+
+Map:
+	lat: 38.606249
+	long: -0.190992
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				Gabriel Miró, écrivain-poète (1879-1930) originaire d‘alicante,  appelait le Monte Ponoig le « lion endormi ». Celui qui traverse cette  montagne trouvera tout de suite la ressemblance avec le gros félin. Son paysage est à couper le souffle. De hautes falaises, des gorges profondes, une tour de guet impressionnante et un extraordinaire point de vue sur la Costa Blanca (1189 mètres) en font la reine des montagnes.
+			</p>
+			<p> 
+				Le mont Ponoig cumule tous les avantages. Le fait d’être élevé et situé près de la mer lui attribue un aspect paradisiaque. Cette situation lui permet d’abriter de nombres espèces végétales et animales, dont notre guide connait tous les secrets. 
+			</p>
+			<p>
+				Les sentiers du Ponoig relatent l’histoire et le mode de vie des habitants de la région. Ces derniers connaissent les vertus médicinales des plantes présentes sur leur terre. Une terre qui a souffert, au début des années 50, du développement touristique.
+			</p>
+			<p>
+				Reste qu’aujourd’hui, cette montagne a résisté à la modernité des temps. Ses habitants ont su préserver son authenticité. On y cultive des fruits et légumes dans ses champs, on y déguste de bon riz et d’excellents poissons et fruits de mer de notre mer Méditerranée. Une gastronomie appréciée des randonneurs découvrant avec Oxytours toute l’importance l'importance de la tradition et de savoir-faire dans la cuisine.
+
+			</p>
+			<p>
+				Vous terminerez cette excursion avec la visite d’une cave à vin et d’une fabrique d’huile où une dégustation des meilleures productions vous sera proposée (Visite facultative. Prix hors forfait.) 
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

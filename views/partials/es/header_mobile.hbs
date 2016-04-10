@@ -1,0 +1,119 @@
+{{#is category 'index'}}
+<header class="header header--index">
+
+	<div class="row">
+		<div class="header-cta">
+			<h1 class="display3">{{title}}</h1>
+			<h2 class="display3-subhead">{{shortname}}</h2>
+		</div>
+	</div>	
+</header>
+{{/is}}
+
+{{#is category 'category'}}
+
+<header class="header header--category">
+
+	<div class="header-cta">
+		<h1 class="display3">{{title}}</h1>
+		<h2 class="display3-subhead">{{shortname}}</h2>
+	</div>
+
+	<div class="header-photoContainer">
+		<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+			<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+		</div>
+	</div>
+
+</header>
+
+
+{{/is}}
+
+{{#is category 'route'}}
+<header class="header header--route">
+
+	<div class="header-photoContainer">
+		<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+			<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+		</div>
+	</div>
+
+</header>
+<div class="header-route">
+	<div class="row">
+			<img class="route-category ribbon-icon" src="../img/icon_{{tag}}.png" alt="">
+			<h1 class="header-route-title">{{title}}</h1>
+			<h2 class="display3-subhead">{{shortname}}</h2>
+
+			<div class="header-route-cta header-route-cta--{{tag}} show-for-large-up">
+				<a class="button" href="form.html">
+					Reserva ahora esta ruta
+				</a>
+				<div class="route-price">
+					{{Price}}
+				</div>
+			</div>
+			<table class="route-properties route-properties--{{tag}}">
+				<tr>
+					<td>
+						<i class="fa fa-clock-o fa-3x route-item"></i>
+						Duración
+					</td>
+					<td>
+						<i class="fa fa-arrows-h fa-3x route-item"></i>
+						Distancia
+					</td>
+					<td>
+						<i class="fa fa-child fa-3x route-item"></i>
+						Dificultad
+					</td>
+					<td>
+						<i class="fa fa-signal fa-3x route-item"></i>
+						Desnivel
+					</td>
+				</tr>
+				<tr>
+					<td>{{Length}}</td>
+					<td>{{Distance}}</td>
+					<td>{{Difficulty}}</td>
+					<td>{{Slope}}</td>
+				</tr>
+			</table>
+	</div>
+	<div class="row hide-for-large-up">
+		<div class="header-route-cta header-route-cta--{{tag}} text-center">
+			<button class="button u-mgt">
+				Más información y reservas
+			</button>
+		</div>				
+	</div>
+</div>
+
+{{/is}}
+
+{{#is category 'form'}}
+
+<header class="header header--category">
+
+	<div class="header-cta">
+		<h1 class="display3">{{title}}</h1>
+		<h2 class="display3-subhead">{{shortname}}</h2>
+	</div>
+
+	<div class="header-photoContainer">
+		<div id="route-photos" class="owl-carousel">
+			{{#each Photos}}
+			<div class="item"> <img src="../img/routes/{{item}}"> </div>
+			{{/each}}
+		</div>
+	</div>
+
+</header>
+
+
+{{/is}}

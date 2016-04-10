@@ -1,0 +1,115 @@
+---
+category: route
+tag: roots
+lang: en
+title: "The Devil’s domain"
+shortname: "Hells gully"
+Area: "Vall d’Ebo"
+
+Price: 75€
+Length: 4h
+Distance: 10km
+Difficulty: Medium
+Slope: 400m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *"
+- item: "10:00 Start guided hike by our Tour leader"
+- item: "11:30 Break for snack" 
+- item: "14:00 Lunch at our selected restaurant"
+- item: "18:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+- item: "5 course traditional lunch (set menu)."
+
+PriceVariation: "75 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0901.jpg
+- item: r0902.jpg
+- item: r0903.jpg
+- item: r0904.jpg
+- item: r0905.jpg
+- item: r0906.jpg
+
+Thumbnail: r09thumb.jpg
+
+Map:
+	lat: 38.785713
+	long: -0.122325
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				The first time you access <b>Hell’s gully</b> you feel overcome by a <b>strange sensation, indeed it is almost mystical</b> as the countryside before you appears not to be real. The banks of the dry river bed practically touch each other and an <b>enormous amount of stone blocks</b> appear completely covered in white chalk.
+			</p>
+			<p> 
+				It is almost as if an <b>uncontrollable force of torrential rain</b> has sculpted this great passage, more than 15 kilometres in length. Undoubtedly impressive to both visitors and inhabitants who must have thought it could only be the work of the Devil, the interminable action of its water throughout thousands of years has not only given rise to <b>gullies or ravines</b> but also various <b>caves</b>. For example the <b>Rull’s cave</b>, a marvellous example of <b>stalactites and stalagmites</b>.
+			</p>
+			<p>
+				This custom made excursion by <b>Oxytours will immerse you in the heart of the mountain via its gullies</b> and singular vertical countryside. Before arriving we will stroll through <b>paths of cultivation</b> to later on descend into the gully by a narrow pathway set up by the <b>Arabs</b>. 
+			</p>
+			<p>
+				The <b>gastronomy</b> of this area is in harmony with its villages and inhabitants. Its <b>tranquility</b> rich not only in detail but also delightfully attacking your senses arises from a <b>tradition</b> often lost. In addition  you will be able to learn how its cuisine is created as our <b>selected restaurant</b> will demonstrate the <b>traditional cooking methods</b> as carried out by generations of locals and so we take our tables to enjoy our well deserved mouthwatering food.
+			</p>
+			<p>
+				For this trip your camera is a must!
+			</p>
+			<p>
+				You will discover all this and more  with Oxytours.
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

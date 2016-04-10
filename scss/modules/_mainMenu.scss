@@ -1,0 +1,61 @@
+.mainMenu {
+
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	width: 100%;
+	
+	li {
+		font-size: 0.9rem;
+		text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+		//background: rgba(54, 54, 54, 0.5);
+		border-radius: 0.2rem;
+		padding: 0.5rem 0.5rem;
+		color: #FFF;
+		font-family: $type-header;
+		font-weight: 600;
+		text-transform: uppercase;
+		transition: all 0.3s ease-out;
+		margin-left: 1rem;
+		width: 100%;
+
+		&:hover {
+			background: rgba(255, 255, 255, 1);
+
+			a {
+				color: #333;
+				text-shadow: none;
+			}
+		}
+	}
+
+	a {
+		color: #FFF;
+		display: inline-block !important;
+		text-align: center;
+		width: 31%;
+	}
+
+}
+
+.f-topbar-fixed {
+	padding-top: 0 !important;
+}
+
+@media #{$large-up} { 
+
+	.mainMenu {
+		margin-left: 12rem;
+		color: #FFF;
+		float: right;
+		width: auto;
+
+		li {
+			width: auto;
+
+			a {
+				text-align: inherit;
+				width: auto;
+			}
+		}
+	}
+}

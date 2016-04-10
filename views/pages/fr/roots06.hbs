@@ -1,0 +1,127 @@
+---
+category: route
+
+featured: true
+
+tag: roots
+lang: es
+title: "L’étonnant arc de Atanços"
+shortname: "Montagne de Xortà"
+Area: "Montagne de Xortà"
+
+Price: 75€
+Length: 3.5 / 4h
+Distance: 6km
+Difficulty: Basse/Moyenne
+Slope: 200/450m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion ."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la fabrique de charcuterie artisanale. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "75 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r0601.jpg
+- item: r0602.jpg
+- item: r0603.jpg
+- item: r0604.jpg
+- item: r0605.jpg
+- item: r0606.jpg
+- item: r0607.jpg
+- item: r0608.jpg
+
+Thumbnail: r06thumb.jpg
+
+Map:
+	lat: 38.701006
+	long: -0.180530
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				La montagne de Xortà est une petite perle. Elle culmine à 1220 mètres. Une fois sur place vous découvrirez une montagne moins imposante mais tout aussi riche que ses grandes sœurs Serrella, Aitana ou Bernia.
+			</p>
+			<p> 
+				De loin, la Sierra de Xortà est une montagne qui semble dissimuler ses secrets. Elle deviendra généreuse quand vous foulerez sa terre docile, se laissera découvrir et apprivoiser.
+			</p>
+			<p>
+				Au détour d’un chemin, un arc de pierre de 20 mètres de hauteur, séparé par une étroite colonne semble se précipiter dans un profond ravin. Un vertige de la nature apprécié des visiteurs. 
+			</p>
+			<p>
+				Aux pieds des énormes parois verticales de la sierra de  Xortà, vous traverserez des champs d’oliviers et d’amandiers. Ces chemins vous mèneront au sommet de la montgane (en fonction du niveau du participant) d’où vous pourrez admirez notre mer méditerranée. Emilio Varela peintre d’Alicante du XXe siècle, a couché sur ses toiles  ces  extraordinaires vues panoramiques qu’offrent  la vallée de Guadalest et la sierra de Aitana.	
+			</p>
+			<p>
+				Oxytours vous guidera dans un des restaurants sélectionnés par ses soins. Vous pourrez y déguster la cuisine traditionnelle de la Costa Blanca. Une cuisine en constante évolution grâce à la contribution de nombreux visiteurs amenant de nouvelles tendances. Une cuisine qui conserve toujours la qualité de ses produits.
+			</p>
+			<p>
+				Pour finir la journée, vous pouvez visiter une fabrique de charcuterie artisanale où est élaborée la fameuse sobrasada, spécialité des montagnes d’Alicante et les Îles Baleares (Visite facultative. Prix hors forfait).
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

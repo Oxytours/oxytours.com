@@ -1,0 +1,126 @@
+---
+category: route
+tag: roots
+lang: fr
+
+title: "Bernia, La Vigie des pirates"
+shortname: "Montagne de Bernia"
+Area: "Montagne de Bernia"
+
+Price: 85€
+Length: 3.5 / 4h
+Distance: 8km
+Difficulty: Moyenne
+Slope: 400m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion ."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la cave. (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "85 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r0501.jpg
+- item: r0502.jpg
+- item: r0503.jpg
+- item: r0504.jpg
+
+Thumbnail: r05thumb.jpg
+
+Map:
+	lat: 38.658734
+	long: -0.044678
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				De notre méditerranée, émerge une autre mer. Une gigantesque mer de pierres : la sierra de Bernia, en regardant vers l’ouest  la vallée de Tárbena, atteignant 1129 mètres d'altitude.
+
+			</p>
+			<p> 
+				Se promener dans la montagne réserve de belles surprises avec un panorama sur le nord de la Costa Blanca et même par temps clair, vous distinguerez les terres de Valencia et l’île d’Ibiza. 
+
+			</p>
+			<p>
+				La montagne regorge de nombreuses espèces de plantes et d’animaux. Leur particularité vient du fait que certains d’entre eux ne vivent que dans cette zone. Une occasion pour vous de découvrir un monde unique. 
+
+			</p>
+			<p>
+				Le fort de Bernia construit au XVIe, culmine à plus de 800 mètres d’altitude. Il servait de tour de guet pour prévenir des incessantes attaques et invasions barbares dont la Costa Blanca a fait l’objet depuis l’antiquité. Notre guide vous racontera l’histoire de cette forteresse érigeant fièrement ses ruines et aussi  vous passerez à travers le Forat,  un petit tunnel naturel dans la montagne, vous emmènera de l’autre coté du versant. Et encore une fois, vous jouirez d’un formidable panorama régional. 
+				
+			</p>
+			<p>
+				En outre, Oxytours vous fera découvrir la cuisine typique de la région d’Alicante. Une cuisine exceptionnelle faite de riz, poissons, et de fruits de mers préparée de façon traditionnelle. Vous ne dégusterez que des exceptionnels produits du terroir.  
+
+			</p>
+			<p>
+				Après le déjeuner, vous pouvez visiter l'un des meilleures caves de la Costa Blanca où une dégustation de vins et d’huile d’olives vous attendra (Visite facultative. Prix hors forfait).
+
+			</p>
+			<!-- EO Description -->
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>	
+	</div>
+</div>
+
+{{>map this}}

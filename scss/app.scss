@@ -1,0 +1,224 @@
+@import "settings";
+
+@import
+"foundation/components/accordion",
+"foundation/components/alert-boxes",
+"foundation/components/block-grid",
+"foundation/components/breadcrumbs",
+"foundation/components/button-groups",
+"foundation/components/buttons",
+"foundation/components/clearing",
+"foundation/components/dropdown",
+"foundation/components/dropdown-buttons",
+"foundation/components/flex-video",
+"foundation/components/forms",
+"foundation/components/grid",
+"foundation/components/inline-lists",
+"foundation/components/joyride",
+"foundation/components/keystrokes",
+"foundation/components/labels",
+"foundation/components/magellan",
+"foundation/components/orbit",
+"foundation/components/pagination",
+"foundation/components/panels",
+"foundation/components/pricing-tables",
+"foundation/components/progress-bars",
+"foundation/components/reveal",
+"foundation/components/side-nav",
+"foundation/components/split-buttons",
+"foundation/components/sub-nav",
+"foundation/components/tables",
+"foundation/components/tabs",
+"foundation/components/thumbs",
+"foundation/components/tooltips",
+"foundation/components/top-bar",
+"foundation/components/type",
+"foundation/components/offcanvas",
+"foundation/components/visibility";
+
+$type-header: "Raleway";
+$main-color: rgba(66, 65, 54, 1);
+
+@import
+"modules/header",
+"modules/logo",
+"modules/content",
+"modules/topBar",
+"modules/featuredCard",
+"modules/itemCard",
+"modules/ribbon",
+"modules/footer",
+"modules/route",
+"modules/socialNetworks",
+"modules/modal",
+"modules/cookies",
+"modules/mainMenu";
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $type-header;
+    margin: 0;
+}
+
+h1,h2 {
+    font-weight: 600;
+}
+
+h1 {
+    letter-spacing: -1;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #333;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 0.9rem;
+    color: #555566;
+    line-height: 1.6;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    font-family: "Droid Serif";
+}
+
+ul {
+    margin-left: 0;
+}
+
+p, li {
+    font-size: 0.9rem;
+    color: #555566;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    list-style: none;
+}
+
+cite {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.4;
+    border-left: 4px solid $main-color;
+    color: $main-color;
+    display: block;
+    padding-left: 0.7rem;
+    margin: 1rem 0;
+    font-style: normal;
+    font-family: "raleway";
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.display3 {
+    font-size: 3.7rem;
+    line-height: 0.9;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    font-weight: 300;
+
+    &-subhead {
+        font-size: 2rem;
+        margin-top: -0.5rem;
+        margin-bottom: 2rem;
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+}
+
+select {
+    border-radius: 0.2rem;
+}
+
+.display2 {
+    font-size: 1.5rem;
+    line-height: 0.9;
+    font-weight: 600;
+    color: rgba(90, 88, 65, 1);
+}
+
+.box {
+    background: #f5f5f5;
+    padding: 1rem;
+    transition: all 0.4s;
+    box-shadow: 0 1px 1px 0px rgba(0, 0, 0, 0.1);
+    transform: translateY(0rem);
+
+    &:hover {
+        box-shadow: 0 6px 6px 0px rgba(0, 0, 0, 0.2);
+        transform:translateY(-0.5rem);
+    }
+}
+
+.route {
+    float: left !important;
+}
+
+.route .box {
+    min-height: 20rem;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+.aboutUs {
+    background: #232323;
+}
+
+.button {
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    font-family: $type-header;
+    font-weight: 600;
+    transition: all 0.3s;
+    //max-width: 290px;
+
+    &:hover {
+        color: #333;
+        background: #FFF;
+        text-shadow: none;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    }
+}
+
+
+.section-title {
+    padding: 3rem 0px 2rem;
+}
+
+// Utils
+
+.u-mgb {
+    margin-bottom: 1rem;
+}
+
+.u-pdb {
+    padding-bottom: 1rem;
+}
+
+.u-mgt {
+    margin-top: 1rem;
+}
+
+.u-mgt2x {
+    margin-top: 2rem;
+}
+
+
+#map_canvas {
+    width: 100%;
+    height: 30rem;
+    background-color: #CCC;
+}
+
+.footer a {
+    color: #999 !important;
+}
+
+.form-info {
+    padding: 1rem 2rem;
+}
+
+.topBar-container.fixed .premios {
+    display: none;
+}

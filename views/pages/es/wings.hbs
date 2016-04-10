@@ -1,0 +1,69 @@
+---
+category: category
+lang: es
+title: Rutas con alas
+shortname: Explora el excepcional patrimonio natural de la Costa Blanca. Flora única, refugio de aves, parques naturales, mar y costa...
+
+Photos:
+- item: w0601.jpg
+- item: w0606.jpg
+- item: w0701.jpg
+- item: w0106.jpg
+- item: w0501.jpg
+- item: w0709.jpg
+- item: w0803.jpg
+- item: w0603.jpg
+---
+
+<div class="content content--index">
+
+	<div class="row">
+		<div class="column">
+			<div class="row u-mgt">
+
+				{{#each pages}}
+
+					{{#is data.tag 'wings'}}
+
+						<div class="column medium-4 large-3 route">
+							<a href="{{filename}}">
+								<div class="itemCard box">
+
+									<div class="ribbon">
+										<img class="ribbon-icon" src="../img/icon_{{data.tag}}.png" alt="">
+									</div>		
+		
+									<img src="../img/{{data.Thumbnail}}" alt="">
+									<div class="itemCard-content">
+										<p class="itemCard-location">
+											{{data.shortname}}
+										</p>						
+
+										<h4 class="itemCard-title">
+											{{data.title}}
+										</h4>
+									</div>
+									
+								</div>
+							</a>
+						</div>
+
+				{{/is}}
+
+				{{/each}}
+
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column text-center section-title">
+			<img src="../img/oxytours_inverse.svg" alt=""><br>
+			<a class="button" href="form.html">
+				Planifica tu experiencia con nosotros
+			</a>
+		</div>
+	</div>	
+
+</div>
+

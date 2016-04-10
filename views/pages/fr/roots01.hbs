@@ -1,0 +1,140 @@
+---
+category: route
+
+featured: true
+
+tag: roots
+lang: fr
+title: Toucher le ciel de la Costa Blanca 
+shortname: Montagne d'Aitana 
+Area: Sierra de Aitana
+
+Price: 75€ 
+Length: 3.5 / 4h
+Distance: 10km
+Difficulty: Moyenne
+Slope: 700m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * "
+- item: "10:00 Départ excursion. Visite et explication du patrimoine."
+- item: "11:30 Pause casse-croûte. "
+- item: "14:00 Déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion "
+- item: "Guidage et prise en charge durant toute la journée"
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région"
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la fabrique d’huile d’olive (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "75 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: r0101.jpg
+- item: r0102.jpg
+- item: r0103.jpg
+- item: r0104.jpg
+- item: r0105.jpg
+- item: r0106.jpg
+- item: r0107.jpg
+
+Thumbnail: r01thumb.jpg
+
+Map:
+	lat: 38.650046
+	long: -0.254044
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Connue pour être la plus haute montagne de la Costa Blanca avec ses 1558 mètres, Aitana se révèle être un des meilleurs lieux de la région pour pratiquer des randonnées, découvrir d’extraordinaires panoramas sur la mer méditerranée et la vallée de Guadalest.
+
+			</p>
+			<p> 
+				En parcourant les sentiers d’Aitana, vous vous laisserez porter par tous les sens de la nature. Ses différentes couleurs présentes tout au long de l’année, les chants de ses oiseaux et son silence régnant. Un silence rompu par le clapotis des nombreuses fontaines présentes tout au long du parcours.
+
+			</p>
+			<p>
+				Notre guide vous fera découvrir toute la biodiversité dont bénéficie Aitana grâce à son exceptionnelle situation géographique.  Il vous racontera l’histoire particulière de cette montagne. 
+
+			</p>
+			<p>
+				Ici, la botanique et la géologie ne forment qu’un pour offrir aux hommes de singuliers paysages où poussent des plantes uniques au monde. Depuis des siècles, les hommes de la sierra Aitana se servent des eaux des neiges pour cultiver oliviers, amandiers et cerisiers.
+
+			</p>
+			<p>
+				Vous traverserez el Pas de la Rabosa,  un passage étroit dans la roche qui vous conduira sur l’autre versant de la montagne où vous profiterez d’une vue sur les surprenantes cimes de Partagat.
+
+			</p>
+			<p>
+				Pour conclure cette magnifique journée Oxytours vous fera découvrir la délicieuse cuisine locale dans un restaurant sélectionné pour sa qualité gastronomique.
+
+			</p>
+			<p>
+				Enfin vous avez la possibilité de visiter une fabrique d’huile d’olive au palmarès impressionnant de récompenses de part la qualité de sa production. (Visite facultative. Prix hors forfait.)
+
+			</p>
+			<p>
+				Pour découvrir ce patrimoine Oxytours vous propose cette route pour seul but celui de vous faire toucher le ciel de la Costa Blanca. 
+
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

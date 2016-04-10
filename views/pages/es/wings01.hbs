@@ -1,0 +1,129 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: es
+title: El gran bosque húmedo de la Costa Blanca
+shortname: Parque Natural de la Font Roja
+Area: Sierra del Menejador
+
+Price: 85€
+Length: 3h
+Distance: 7 km
+Difficulty: Baja
+Slope: 350m
+
+Schedule:
+- item: "08:30-09:30 Recogida en su lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado. "
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se situe su alojamiento."
+
+Included:
+- item: "Traslados desde su alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante. "
+
+Notincluded:
+- item: "Visita a bodega (contratación opcional)."
+
+PriceVariation: "85 € por persona. IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: w0101.jpg
+- item: w0102.jpg
+- item: w0103.jpg
+- item: w0104.jpg
+- item: w0105.jpg
+- item: w0106.jpg
+- item: w0107.jpg
+
+Thumbnail: w01thumb.jpg
+
+Map:
+	lat: 38.657810
+	long: -0.532359
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				La finalidad de esta ruta es ofrecerle la oportunidad de conocer, desde un punto de vista diferente, una de las comarcas más bellas de la provincia de Alicante: L’Alcoià. Una propuesta que le permitirá adentrarse en su bosque, enriquecerse con su enorme patrimonio cultural y deleitarse con una gastronomía llena de tradición, productos autóctonos e historia.
+			</p>
+			<p> 
+				Visitará el Parque Natural del Carrascal de la Font Roja  situado en el norte del provincia de Alicante. Un enclave con una excelente representación del bosque mixto mediterráneo donde podrá observar espectaculares formaciones vegetales de bosques caducifolios, carrascales de umbría así como importante vegetación rupícola.
+			</p>
+			<p>
+				Nos adentraremos en su historia para descubrir cómo, a lo largo de los siglos, sus habitantes han aprovechado los distintos recursos naturales a su alcance. Un buen ejemplo de ello son los pozos de nieve del siglo XVIII utilizados para la producción de hielo y que usted tendrá ocasión de conocer en esta visita.
+			</p>
+			<p>
+				Tras más de tres horas de inmersión en plena naturaleza repondremos fuerzas en el restaurante seleccionado por Oxytours, combinación perfecta de tradición y excelencia turística, donde disfrutará de platos típicos de la zona de esmerada elaboración.
+			</p>
+			<p>
+				Para finalizar la jornada podrá contratar, de manera opcional, la visita a las instalaciones de una bodega donde se realizará una cata de sus productos y conoceremos cómo, a través del cultivo de la vid, se realiza una importante labor social y de recuperación del paisaje tradicional de la zona.
+			</p>
+			<p>
+				Una propuesta que le permitirá adentrarse en su bosque, enriquecerse con su enorme patrimonio cultural y deleitarse con su gastronomía llena de tradición, productos autóctonos e historia.
+			</p>
+			<p>
+				¿Nos acompaña?
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

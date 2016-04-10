@@ -1,0 +1,123 @@
+---
+category: route
+tag: roots
+lang: es
+title: "Bernia, vigía de piratas"
+shortname: Sierra de Bernia
+Area: Sierra de Bernia
+
+Price: 85€
+Length: 3.5 / 4h
+Distance: 6km
+Difficulty: Media
+Slope: 400m
+
+Schedule:
+- item: "08:30-09:30 Recogida en su lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado. "
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se situe su alojamiento."
+
+Included:
+- item: "Traslados desde su alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante. "
+
+Notincluded:
+- item: "Visita a bodega de vino y aceite (contratación opcional)."
+
+PriceVariation: "85 € por persona. IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: r0501.jpg
+- item: r0502.jpg
+- item: r0503.jpg
+- item: r0504.jpg
+
+Thumbnail: r05thumb.jpg
+
+Map:
+	lat: 38.658734
+	long: -0.044678
+---
+
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				Desde el mismo mar emerge la Sierra de Bernia, gigante de piedra que crece hacia poniente buscando el valle de Tárbena,  y que alcanza los 1.129 metros de altura en su cima.  
+			</p>
+			<p>
+				Le invitamos a asdender su ladera observando el paisaje, una inmejorable visión de las comarcas de las Marina Alta y Baixa e interior de Alicante, alcanzando a divisar en días claros la Isla de Ibiza o las tierras de Valencia.
+			</p>
+			<p>
+				Esta proximidad al mar, junto con su altitud, contribuye a que en Bernia estén presentes una gran diversidad de hábitats con interesantes especies de flora y fauna, que sólo habitan en esta zona.
+			</p>
+			<p> 
+				La increíble atalaya que constituye esta montaña propició la construcción, a mediados del siglo XVI y a más de 800 metros de altura, del Fort de Bernia, con el objetivo de proteger la costa de los continuos ataques piratas que asolaban estas tierras desde la antigüedad. 
+			</p>
+			<p>
+				Con Oxytours visitará los restos de esta fortaleza para conocer su historia, sus orquídeas silvestres o el Forat, orificio natural que atraviesa la montaña de una vertiente a otra, y que ofrece una de las panorámicas más espectaculares de toda la región.
+			</p>
+			<p>
+				Además tendrá la ocasión de descubrir la cocina típica de la costa alicantina, famosa en toda Europa por la excelente calidad de sus arroces, pescados y salazones, aunando en su elaboración tradición e innovación culinaria. 
+			</p>
+			<p>
+				Para finalizar nuestro tour, después de la comida, podrá contratar de manera opcional la visita a una excelente bodega para conocer el funcionamiento de la misma, realizando la cata de una pequeña selección de vinos y aceites de oliva de excelente calidad.
+			</p>
+			<p>
+				Combinación perfecta de senderismo, cultura, naturaleza y gastronomía para adentrarse en la auténtica Costa Blanca
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>		
+	</div>
+</div>
+
+{{>map this}}

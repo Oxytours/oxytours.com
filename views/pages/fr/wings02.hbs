@@ -1,0 +1,135 @@
+---
+category: route
+tag: wings
+lang: fr
+title: "Entre ifs magiques et puits de neige"
+shortname: "Parc Naturel de Mariola"
+Area: "Parc Naturel de Mariola"
+
+Price: 85€ 
+Length: 4 h.
+Distance: 10 km.
+Difficulty: Moyenne
+Slope: 900 m
+
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 déjeuner dans un restaurant sélectionné par Oxytours. "
+- item: "18:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Visite à la fabrique d’huile d’olive (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "85 € par personne (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: w0201.jpg
+- item: w0202.jpg
+- item: w0203.jpg
+- item: w0204.jpg
+- item: w0205.jpg
+- item: w0206.jpg
+
+Thumbnail: w02thumb.jpg
+
+Map:
+	lat: 38.764770
+	long: -0.501166
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Sommets, ravins et collines racontent mieux que quiconque l’histoire de la Costa Blanca. La sierra de Mariola en est un parfait exemple. Les hommes préhistoriques nous ont laissé, en témoignage de leur passage, de formidables peintures rupestres datant 10.000 ans. Les châteaux de la sierra Mariola, sont des empreintes éternelles des guerres entre les royaumes de Castille et d’Aragon.
+			</p>
+			<p> 
+				L’importance du patrimoine culturel de Mariola se retrouve également dans son environnement, avec une très grande variété de plantes aromatiques et médicinales dont les habitants connaissent les vertus. Déclarée depuis 2002 Parc Naturel, la biodiversité de Mariola  abrite des aigles et vautours fauves que notre guide ne manquera pas de vous faire observer.
+			</p>
+			<p>
+				Ici, les puits de neige font partie du décor et de l’activité des hommes. L’extraordinaire conservation de ce patrimoine culturel permet d’en connaitre parfaitement le fonctionnement. La Cava Gran que vous visiterez, vous permettra de comprendre l’importance économique de cette activité qui existait jusqu'au début du XXe siècle
+				
+			</p>
+			<p>
+				La sierra de Mariola héberge en son sein une petit forêt d’ifs. La longévité de cette espèce peut atteindre 3000 ans. Notre guide vous révélera les secrets de cet arbre mythique aux propriétés incroyables et vénéré par les celtes.
+
+			</p>
+			<p>
+				Cette excursion prendra fin au sommet du mont Cabrer à 1390 mètres. De là haut, vous contemplerez les beautés intérieures de la Costa Blanca. 
+				
+			</p>
+			<p>
+				Après avoir admiré ce panorama, vous vous régalerez de la délicieuse cuisine faite de produit locaux accompagnée des meilleurs régionaux.
+
+			</p>
+			<p>
+				Enfin vous avez la possibilité de visiter  une fabrique d’huile d’olive au palmarès impressionnant de récompenses de part la qualité de sa production (Visite facultative. Prix hors forfait).
+				
+			</p>
+			<p>
+				A déguster avec Oxytours !
+			
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

@@ -1,0 +1,110 @@
+---
+category: route
+tag: roots
+lang: en
+title: The Costa Blanca desert
+shortname: "Montnegre valley"
+Area: "Montnegre valley"
+
+Price: 75€
+Length: 3,5 / 4h
+Distance: 7km
+Difficulty: Low
+Slope: 120m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *"
+- item: "10:00 Start guided hike by our Tour leader"
+- item: "11:30 Break for snack" 
+- item: "14:00 Lunch at our selected restaurant"
+- item: "18:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+- item: "5 course traditional lunch (set menu)."
+
+PriceVariation: "75 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r1001.jpg
+- item: r1002.jpg
+- item: r1003.jpg
+- item: r1004.jpg
+- item: r1005.jpg
+
+Thumbnail: r10thumb.jpg
+
+Map:
+	lat: 38.485604
+	long: -0.525108
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				The Costa Blanca unites an amazing range of environments and habitats arriving from its famous beaches and coves to the leafy Woods and humid areas of its mountains. However one of these environments is undoubtedly also the least known. This area is particularly spectacular due to its impressive countryside. We are talking about the <b>Montnegre valley, an authentic desert</b> in the heart of the Costa Blanca. 
+			</p>
+			<p> 
+				To pass through this valley is to immerse yourself in a climate so dry where rain is so rare through the year. However this desert countryside gives us such great beauty. The <b>incredible range of shapes and colors</b> on offer capture you at first sight.
+
+			</p>
+			<p>
+				Everything that we come across in this area its related to harsh climatic conditions, its <b>vegetation and wildlife are unique</b>, as is its geology. That said the is one element that leaps out about all others, intimately associated with its history and inhabitants: <b>Water</b>, so very scarce as it is vital. We shall continuous to stay away a very important fact in this area’s story, the <b>Alicante’s allotment</b> where every type of top quality produce was grown for centuries existed here. Traditional production still exists to maintain the memory and flavour from times gone by and these can be enjoyed in the <b>region’s fantastic gastronomy</b> which we will sampled at the end of our morning in a specially selected restaurant.  
+			</p>
+			<p>
+				Some would argue that Africa and her deserts do not begin in Morocco after crossing the Gibraltar straits, but actually strait in the south of the Costa Blanca.
+			</p>
+
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

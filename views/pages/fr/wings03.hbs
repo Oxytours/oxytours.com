@@ -1,0 +1,121 @@
+---
+category: route
+tag: wings
+lang: fr
+title: "Le phare et les mines d’ocre de l’Albir"
+shortname: "Parc Naturel de Serra Gelada"
+Area: "Parc Naturel de Serra Gelada"
+
+Price: 40€ 
+Length: 3 h.
+Distance: 6 km.
+Difficulty: Basse
+Slope: 110 m
+
+Schedule:
+- item: "08:30-09:30 Départ de votre logement * ."
+- item: "10:00 départ excursion. Visite et explication du patrimoine. "
+- item: "11:30 pause casse-croûte. "
+- item: "14:00 Retour sur votre lieu de résidence et fin de la journée."
+- item: "* L'heure à déterminer en fonction de l'emplacement de votre logement."
+
+Included:
+- item: "Aller retour compris entre votre lieu de résidence (*) et celui de l’excursion."
+- item: "Guidage et prise en charge durant toute la journée."
+- item: "Inclut casse-croûte typique de la région."
+- item: "Assurance et responsabilité civile. "
+
+Notincluded:
+- item: "Restauration: menu sélectionné dans un restaurant traditionnel (Visite facultative. Prix hors forfait)"
+
+PriceVariation: "40 € par personne. Enfants de moins de 12 ans : 25 €  (TVA incluse) (pour les groupes de 4-7 personnes). Voir prix pour un nombre différent de participants."
+
+Photos:
+- item: w0301.jpg
+- item: w0302.jpg
+- item: w0303.jpg
+- item: w0304.jpg
+- item: w0305.jpg
+
+Thumbnail: w03thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Le Parc de la Serra Gelada abrite de spectaculaires falaises de plus de 6 kilomètres de long. 
+			</p>
+			<p> 
+				C‘est à l’’extrême nord de cette montagne que vous découvrirez le phare d’El Albir, unique flambeau visitable de la région. Tout au long de cette balade, vous pourrez admirer la baie d’Altea, une zone protégée. Il vous faudra aussi regarder en direction de la mer pour apercevoir au loin les sauts aquatiques des dauphins. Notre guide attirera votre attention sur une plante, la Posidonie de Méditerranée qui n'est pas une  algue, bien qu'elle vive sous l'eau et  produisant parfois au printemps des fruits appelés « olives de mer ». 
+
+			</p>
+			<p>
+				Autre caractéristique du lieu,  les nombreuses ouvertures dans la montagne visibles de notre route. Ce sont d’anciennes mines d’ocres exploitées par l’homme, que notre guide vous fera visiter. Plus loin, nous pouvons voir les restes d’une ancienne tour, la tour Bombarda. Au XVème et XVIème, elle était un point d’observation pour alerter les habitants de l’arrivée de pirates.
+			
+			</p>
+			<p>
+				Si l’envie vous prend d’évoluer dans un décor de fossiles, d’oiseaux marins, de dauphins, au milieu d’une flore unique cette route est faite pour vous. Venez en profiter avec Oxytours !
+				
+			</p>
+			<p>
+				Oxytours sélectionne des petits restaurants où vous découvrirez les saveurs traditionnelles de la Costa Blanca, un mélange de cultures gastronomiques léguées au fil du temps par des hommes qui sont entrés dans notre région et vous pouvez connaître facultativement sur cette tournée (Prix hors forfait).
+
+			
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Programme</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prix</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Le prix inclut</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Le prix no inclut</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

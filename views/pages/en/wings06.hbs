@@ -1,0 +1,133 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: en
+title: "Birds of the wetlands of the Costa Blanca"
+shortname: "El Hondo, Santa Pola and La Mata Natural Reserves"
+Area: "El Hondo, Santa Pola and La Mata Natural Reserves"
+
+Price: 80€
+Length: 9h
+Distance: 90km
+Difficulty: Low
+Slope: 0m
+
+Schedule:
+- item: "07:00-08:00 Pick up from your accommodation *"
+- item: "09:00 Start birdwatching tour from the vehicle and walking by our Tour leader"
+- item: "11:30 Break for snack"
+- item: "14:00 Lunch at our selected restaurant"
+- item: "18:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+- item: "5 course traditional lunch (set menu)."
+- item: "Lending of optical equipment for birding."
+
+PriceVariation: "80 € by person. Children under 12 years: 60 € (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: w0601.jpg
+- item: w0602.jpg
+- item: w0603.jpg
+- item: w0604.jpg
+- item: w0605.jpg
+- item: w0606.jpg
+
+
+Thumbnail: w06thumb.jpg
+
+Map:
+	lat: 38.166450
+	long: -0.737402
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Few places in Spain attract <b>birdwatching</b> enthusiasts like the Costa Blanca. Here its <b>wetlands</b> are bringing together a <b>great number of peculiar species</b>. You will find the most protected species, some of which are in danger of extinction and <b>impossible to find in other parts of Europe</b>. 
+			</p>
+			<p> 
+				Oxytours has a wealth of experience in showing these exceptional areas to visitors. The region’s importance has earn its declaration as <b>protected natural places</b> and inclusion in international conventions such as <b>RAMSAR</b>. 
+			</p>
+			<p>
+				By a route which takes in the main marshlands of the region we will observe a <b>great variety of birds in the different seasons</b>, among these we find two of the most threatened species of ducks in Europe such as the <b>Marbled teal</b> (<i>Marmaronetta angustirostris</i>) and <b>White-headed duck</b> (<i>Oxyura leucocephala</i>), the latter being our chosen corporate logo. 
+			</p>
+			<p>
+				We can also admire the slow movement of wading birds as they walk on the water’s surface just like the <b>Flamingo</b> (<i>Phoenicopterus roseus</i>) and the rare <b>Glossy ibis</b> (<i>Plegadis falcinellus</i>), accompanied by <b>Squacco heron</b> (<i>Ardeola ralloides</i>), <b>Purple heron</b> (<i>Ardea purpurea</i>) and we can even have the opportunity to see the spectacular cobalt blue of the <b>Purple gallinule</b> (<i>Porphyrio porphyrio</i>).
+			</p>
+			<p>
+				The close proximity of the coast makes its possible for us to see interesting seabird species that have made nests in these adjacent marshlands, such as the elegant <b>Audouin’s gull</b> (<i>Larus audouinii</i>), <b>Slender-billed gull</b> (<i>Chroicocephalus genei</i>) and <b>Whiskered tern</b> (<i>Clhidonias hybrida</i>). In addition, there are very distinct groups like <b>Collared pranticolle</b> (<i>Glareola pratincola</i>), <b>Bearded tit</b> (<i>Panurus biarmicus</i>), <b>Penduline tit</b> (<i>Remiz pendulinus</i>), <b>Moustached warbler</b> (<i>Acrocephalus melanopogon</i>), <b>Roller</b> (<i>Coracias garrulus</i>) or <b>Bee-eater</b> (<i>Merops apiaster</i>), among others.
+			</p>
+			<p>
+				If you would like to fully know the marshland species, don’t hesitate to consult our listing and ask us anything you wish.
+			</p>
+			<p>
+				We are able to provide you with the necessary prismatic lenses or scope so you can thoroughly enjoy your birdwatching.
+			</p>
+			<p>
+				With Oxytours you can truly discover the aquatic and marine birdlife of the Costa Blanca.
+			</p>
+			<p>
+				Book your trip with us now!
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

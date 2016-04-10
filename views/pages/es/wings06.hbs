@@ -1,0 +1,129 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: es
+title: Los humedales de la Costa Blanca y sus joyas aladas
+shortname: Parques Naturales de El Hondo, Santa Pola y La Mata.
+Area: Parques Naturales de El Hondo, Santa Pola y La Mata.
+
+Price: 80€
+Length: 9h
+Distance: 90km
+Difficulty: Baja
+Slope: 0m
+
+Schedule:
+- item: "07:00-8:00  Recogida en su lugar de alojamiento *."
+- item: "09:00 Inicio del recorrido para observación de aves desde vehículo y a pie a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado."
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se situe su alojamiento."
+
+Included:
+- item: "Traslados desde su alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante elegido."
+- item: "Préstamo de equipo óptico para la observación de aves."
+
+PriceVariation: "80 € por persona. Menores de 12 años: 60 € IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: w0601.jpg
+- item: w0602.jpg
+- item: w0603.jpg
+- item: w0604.jpg
+- item: w0605.jpg
+- item: w0606.jpg
+
+Thumbnail: w06thumb.jpg
+
+Map:
+	lat: 38.166450
+	long: -0.737402
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Pocos lugares en España tienen el atractivo para los entusiastas de la observación de aves como la Costa Blanca, donde sus zonas húmedas reúnen un gran número de especies de gran singularidad, la mayoría protegidas y algunas de ellas en peligro de extinción, imposibles de observar en otras zonas de Europa. 
+			</p>
+			<p> 
+				Desde hace años los guías de Oxytours muestran la excepcionalidad de estas zonas húmedas a sus visitantes, importancia que han merecido su declaración como Espacios Naturales Protegidos y su inclusión en convenios internacionales, como RAMSAR. 
+			</p>
+			<p>
+				En un recorrido que transcurrirá por los principales humedales de nuestra región observaremos una gran variedad de aves en las distintas estaciones del año, entre las que se encuentran dos de las especies de anátidas más amenazadas de Europa, como son la Cerceta Pardilla (Marmaronetta angustirostris) y la Malvasía cabeciblanca (Oxyura leucocephala), esta última especie elegida como imagen corporativa de Oxytours. 
+			</p>
+			<p>
+				Podremos además admirar el desplazamiento pausado de aves zancudas sobre la lámina de agua, como ocurre con el Flamenco (Phoenicopterus roseus) y el escaso Morito (Plegadis falcinellus), acompañados por Garcillas cangrejeras (Ardeola ralloides), Garzas imperiales (Ardea purpurea) e incluso podremos ver pasar el espectacular azul cobalto del Calamón (Porphyrio porphyrio).
+			</p>
+			<p>
+				No debemos olvidar que la cercanía de la costa hace posible la observación de interesantes especies de aves que además nidifican en estas zonas húmedas adyacentes, como ocurre con la elegante Gaviota de Audouin (Larus audouinii) o la Gaviota picofina (Chroicocephalus genei) y Fumareles cariblancos (Clhidonias hybrida). Junto a estos, especies de distintos grupos como Canasteras (Glareola pratincola), Bigotudos (Panurus biarmicus), Pájaros moscónes (Remiz pendulinus), Carricerínes reales (Acrocephalus melanopogon), Carracas (Coracias garrulus) o Abejarucos (Merops apiaster), entre otras.
+			</p>
+			<p>
+				No es posible dar cabida aquí a todas las especies que podremos observar. Si necesita conocer de manera más amplia las especies presentes en los humedales de la Costa Blanca, no dude en hacernos llegar cualquier duda que tenga al respecto.
+			</p>
+			<p>
+				No se preocupe si no incluyó en su maleta prismáticos o telescopio. Nosotros le prestaremos el equipo necesario para que pueda disfrutar de una magnífica jornada de observación de aves.
+			</p>
+			<p>
+				Descúbra con Oxytours las aves acuáticas y marinas de la Costa Blanca. Reserve ya su itinerario.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

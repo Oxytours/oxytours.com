@@ -1,0 +1,124 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: en
+title: "Among dolphins and pirates: the secrets of the cliffs"
+shortname: "Serra Gelada Nature Reserve by boat"
+Area: "Serra Gelada Natural Reserve by boat"
+
+Price: 65€
+Length: "4h"
+Distance: 45km
+Difficulty: Low
+Slope: 0m
+
+Schedule:
+- item: "10:00 Start marine guided route from the harbour of Altea by our Tour leader, between Altea and Benidorm bays including Toix and Serra Gelada cliffs"
+- item: "11:30 Break for snack on board"
+- item: "14:00 Return to the harbour and end of the journey"
+
+Included:
+- item: "Rent of boat with skipper service"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+
+Notincluded:
+- item: "Collection from home or accommodation and lunch in a traditional restaurant (Additional extra. Booking optional)"
+
+PriceVariation: "65 € by person. (VAT incl.)(6 people group). Booking must be made by 30th September 2015. Price including pick up from your accomodation and lunch at our selected restaurant: 140 € by person. (VAT incl.)(6 people group). Check price for a different number of participants."
+
+Photos:
+- item: w0701.jpg
+- item: w0702.jpg
+- item: w0703.jpg
+- item: w0704.jpg
+- item: w0705.jpg
+- item: w0706.jpg
+- item: w0707.jpg
+- item: w0708.jpg
+- item: w0709.jpg
+
+Thumbnail: w07thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Only <b>from the sea</b> is it possible to truly appreciate the true wonder of the <b>Serra Gelada terrestrial marine Natural Reserve</b>. We offer you the unique opportunity to board a sailing or motor boat to discover the secrets of the cliffs. This <b>fantastic experience</b> cannot be achieved any other way.
+			</p>
+			<p> 
+				Having <b>embarked in Altea</b> we will sail to the feet of its <b>incredible cliffs</b> where we will come across the Serra Gelada <b>flora and fauna</b>, the highest <b>fossil dune in Europe</b>, the greatest presence of <b>Bottlenose dolphins</b> (<i>Tursiops truncatus</i>) in the Valencia region and know the existence of impressive marine plant named <i>Posidonia oceanica</i>.
+			</p>
+			<p>
+				In order to contemplate the <b>cliff fisheries of Toix</b>, a true testimony to the tremendous difficulties encountered by the local population in the middle of the 20<sup>th</sup> century or, the remains of the <b>watchtowers</b> which alerted Altea  bay of <b>Berber pirate attacks</b> such as the terrifying <b>Dragut the Turk</b>, in the 16<sup>th</sup> century.
+			</p>
+			<p>
+				We also have the chance to get to know Altea and Benidorm marine birdlife where depending on the time of year it is posible to see various protected species such as <b>Balearic searwather</b> (<i>Puffinus mauretanicus</i>) and <b>Mediterranean searwather</b> (<i>Calonectris diomedea</i>), <b>European storm-petrel</b> (<i>Hydrobates pelagicus</i>),  <b>Audouin’s Gull</b> (<i>Larus audouinii</i>), <b>Shag</b> (<i>Phalacrocorax aristotelis</i>) or <b>Northern gannet</b> (<i>Morus bassanus</i>). 
+			</p>
+			<p>
+				As always with <b>Oxytours</b> we will enjoy the regions <b>delicious cuisine</b> and so we end our morning at a <b>handpicked restaurant</b> where we not only enjoy the <b>excellent flavour of traditional cooking</b> but also leave with the pleasant sensation that we have dined at home.
+			</p>
+			<p>
+				<b>Without doubt, the best form to discover the Costa Blanca</b>.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

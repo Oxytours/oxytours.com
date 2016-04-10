@@ -1,0 +1,110 @@
+---
+category: route
+tag: roots
+lang: es
+title: El desierto alicantino
+shortname: Valle del Montnegre
+Area: Valle del Montnegre
+
+Price: 75€
+Length: 3,5 / 4h
+Distance: 7km
+Difficulty: Baja
+Slope: 120m
+
+Schedule:
+- item: "08:30-09:30 Recogida en el lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Comida en el restaurante seleccionado. "
+- item: "18:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se sitúe su alojamiento."
+
+Included:
+- item: "Traslados desde el alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+- item: "Comida: Menú concertado con el restaurante. "
+
+PriceVariation: "75 € por persona. IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+Photos:
+- item: r1001.jpg
+- item: r1002.jpg
+- item: r1003.jpg
+- item: r1004.jpg
+- item: r1005.jpg
+
+Thumbnail: r10thumb.jpg
+
+Map:
+	lat: 38.485604
+	long: -0.525108
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<p>
+				La Costa Blanca reúne un conjunto de hábitats y ambientes muy variados que se suceden desde sus famosas playas y calas en el litoral ,a los bosques frondosos y húmedos de sus montañas. Pero uno de estos ambientes, sin duda el menos desconocido, es también uno de los más valiosos por su valor ambiental, cultural y paisajístico. Es lo que ocurre con el Valle del Montnegre, un auténtico desierto en el centro de la Costa Blanca.
+			</p>
+			<p> 
+				Recorrer el valle del Montnegre es adentrarse en una zona de gran aridez, con un clima muy seco y precipitaciones muy escasas a lo largo del año. Sin embargo, el paisaje desértico que se observa desde sus senderos es de gran belleza. La increíble gama de colores y formas de los estratos presentes en sus barrancos le capturará sorprendiéndolo desde el primer instante.
+			</p>
+			<p>
+				Todo lo que encontramos en esta zona está ligado a las duras condiciones climatológicas. Su vegetación y fauna son únicas en toda la Costa Blanca, así como su geología. Pero hay un elemento que destaca sobre todos los demás, íntimamente relacionado con la historia y los habitantes de este valle: el agua, tan escasa aquí como vital. Durante esta jornada descubrirá por qué el agua fue, y sigue siendo, tan importante en la historia de esta zona de la provincia de Alicante.
+			</p>
+			<p>
+				Y es que durante siglos existió aquí una de las despensas más grandes del mediterráneo español: la Huerta de Alicante, donde crecían todo tipo de hortalizas y verduras, de excelente calidad. Aún hoy en día existen producciones tradicionales que mantienen el recuerdo y el sabor de aquellos tiempos y que se puede comprobar en los platos elaborados con sus productos, y que tendremos oportunidad de degustar al finalizar la mañana en nuestro restaurante seleccionado.
+			</p>
+			<p>
+				Algunas personas consideran que África y sus desiertos no empiezan en Marruecos, tras cruzar el estrecho de Gibraltar, sino en el sur de la Costa Blanca. Acompáñenos y lo descubrirá de nuestra mano.
+			</p>
+		</div>
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

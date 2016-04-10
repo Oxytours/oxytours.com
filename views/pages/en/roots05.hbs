@@ -1,0 +1,127 @@
+﻿---
+category: route
+tag: roots
+lang: en
+title: "Bernia, the Pirate watchtower"
+shortname: "Bernia mountain"
+Area: Bernia mountain.
+
+Price: 85€
+Length: 3.5 / 4h
+Distance: 8km
+Difficulty: Medium
+Slope: 400m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *."
+- item: "10:00 Start guided hike by our Tour leader. "
+- item: "11:30 Break for snack. "
+- item: "14:00 Lunch at our selected restaurant. "
+- item: "18:00 Transfer to accommodation of client and end of the journey."
+- item: "* Exact time to be determined depending of your location."
+
+Included:
+- item: "Transfers from your accommodation * to the area to visit."
+- item: "Full guide service throughout."
+- item: "5 course traditional lunch (set menu)."
+- item: "Mid morning snack."
+- item: "Personal insurance. "
+
+Notincluded:
+- item: "Visit the Bodega (Additional extra. Booking optional)"
+
+PriceVariation: "85 € by person. (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: r0501.jpg
+- item: r0502.jpg
+- item: r0503.jpg
+- item: r0504.jpg
+
+Thumbnail: r05thumb.jpg
+
+Map:
+	lat: 38.658734
+	long: -0.044678
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Emerging from the sea  is the gigantic <b>Bernia mountain</b>, which stretches as far as the <b>Tarbena valley</b>, reaching 1.129 metres in height. 
+			</p>
+			<p> 
+				We invite you to ascend its slope observing the countryside giving <b>unsurpassed views</b> of Marina Alta, Marina Baixa as well as Alicante’s interior. On a clear day we can even see the island of Ibiza.
+			</p>
+			<p>
+				Its proximity to the sea combined with its altitude makes Bernia one of the greatest diverse habitats, unbelievable species of flora and fauna are found only in this area.
+			</p>
+			<p>
+				The incredible stone vantage point made up of the mountain, itself and the <b>16<sup>th</sup> century fortress</b> some 800 metres high, aimed to protect the coastline from the constant <b>pirate attacks</b> which plagued this land as since ancient times.
+			</p>
+			<p>
+				We visit the remains of this fortress to get to know its story,<b>wild orchids</b> and the <i>Forat</i>, a natural orifice crossing the mountain from one face to the other offering spectacular views of the entire region.
+			</p>
+			<p>
+				You will have the opportunity to discover <b>typical Alicante cuisine</b>, famous throughout for its excellence. You may already be familiar with paella, however we invite you to try various other <b>delicacies accompanied by good wine</b> of course!
+			</p>
+			<p>
+				After lunch you might wish to extend your day by booking a visit to an <b>excellent bodega</b> in order to sample its exquisite wines and olive oils. This is available at a small extra charge. 
+			</p>
+			<p>
+				In a nutshell: the perfect combination of hiking, nature, history, culture and gastronomy to immerse yourself in the authentic Costa Blanca.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+		
+	</div>
+</div>	
+
+{{>map this}}

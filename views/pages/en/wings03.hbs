@@ -1,0 +1,120 @@
+---
+category: route
+tag: wings
+lang: es
+title: "The ochre mines and lighthouse of Albir"
+shortname: "Serra Gelada Natural Reserve"
+Area: "Serra Gelada"
+
+Price: 40€
+Length: 3h
+Distance: 6km
+Difficulty: Low
+Slope: 110m
+
+Schedule:
+- item: "08:30-09:30 Pick up from your accommodation *"
+- item: "10:00 Start guided hike by our Tour leader"
+- item: "11:30 Break for snack"
+- item: "14:00 Transfer to accommodation of client and end of the journey"
+- item: "* Exact time to be determined depending of your location"
+
+Included:
+- item: "Transfers from your accommodation (*) to the area to visit"
+- item: "Full guide service throughout"
+- item: "Personal insurance"
+- item: "Mid morning snack"
+
+Notincluded:
+- item: "Lunch: 5 course traditional lunch (set menu) (Additional extra. Booking optional)"
+
+PriceVariation: "40 € by person. Children under 12 years: 25 € (VAT incl.)(4 to 7 people groups). Check price for a different number of participants."
+
+Photos:
+- item: w0301.jpg
+- item: w0302.jpg
+- item: w0303.jpg
+- item: w0304.jpg
+- item: w0305.jpg
+
+Thumbnail: w03thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				The <b>spectacular mountain cliffs</b> include the <b>Serra Gelada Natural Reserve</b> offering more than 6 kilometres of astonishing countryside to take your breath away.
+			</p>
+			<p> 
+				In the extreme north of this mountain we find the <b>Albir Lighthouse</b>, the only one you can access in this region. A gentle slope leads from the beach to the lighthouse moving through <b>beautiful coves</b> and giving <b>breathtaking views of Altea bay</b> and Peñon de Ifach. 
+			</p>
+			<p>
+				Along this excursion you will discover why species such as the <b>Bottlenose dolphin and Posidonia seaplants</b>, which are vital to the Mediterranean conservation exist here. In addition, you will be able to see the unique <b>geological origins</b> of this area.
+
+			</p>
+			<p>
+				Visiting the ochre mines or the remains of <b>watchtowers</b> you will be transported back to mediaeval <b>pirate attacks</b> during XV to XVIII centuries.
+			</p>
+			<p>
+				To end our trip you might wish to extend your day by booking optionally visit a <b>selected restaurant</b> to enjoy the flavours of <b>traditional gastronomy</b> from the Costa Blanca, respecting the original methods used to create exceptional dishes. This is available at a extra charge.
+			</p>
+			<p>
+				Fossil dunes, seabirds, dolphins, unique flora, spectacular views… A suitable route for all ages.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

@@ -1,0 +1,124 @@
+---
+category: route
+tag: wings
+lang: es
+title: Tierra de agua, cuna del arroz
+shortname: Parque Natural de la Marjal Pego - Oliva
+Area: Marjal de Pego - Oliva
+
+Price: 40€
+Length: 3h
+Distance: 8km
+Difficulty: Baja
+Slope: 300m
+
+Schedule:
+- item: "08:30-09:30 Recogida en el lugar de alojamiento *."
+- item: "10:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "11:30 Descanso para el almuerzo. "
+- item: "14:00 Traslado hasta el alojamiento del cliente y fin de la jornada."
+- item: "* La hora exacta de recogida dependerá de la localidad donde se sitúe el alojamiento."
+
+Included:
+- item: "Traslados desde su alojamiento* hasta la zona a visitar y viceversa."
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada."
+- item: "Seguro de accidentes y responsabilidad civil. "
+- item: "Almuerzo típico de la zona."
+
+Notincluded:
+- item: "Comida: Menú concertado con el restaurante (contratación opcional)."
+
+PriceVariation: "40 € por persona. Menores de 12 años: 25 € IVA incluido (Grupos de 4 a 7 personas). Consulte precio para un número distinto de participantes."
+
+Photos:
+- item: w0501.jpg
+- item: w0502.jpg
+- item: w0503.jpg
+- item: w0504.jpg
+- item: w0505.jpg
+- item: w0506.jpg
+
+
+Thumbnail: w05thumb.jpg
+
+Map:
+	lat: 38.869491
+	long: -0.066537
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				En la zona norte de la Costa Blanca encontramos uno de los Espacios Naturales Protegidos más singulares de esta región. Un lugar donde el agua es la protagonista absoluta y el cultivo del arroz está presente en cada uno de los rincones y de las personas de esta comarca.
+			</p>
+			<p> 
+				El arroz, que comenzó a cultivarse en época árabe, no siempre ha estado presente en la Marjal.  La historia de su cultivo es apasionante, y la descubrirá durante su visita: las enfermedades asociadas a las zonas húmedas, los procesos de desecación y transformación del humedal o como en el siglo XX el arrozal dio de comer a niños sin recursos de toda España tras la guerra civil. Hablar del cultivo del arroz en la Marjal es hablar del durísimo trabajo en el agua durante largas jornadas, del esfuerzo continuo en condiciones difíciles de imaginar hoy en día y que marcaron el carácter de sus trabajadores durante décadas.
+			</p>
+			<p>
+				Pero hablar de arroz es hablar también de cocina, y es que en esta zona se produce una de las variedades más apreciadas por cocineros de toda Europa, el arroz Bomba, base para la elaboración de multitud de platos de nuestra gastronomía.
+			</p>
+			<p>
+				El agua de la Marjal, recogida en gran parte en las montañas del Valle de Gallinera, surge en esta llanura con una fuerza y una transparencia únicas y su gran calidad permite la existencia de especies vegetales y animales de gran importancia, como nenúfares,  Samarucs o importantes colonias de garzas: un legado que es necesario proteger y que estamos encantados de poder mostrárselo. 
+			</p>
+			<p>
+				Desde Oxytours le acompañaremos por los canales y lagunas de la Marjal, descubriendo su vegetación y sus aves o por los campos de arroz, contándole la historia que esconde. La historia del lugar donde al agua decide salir de la tierra e inundarlo todo permitiéndonos disfrutar de uno de los enclaves más bellos y desconocidos de la Costa Blanca. 
+			</p>
+			<p>
+				Y para finalizar la jornada recuerde que puede contratar de manera opcional un excelente menú en un restaurante tradicional de la zona y descubrir así los sabores de la auténtica gastronomía de la Costa Blanca.
+			</p>
+			<p>
+				Reserve su ruta con Oxytours.
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>			
+			</div>		
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>			
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>	
+
+{{>map this}}

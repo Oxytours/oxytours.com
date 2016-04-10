@@ -1,0 +1,91 @@
+---
+category: form
+lang: es
+title: Réservez votre itinéraire
+shortname: Vous êtes très proche de profiter d'une expérience unique
+
+Photos:
+- item: r0201.jpg
+- item: r0202.jpg
+- item: r0203.jpg
+- item: r0204.jpg
+- item: r0205.jpg
+- item: r0206.jpg
+---
+
+<div class="content content--index">
+
+	<div class="row">
+		<div class="column large-5">
+
+			<form action="http://www.oxytours.com/mail/mailto_fr.php" method="post">
+				<div class="row">
+					<div class="column">
+						<label for="">Nom
+							<input type="text" name="name" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Prénoms
+							<input type="text" name="surname" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Email
+							<input type="email" name="email" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Téléphone
+							<input type="text" name="phone">
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Ville
+							<input type="text" name="city">
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Pays
+							<input type="text" name="country">
+						</label>
+					</div>
+
+					<div class="column">
+						<label for="">Tour sélectionné
+							<select name="route">
+								{{#each pages}}
+									{{#is data.category 'route'}}
+										<option value="{{data.title}}: {{data.shortname}}">{{data.title}}: {{data.shortname}}</option>
+									{{/is}}
+								{{/each}}
+							</select>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Dates</label>
+						<input id="datepicker" type="text" name="date" required />
+					</div>
+					<div class="column">
+						<label for="">Nombre de participants
+							<input type="text" name="people" required>
+						</label>
+					</div>
+					<div class="column">
+						<label for="">Commentaires
+							<textarea type="text" name="comments"></textarea>
+						</label>
+					</div>					
+				</div>
+				<button class="button expand">Envoyer</button>
+			</form>	
+
+		</div>
+		<div class="column large-7 form-info">
+			<h3>Information Pertinente</h3>
+			Une fois rempli ce formulaire, nous vous contacterons par email ou téléphone le plus tôt possible pour confirmer les dates et les instructions de paiment.
+		</div>
+	</div>
+
+</div>
+
