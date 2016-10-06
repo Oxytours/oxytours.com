@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
                     flatten: true,
-                    partials: ['views/partials/es/**/*.hbs']
+                    partials: ['views/partials/es/**/*.hbs', 'views/partials/header_mobile.hbs']
                 },
                 src:   ['views/pages/es/**/*.hbs'],
                 dest:  'mobile/es/'
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
                     flatten: true,
-                    partials: ['views/partials/en/**/*.hbs']
+                    partials: ['views/partials/en/**/*.hbs', 'views/partials/header_mobile.hbs']
                 },
                 src:   ['views/pages/en/**/*.hbs'],
                 dest:  'mobile/en/'
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
                     flatten: true,
-                    partials: ['views/partials/fr/**/*.hbs']
+                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/header_mobile.hbs']
                 },
                 src:   ['views/pages/fr/**/*.hbs'],
                 dest:  'mobile/fr/'

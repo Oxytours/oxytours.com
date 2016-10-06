@@ -6,7 +6,7 @@
 			<h1 class="display3">{{title}}</h1>
 			<h2 class="display3-subhead">{{shortname}}</h2>
 		</div>
-	</div>	
+	</div>
 </header>
 {{/is}}
 
@@ -54,8 +54,10 @@
 
 
 			<div class="header-route-cta header-route-cta--{{tag}} show-for-large-up">
-				<a class="button" href="form.html">
-					More info and booking
+        <a class="button" href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
+          {{#is lang "en"}} More info and booking {{/is}}
+          {{#is lang "fr"}} Plus d'information et réserves {{/is}}
+          {{#is lang "es"}} Más información y reservas {{/is}}
 				</a>
 				<div class="route-price">
 					{{Price}}
@@ -65,19 +67,27 @@
 				<tr>
 					<td>
 						<i class="fa fa-clock-o fa-3x route-item"></i>
-						Length
+              {{#is lang "en"}} Length {{/is}}
+              {{#is lang "fr"}} Durée {{/is}}
+              {{#is lang "es"}} Duración {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
-						Distance
+              {{#is lang "en"}} Distance {{/is}}
+              {{#is lang "fr"}} Distance {{/is}}
+              {{#is lang "es"}} Distancia {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-child fa-3x route-item"></i>
-						Difficulty
+              {{#is lang "en"}} Difficulty {{/is}}
+              {{#is lang "fr"}} Difficulté {{/is}}
+              {{#is lang "es"}} Dificultad {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-signal fa-3x route-item"></i>
-						Slope
+              {{#is lang "en"}} Slope {{/is}}
+              {{#is lang "fr"}} Dénivelé {{/is}}
+              {{#is lang "es"}} Desnivel {{/is}}
 					</td>
 				</tr>
 				<tr>
@@ -91,10 +101,12 @@
 	</div>
 	<div class="row hide-for-large-up">
 		<div class="header-route-cta header-route-cta--{{tag}} text-center">
-				<a class="button u-mgt" href="form.html">
-					More info and booking
-				</a>
-		</div>				
+      <a class="button u-mgt" href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
+        {{#is lang "en"}} More info and booking {{/is}}
+        {{#is lang "fr"}} Plus d'information et réserves {{/is}}
+        {{#is lang "es"}} Más información y reservas {{/is}}
+      </a>
+		</div>
 	</div>
 </div>
 

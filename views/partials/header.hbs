@@ -118,19 +118,11 @@
 
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--{{tag}} ">
-        {{#if formlink}}
-				<a class="button" href="{{formlink}}">
+				<a class="button" href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
           {{#is lang "en"}} More info and booking {{/is}}
           {{#is lang "fr"}} Plus d'information et réserves {{/is}}
-          {{#is lang "es"}} Mñas información y reservas {{/is}}
+          {{#is lang "es"}} Más información y reservas {{/is}}
 				</a>
-        {{else}}
-        <a class="button" href="form.html">
-          {{#is lang "en"}} More info and booking {{/is}}
-          {{#is lang "fr"}} Plus d'information et réserves {{/is}}
-          {{#is lang "es"}} Mñas información y reservas {{/is}}
-				</a>
-        {{/if}}
 				<div class="route-price">
 					{{Price}}
 				</div>
