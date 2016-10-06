@@ -39,21 +39,6 @@
 $type-header: "Raleway";
 $main-color: rgba(66, 65, 54, 1);
 
-@import
-"modules/header",
-"modules/logo",
-"modules/content",
-"modules/topBar",
-"modules/featuredCard",
-"modules/itemCard",
-"modules/ribbon",
-"modules/footer",
-"modules/route",
-"modules/socialNetworks",
-"modules/modal",
-"modules/cookies",
-"modules/mainMenu";
-
 h1, h2, h3, h4, h5, h6 {
     font-family: $type-header;
     margin: 0;
@@ -68,11 +53,11 @@ h1 {
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: #333;
-    padding: 0.5rem 0;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #333;
+  padding: 0rem 0 0.5rem;
+  font-weight: normal;
 }
 
 h4 {
@@ -89,7 +74,7 @@ ul {
 }
 
 p, li {
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555566;
     line-height: 1.6;
     margin-bottom: 1.25rem;
@@ -97,33 +82,33 @@ p, li {
 }
 
 cite {
-    font-size: 1.2rem;
-    font-weight: bold;
-    line-height: 1.4;
-    border-left: 4px solid $main-color;
-    color: $main-color;
-    display: block;
-    padding-left: 0.7rem;
-    margin: 1rem 0;
-    font-style: normal;
-    font-family: "raleway";
-    font-weight: 400;
-    text-transform: uppercase;
+  font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 1.4;
+      color: #7b5454;
+      display: block;
+      margin: 1rem 0;
+      font-style: normal;
+      font-family: "raleway"; 
+      font-weight: 400;
 }
 
 .display3 {
-    font-size: 3.7rem;
     line-height: 0.9;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     font-weight: 300;
+    text-transform: capitalize;
+    font-size: 6rem;
 
     &-subhead {
-        font-size: 2rem;
         margin-top: -0.5rem;
         margin-bottom: 2rem;
         text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
         max-width: 70rem;
         margin: 0 auto;
+        font-weight: normal;
+        font-size: 1.88rem;
+        text-transform: lowercase;
     }
 }
 
@@ -183,7 +168,8 @@ select {
 
 
 .section-title {
-    padding: 3rem 0px 2rem;
+  padding: 3rem;
+  color: #7b5454;
 }
 
 // Utils
@@ -222,3 +208,18 @@ select {
 .topBar-container.fixed .premios {
     display: none;
 }
+
+@import
+"modules/header",
+"modules/logo",
+"modules/content",
+"modules/topBar",
+"modules/featuredCard",
+"modules/itemCard",
+"modules/ribbon",
+"modules/footer",
+"modules/route",
+"modules/socialNetworks",
+"modules/modal",
+"modules/cookies",
+"modules/mainMenu";

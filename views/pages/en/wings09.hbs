@@ -1,0 +1,125 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: en
+title: Under the Moonlight
+shortname: Night tours to Natural Reserves in the Costa Blanca
+Area: Calp, Pego y l'Alfàs del Pi
+
+Price: 10€
+Length: 3,5h
+Distance: 3/6km
+Difficulty: Low
+Slope: 0/130m
+
+Schedule:
+- item: "Serra Gelada Nature Reserve: July: 13 y 27. August: 3, 17 y 24"
+- item: "Penyal d'Ifac Nature Reserve: July: 14 y 28. August: 4, 18 y 25"
+- item: "Pego - Oliva Marsh Nature Reserve: July: 20. August: 10"
+- item: "20.30 Meeting at the meeting point and dinner. Tasting of artisan cheese and white wine from Alicante."
+- item: "21.00 Start guided route by our guides."
+- item: "00.00 End of the itinerary."
+Included:
+- item: "Full guide service throughout. Expert guides on environmental and cultural heritage of the Costa Blanca."
+- item: "Tasting of artisan cheese and white wine from Alicante."
+- item: "Insurance"
+
+Notincluded:
+- item: "Dinner of participants."
+
+PriceVariation: "10 € adults and 5 € children up to 12 years old (children under 2 years free). 10% discount for groups of more than 4 adults (VAT Incl.)"
+
+Photos:
+- item: w0901.jpg
+- item: w0902.jpg
+- item: w0903.jpg
+- item: w0904.jpg
+- item: w0905.jpg
+- item: w0906.jpg
+
+Thumbnail: w09thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+            <h2>
+                <a href="https://docs.google.com/forms/d/1OZhGA_PFpjfPSb6HavN4io5hqESGQs5wVsMc1JS5UUI/viewform?c=0&w=1"> Click HERE for bookings </a>
+            </h2><br><br>
+			<p>
+				When the sun sets forming a backdrop to the horizon, <b>everything changes</b>, including our perception. It becomes very distinctive, unknown and even strange. The same is true of our mountains and coastline. As darkness envelops what we can see, the mountains and wetlands reach a <b>magical and mysterious</b> atmosphere.
+			</p>
+			<p>
+				This summer <b>Oxytours</b> are offering again a way to enjoy the Costa Blanca’s Nature Reserves, at night to discover their secrets. Taking three of Alicante's finest:  <b>Peñón de Ifac, Serra Gelada and Pego - Oliva Marsh</b> and hiking through them after a mountain picnic (bring your own) from dusk until midnight.
+			</p>
+			<p>
+				Each place offers its unique story and is home to extraordinary environmental life of <b>great ecological importance</b>. Through these summer night excursions we will experience nature as never before. Open to all age groups, these activities are not to be missed.
+			</p>
+			<p>
+				From the Muntanyeta Verda surrounded by the <b>rice fields</b> of Pego-Oliva Marsh or the amazing vantage point at the Albir <b>lighthouse</b> moving through the forgotten <b>medieval battlefields</b> of Peñón de Ifac. All of these areas seem long forgotten and forever hidden but we bring them back to life during Oxytours summer nights.
+			</p>
+			<p>
+				Significant natural areas experienced through mystical and magical nights. An activity to be enjoyed with <b>family, friends or maybe both!</b> Before starting our hike, we will have dinner and we will give you a glass of white wine accompanied by delicious artisan cheese.
+			</p>
+			<p>
+				<b>Could there be a better way to discover the Costa Blanca?</b>
+			</p>
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Details</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Prices by number of people</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Price includes</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">Price not includes</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

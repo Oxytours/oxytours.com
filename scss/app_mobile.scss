@@ -39,20 +39,6 @@
 $type-header: "Raleway";
 $main-color: rgba(66, 65, 54, 1);
 
-@import
-"modules/header",
-"modules/logo",
-"modules/content",
-"modules/topBar",
-"modules/featuredCard",
-"modules/itemCard",
-"modules/ribbon",
-"modules/footer",
-"modules/route",
-"modules/socialNetworks",
-"modules/modal",
-"modules/mainMenu";
-
 h1, h2, h3, h4, h5, h6 {
     font-family: $type-header;
     margin: 0;
@@ -79,7 +65,7 @@ h4 {
     color: #555566;
     line-height: 1.6;
     margin-top: -0.5rem;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
     font-family: "Droid Serif";
 }
 
@@ -195,11 +181,11 @@ select {
 }
 
 .u-mgt {
-    margin-top: 1rem;    
+    margin-top: 1rem;
 }
 
 .u-mgt2x {
-    margin-top: 2rem;    
+    margin-top: 2rem;
 }
 
 
@@ -233,7 +219,7 @@ select {
 
 .header-route-title {
   line-height: 2.6rem;
-  padding: 0.5rem;    
+  padding: 0.5rem;
 }
 
 .header-route-subtitle {
@@ -278,3 +264,17 @@ select {
 #topbar {
     position: absolute;
 }
+
+@import
+"modules/header",
+"modules/logo",
+"modules/content",
+"modules/topBar",
+"modules/featuredCard",
+"modules/itemCard",
+"modules/ribbon",
+"modules/footer",
+"modules/route",
+"modules/socialNetworks",
+"modules/modal",
+"modules/mainMenu";

@@ -20,37 +20,37 @@ module.exports = function(grunt) {
             options: {
                 layout: 'layouts/default.hbs',
                 layoutdir: 'views',
-                helpers: ['helper-aggregate'],
+                helpers: ['node_modules/handlebars-helpers/index.js'],
                 data: 'data/**/*.json'
             },
             main_es: {
                 options: {
-                    flatten: true,                    
-                    partials: ['views/partials/es/**/*.hbs']
+                    flatten: true,
+                    partials: ['views/partials/es/**/*.hbs', 'views/partials/mainMenu.hbs']
                 },
                 src:   ['views/pages/es/**/*.hbs'],
                 dest:  'static/es/'
-            },            
+            },
             main_en: {
                 options: {
-                    flatten: true,                    
-                    partials: ['views/partials/en/**/*.hbs']
+                    flatten: true,
+                    partials: ['views/partials/en/**/*.hbs', 'views/partials/mainMenu.hbs']
                 },
                 src:   ['views/pages/en/**/*.hbs'],
                 dest:  'static/en/'
             },
             main_fr: {
                 options: {
-                    flatten: true,                    
-                    partials: ['views/partials/fr/**/*.hbs']
+                    flatten: true,
+                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/mainMenu.hbs']
                 },
                 src:   ['views/pages/fr/**/*.hbs'],
                 dest:  'static/fr/'
-            },              
+            },
             mobile_es: {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
-                    flatten: true,                    
+                    flatten: true,
                     partials: ['views/partials/es/**/*.hbs']
                 },
                 src:   ['views/pages/es/**/*.hbs'],
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             mobile_en: {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
-                    flatten: true,                    
+                    flatten: true,
                     partials: ['views/partials/en/**/*.hbs']
                 },
                 src:   ['views/pages/en/**/*.hbs'],
@@ -68,7 +68,7 @@ module.exports = function(grunt) {
             mobile_fr: {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
-                    flatten: true,                    
+                    flatten: true,
                     partials: ['views/partials/fr/**/*.hbs']
                 },
                 src:   ['views/pages/fr/**/*.hbs'],
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8080,
+                    port: 8081,
                     base: './',
                     hostname:'*',
                 }

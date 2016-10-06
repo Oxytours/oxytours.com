@@ -1,13 +1,13 @@
 .featuredCard {
-
 	text-align: center;
+  padding: 1rem 2.5rem;
 
 	img {
-		margin: 1rem;
-		transition: all 0.3s ease 0s;
-		display: inline-block;
-		height: 100px;
-		width: 100px;
+    margin: -4rem 0 1rem;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
 	}
 
 	&:hover {
@@ -17,7 +17,7 @@
 
 }
 
-@media #{$large-up} { 
+@media #{$large-up} {
 
 	.featuredCard {
 

@@ -1,0 +1,121 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: es
+title: Miradas de Luna
+shortname: Excursiones nocturnas a nuestros Parques Naturales
+Area: Calp, Pego y l'Alfàs del Pi
+
+Price: 10€
+Length: 3,5h
+Distance: 3/6km
+Difficulty: Baja
+Slope: 0/130m
+
+Schedule:
+- item: "Parque Natural Serra Gelada: Julio: 13 y 27. Agosto: 3, 17 y 24"
+- item: "Parque Natural Penyal d'Ifac: Julio: 14 y 28. Agosto: 4, 18 y 25"
+- item: "Parque Natural Marjal Pego - Oliva: Julio: Julio: 20. Agosto: 10"
+- item: "20:30 Reunión en el punto de encuentro y cena. Degustación de quesos artesanos y vino DO Alicante"
+- item: "21:00 Inicio de Ruta senderista e interpretación del Patrimonio a cargo de nuestros guías. "
+- item: "00:00 Fin de la actividad. "
+Included:
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada. Guías expertos en el Patrimonio ambiental de la Costa Blanca"
+- item: "Degustación de quesos artesanos del campo de Elche y vino de la DO Alicante"
+- item: "Seguro"
+
+Notincluded:
+- item: "Cena de los participantes."
+
+PriceVariation: "10 € por persona. Menores de 12 años: 5 € (IVA incluido). Descuento del 10% para grupos de 4 o más adultos."
+
+Photos:
+- item: w0901.jpg
+- item: w0902.jpg
+- item: w0903.jpg
+- item: w0904.jpg
+- item: w0905.jpg
+- item: w0906.jpg
+
+Thumbnail: w09thumb.jpg
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+            <h2>
+                <a href="https://docs.google.com/forms/d/1OZhGA_PFpjfPSb6HavN4io5hqESGQs5wVsMc1JS5UUI/viewform?c=0&w=1"> Haz click AQUI para reservar tus plazas </a>
+            </h2><br><br>
+
+			<p>
+				Cuando cae el sol y se pone tras el horizonte, <b>todo cambia</b>. Incluida nuestra percepción de las cosas, haciendo que lo más cotidiano se convierta en algo extraño y ajeno, en algo distinto. De igual manera ocurre en nuestros <b>Parques Naturales</b>. La noche lo envuelve todo haciendo que miremos a nuestro alrededor con otros ojos,  envolviendo de <b>magia y misterio</b> humedales, montañas y costa.
+			</p>
+			<p>
+				Este verano <b>Oxytours</b> te propone visitar nuestros Parques Naturales a través de <b>"Miradas de Luna"</b>, por la noche, para conocer su importancia y descubrir sus secretos. Para ello, recorreremos senderos de tres de los Parques Naturales de la provincia de <b>Alicante</b>, los de <b>Serra Gelada, Penyal d’Ifac y Marjal de Pego Oliva</b>.
+			</p>
+			<p>
+				Dos <b>montañas litorales y una zona húmeda</b>, cada una con su identidad, con su historia, albergando <b>valores ambientales y culturales</b> de gran importancia y que descubriremos durante estas noches de verano poniendo a prueba todos nuestros sentidos. Incluido el del gusto, ya que incluimos degustación de vino blanco y deliciosos quesos artesanos.
+			</p>
+			<p>
+				Una propuesta para peques y mayores que no puedes dejar escapar. ¡No lo dudes, acompáñanos a <b>conocer nuestros Parques Naturales bajo la magia y el misterio de la noche</b>!
+			</p>
+
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}
