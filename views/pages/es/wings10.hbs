@@ -1,0 +1,121 @@
+---
+category: route
+
+featured: true
+
+tag: wings
+lang: es
+title: Otoño en tu mochila
+shortname: Excursiones a nuestros espacios protegidos
+Area: Elx, Crevillent, Castell de Castells, Teulada-Moraira, Benitatxell
+
+Price: 15€
+Length: 3,5/4h
+Distance: 6/10km
+Difficulty: Baja/Media
+Slope: 0/120m
+
+Schedule:
+- item: "Parque Natural El Fondó (Elx-Crevillent): Octubre: 16"
+- item: "Arcos d'Atanços (Sierra de Xortà, Castell de Castells): Noviembre: 6"
+- item: "Acantilados de Moraira-Benitatxell (Calas Llebeig - Moraig): Diciembre: 4"
+- item: "10:00 Reunión en el punto de encuentro e inicio de la ruta"
+- item: "11:30 Pausa para el almuerzo."
+- item: "13:30 Picaeta de productos tradicionales y copa de vino/zumo al finalizar la ruta."
+- item: "14:00 Fin de la actividad."
+Included:
+- item: "Servicio de guiado en ruta y asistencia durante toda la jornada. Guías expertos en el Patrimonio ambiental de la Costa Blanca"
+- item: "Picaeta de productos tradicionales (quesos y embutidos), fruta, vino de la DO Alicante y zumo"
+- item: "Seguro"
+
+Notincluded:
+- item: "Traslados de los participantes."
+- item: "Almuerzo."
+
+PriceVariation: "15 € por persona. Menores de 12 años: 5 € (IVA incluido). Descuento del 10% para grupos de 4 o más adultos."
+
+Photos:
+- item: w1001.jpg
+- item: w1002.jpg
+- item: w1003.jpg
+- item: w1004.jpg
+- item: w1005.jpg
+- item: w1006.jpg
+
+Thumbnail: w10thumb.jpg
+
+formlink: https://docs.google.com/a/oxytours.com/forms/d/e/1FAIpQLSfjqL-rwu7QmkibQCWJwxwVN9oqz-swMnuuJhLDb9FIGfpXQA/viewform
+
+Map:
+	lat: 38.564705
+	long: -0.057209
+---
+
+<div class="content">
+	<div class="row">
+		<div class="large-6 column">
+
+			<!-- Description -->
+			<p>
+				Cuando los días se acortan y la luz del atardecer es más dorada que nunca y después de largos meses estivales el frío nos sorprende al amanecer, estamos sin duda en época de cambio. <b>El otoño es justo eso, cambio y preparación</b>, tránsito hacia los próximos meses de frío. Nuevos paisajes, frutos y  especies se suceden en una época ideal para disfrutar de paseos y actividades en plena Naturaleza.
+			</p>
+			<p>
+				Por ello desde <b>Oxytours</b>, con las actividades de <b>"Otoño en tu mochila"</b>, te proponemos disfrutar de 3 de los espacios naturales con mayor singularidad de nuestra provincia, todos ellos incluidos en zonas protegidas por su importancia ambiental. Por ello recorreremos senderos de la <b>sierra de Xortá</b>, los <b>acantilados de la Marina Alta</b> y el <b>Parque Natural de El Fondó</b>.
+			</p>
+			<p>
+				Desde los <b>Arcos d’Atanços</b>, auténtica joya geológica de nuestra región hasta el espectacular paisaje vertical de los <b>acantilados de Moraira y Benitatxell</b> con el Meditarráneo como protagonista absoluto, pasando por uno de los humedales más importantes del estado español: >b>el Fondó</b>. Una buena muestra de la riqueza de nuestra tierra que descubriremos durante estas rutas de otoño y saborearemos con una picaeta de <b>productos artesanos</b> de la provincia de <b>Alicante</b>.
+			</p>
+			<p>
+				Una propuesta para peques y mayores que no puedes dejar escapar. <b>¡No lo dudes, apúntate y llena tu mochila de la luz, los paisajes y sabores del otoño!</b>
+			</p>
+
+			<!-- EO Description -->
+
+		</div>
+
+		<div class="large-5 column">
+			<div class="box">
+				<h3>Hoja de ruta</h3>
+				<ul class="route-schedule">
+					{{#each Schedule}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Precio por persona</h4>
+				<ul>
+					<li>{{PriceVariation}}</li>
+				</ul>
+			</div>
+
+			<div class="box">
+				<h4 class="route-included-title">Incluído en el precio</h4>
+				<ul>
+					{{#each Included}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+
+			{{#if Notincluded}}
+			<div class="box">
+				<h4 class="route-included-title">No incluído en el precio</h4>
+				<ul>
+					{{#each Notincluded}}
+					<li>{{item}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			{{/if}}
+			<div class="box">
+				{{> places}}
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+{{>map this}}

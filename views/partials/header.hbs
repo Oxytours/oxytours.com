@@ -118,9 +118,19 @@
 
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--{{tag}} ">
-				<a class="button" href="form.html">
-					More info and booking
+        {{#if formlink}}
+				<a class="button" href="{{formlink}}">
+          {{#is lang "en"}} More info and booking {{/is}}
+          {{#is lang "fr"}} Plus d'information et réserves {{/is}}
+          {{#is lang "es"}} Mñas información y reservas {{/is}}
 				</a>
+        {{else}}
+        <a class="button" href="form.html">
+          {{#is lang "en"}} More info and booking {{/is}}
+          {{#is lang "fr"}} Plus d'information et réserves {{/is}}
+          {{#is lang "es"}} Mñas información y reservas {{/is}}
+				</a>
+        {{/if}}
 				<div class="route-price">
 					{{Price}}
 				</div>
@@ -129,19 +139,27 @@
 				<tr>
 					<td>
 						<i class="fa fa-clock-o fa-3x route-item"></i>
-						Length
+              {{#is lang "en"}} Length {{/is}}
+              {{#is lang "fr"}} Durée {{/is}}
+              {{#is lang "es"}} Duración {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
-						Distance
+              {{#is lang "en"}} Distance {{/is}}
+              {{#is lang "fr"}} Distance {{/is}}
+              {{#is lang "es"}} Distancia {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-child fa-3x route-item"></i>
-						Difficulty
+              {{#is lang "en"}} Difficulty {{/is}}
+              {{#is lang "fr"}} Difficulté {{/is}}
+              {{#is lang "es"}} Dificultad {{/is}}
 					</td>
 					<td>
 						<i class="fa fa-signal fa-3x route-item"></i>
-						Slope
+              {{#is lang "en"}} Slope {{/is}}
+              {{#is lang "fr"}} Dénivelé {{/is}}
+              {{#is lang "es"}} Desnivel {{/is}}
 					</td>
 				</tr>
 				<tr>

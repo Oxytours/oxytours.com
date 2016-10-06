@@ -26,7 +26,7 @@ module.exports = function(grunt) {
             main_es: {
                 options: {
                     flatten: true,
-                    partials: ['views/partials/es/**/*.hbs', 'views/partials/mainMenu.hbs']
+                    partials: ['views/partials/es/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
                 },
                 src:   ['views/pages/es/**/*.hbs'],
                 dest:  'static/es/'
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
             main_en: {
                 options: {
                     flatten: true,
-                    partials: ['views/partials/en/**/*.hbs', 'views/partials/mainMenu.hbs']
+                    partials: ['views/partials/en/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
                 },
                 src:   ['views/pages/en/**/*.hbs'],
                 dest:  'static/en/'
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
             main_fr: {
                 options: {
                     flatten: true,
-                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/mainMenu.hbs']
+                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
                 },
                 src:   ['views/pages/fr/**/*.hbs'],
                 dest:  'static/fr/'
