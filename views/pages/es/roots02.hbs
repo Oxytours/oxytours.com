@@ -48,80 +48,9 @@ Thumbnail: r02thumb.jpg
 Map:
 	lat: 38.819224
 	long: -0.221460
+
+content: ./views/pages/es/roots02.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				Cada paso dado en estas montañas le transportará a tiempos remotos, cuando sus antiguos pobladores excavaron y afianzaron los senderos que unían sus poblados y que aún hoy se conservan. Una tierra orgullosa de sus orígenes donde fueron constantes las batallas y luchas por cada Castillo, por cada rincón del valle. Las fuentes y manantiales aún cuentan la vida de Al-Azraq, el ultimo visir moro de Valencia que luchó por estas tierras contra el rey cristiano Jaume I en el siglo XIII. 
-			</p>
-			<p> 
-				Caminará por sus senderos descubriendo un valle fértil y acogedor que alberga un excepcional patrimonio ambiental y cultural que incluye especies botánicas endémicas únicas en el mundo o abrigos con muestras de arte rupestre Neolítico declaradas Patrimonio de la Humanidad por la Unesco en 1988. 
-			</p>
-			<p> 
-				Actualmente, el cultivo del cerezo es la base de la economía de la zona y en primavera la espectacular floración tiñe de blanco el valle. Pero todo el año es posible disfrutar de este valle a través de sus caminos o admirando los restos del castillo de Gallinera, una de las últimas fortalezas de Al-Azraq, que resistió como pocos 
-				en el Mediterráneo la conquista cristiana y que aún hoy, 800 años después, exhibe orgullosos sus restos. 
-			</p>
-			<p>
-				No hay mejor manera de acabar la mañana que hablando de lo visto y vivido en la montaña alrededor de una buena mesa. Para ello Oxytours ha seleccionado un restaurante en la zona en el que tendrá la oportunidad de degustar la excelente gastronomía del lugar donde la tradición de siglos, la calidad de los productos locales y el trabajo pausado en la cocina ofrecen como resultado platos con personalidad propia, como la de cada rincón de este valle.
-			</p>
-			<p>
-				Como opción para finalizar la jornada podrá contratar la visita a las instalaciones de una cooperativa de cerezas donde, además de realizar una degustación de sus productos, descubriremos la importancia económica y social de su cultivo para el valle.			
-			</p>
-			<p>
-				Un valle increíble. Descúbralo con Oxytours.		
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-
-</div>	
-
+{{>routecontent this}}
 {{>map this}}

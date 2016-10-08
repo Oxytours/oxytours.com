@@ -49,81 +49,9 @@ Thumbnail: w01thumb.jpg
 Map:
 	lat: 38.657810
 	long: -0.532359
+
+content: ./views/pages/es/wings01.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				La finalidad de esta ruta es ofrecerle la oportunidad de conocer, desde un punto de vista diferente, una de las comarcas más bellas de la provincia de Alicante: L’Alcoià. Una propuesta que le permitirá adentrarse en su bosque, enriquecerse con su enorme patrimonio cultural y deleitarse con una gastronomía llena de tradición, productos autóctonos e historia.
-			</p>
-			<p> 
-				Visitará el Parque Natural del Carrascal de la Font Roja  situado en el norte del provincia de Alicante. Un enclave con una excelente representación del bosque mixto mediterráneo donde podrá observar espectaculares formaciones vegetales de bosques caducifolios, carrascales de umbría así como importante vegetación rupícola.
-			</p>
-			<p>
-				Nos adentraremos en su historia para descubrir cómo, a lo largo de los siglos, sus habitantes han aprovechado los distintos recursos naturales a su alcance. Un buen ejemplo de ello son los pozos de nieve del siglo XVIII utilizados para la producción de hielo y que usted tendrá ocasión de conocer en esta visita.
-			</p>
-			<p>
-				Tras más de tres horas de inmersión en plena naturaleza repondremos fuerzas en el restaurante seleccionado por Oxytours, combinación perfecta de tradición y excelencia turística, donde disfrutará de platos típicos de la zona de esmerada elaboración.
-			</p>
-			<p>
-				Para finalizar la jornada podrá contratar, de manera opcional, la visita a las instalaciones de una bodega donde se realizará una cata de sus productos y conoceremos cómo, a través del cultivo de la vid, se realiza una importante labor social y de recuperación del paisaje tradicional de la zona.
-			</p>
-			<p>
-				Una propuesta que le permitirá adentrarse en su bosque, enriquecerse con su enorme patrimonio cultural y deleitarse con su gastronomía llena de tradición, productos autóctonos e historia.
-			</p>
-			<p>
-				¿Nos acompaña?
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>	
-
+{{>routecontent this}}
 {{>map this}}

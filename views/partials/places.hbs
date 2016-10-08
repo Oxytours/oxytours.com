@@ -1,6 +1,17 @@
-<p> (*) Check here for pickup locations included in the price. For other locations please contact us</p>
+<p>
+  {{#is lang "en"}} (*) Check here for pickup locations included in the price. For other locations please contact us. {{/is}}
+  {{#is lang "fr"}} (*) Cliquez ici pour des points de collecte des clients inclus dans le prix. Pour d'autres endroits s'il vous plaît contactez-nous. {{/is}}
+  {{#is lang "es"}} (*) Consulte aquí las localidades de recogida incluidas en el precio. Para otras poblaciones pregúntenos. {{/is}}
+</p>
+
 <select name="" id="">
-	<option value="">List of locations</option>
+
+	<option value="">
+    {{#is lang "en"}} List of locations {{/is}}
+    {{#is lang "fr"}} Liste des villes {{/is}}
+    {{#is lang "es"}} Listado de localidades {{/is}}
+  </option>
+
 	<option>Alcalà de la Jovada</option>
 	<option>Alcoi</option>
 	<option>Alfàs del Pi – Albir</option>
@@ -26,4 +37,5 @@
 	<option>Xàbia</option>
 	<option>Xaló</option>
 	<option>Xixona</option>
-</select>		
+
+</select>

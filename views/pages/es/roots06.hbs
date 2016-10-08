@@ -51,75 +51,9 @@ Thumbnail: r06thumb.jpg
 Map:
 	lat: 38.701006
 	long: -0.180530
+
+content: ./views/pages/es/roots06.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				Entre las grandes montañas de la Costa Blanca, la sierra de Xortà es una pequeña joya. Pese a sus 1.220 metros de altura y su imponente perfil, a menudo pasa desapercibida al estar junto a montañas más altas y emblemáticas como puede ser Serrella, Aitana o Bernia.
-			</p>
-			<p> 
-				Quizás por eso esconde su riqueza, que sólo muestra al visitante que quiere disfrutar caminando por sus senderos. Como ocurre con su Arco, escondido en su ladera y que aparece de pronto ante los sorprendidos senderistas: un arco de 20 metros de altura con dos aberturas separadas por una estrecha columna y que parece estar a punto de precipitarse al profundo barranco de les Foies. Sin duda una de las maravillas naturales de la Costa Blanca, de gran importancia geológica y botánica.
-			</p>
-			<p> 
-				Con Oxytours recorrerá este sendero que transcurre por campos de cultivo de almendros y olivos, a los pies de las enormes paredes verticales de la sierra de Xortà, para a continuación (dependiendo del nivel del participante) ascender a su cima desde la que tendremos una excepcional panorámica del Mar Mediterráneo, del valle de Guadalest y la vecina sierra de Aitana, paisajes de gran belleza que inmortalizó de manera excepcional  en su obra Emilio Varela, con toda seguridad uno de los pintores alicantinos más destacados del siglo XX.
-			</p>
-			<p>
-				Al finalizar el recorrido le espera la gastronomía que le ofrece esta zona, visitando el restaurante seleccionado por Oxytours donde podrá degustar la cocina tradicional del interior de la Costa Blanca, mezcla de sabores tradicionales que han evolucionado con el paso del tiempo gracias al aporte de nuevos pobladores, de nuevas tendencias, pero siempre conservando la calidad de los productos de esta zona.
-			</p>
-			<p>
-				Tras la comida usted puede contratar de manera opcional la visita a las instalaciones de una fábrica de embutidos artesanos donde conoceremos como se elabora el más famoso de ellos: la sobrasada de la montaña alicantina.	
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>	
-
+{{>routecontent this}}
 {{>map this}}

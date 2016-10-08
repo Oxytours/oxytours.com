@@ -47,78 +47,9 @@ Thumbnail: w07thumb.jpg
 Map:
 	lat: 38.564705
 	long: -0.057209
+
+content: ./views/pages/es/wings07.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				Tan solo <b>desde el mar</b> es posible apreciar la espectacularidad del <b>Parque Natural de la Serra Gelada</b>, localizado entre Benidorm, l'Alfàs del Pi y Altea. <b>Oxytours</b> y <b>Rumboaltea Charter</b> le invitan a participar en esta experiencia única de interpretación del Patrimonio de la Costa Blanca a bordo de un <b>velero</b>.
-			</p>
-			<p>
-				Embarcando en <b>Altea</b> navegaremos a los pies de los increibles acantilados de Serra Gelada, con más de <b>420 metros de altura</b>, conociendo su importancia botánica o las dunas fósiles más altas de Europa mientras navegamos por las aguas de una de las zonas de la Comunidad Valenciana con mayor presencia de <b>Delfín mular</b> (<i>Tursiops truncatus</i>), encontrando además  en su fondo marino praderas de la planta marina <i>Posidonia oceanica</i>, vital para el equilibrio ecológico de nuestra costa.
-			</p>
-			<p>
-				A través de esta espectacular ruta en velero descubriremos la apasionante y terrible historia de la <b>piratería</b> en nuestra costa. En particular los ataques de piratas que, como Dragut el Turco, llegaban desde <b>Argel</b> hasta nuestras playas estableciendo el miedo y el pánico entre sus habitantes durante más de <b>300 años</b>. Veremos las calas  que les brindaron refugio y agua fresca, los restos de las <b>torres vigía</b> que oteaban el horizonte sin descanso preparadas para dar la alarma y la relación de la piratería con la <b>expulsión de moriscos</b> desde nuestra tierra durante generaciones.
-			</p>
-			<p>
-				Además tendrá la oportunidad de conocer la avifauna marina de la bahía de Altea y Benidorm, donde dependiendo de la época del año será posible avistar  diferentes especies, muchas de ellas protegidas, como las <b>Pardelas balear</b> (<i>Puffinus mauretanicus</i>) y <b>cenicienta</b> (<i>Calonectris diomedea</i>), el <b>Paiño</b> (<i>Hydrobates pelagicus</i>), la <b>Gaviota de Audouin</b> (<i>Ichthyaetus audouinii</i>), el <b>Cormorán moñudo</b> (<i>Phalacrocorax aristotelis</i>) o los <b>Alcatraces</b> (<i>Morus bassanus</i>).
-			</p>
-			<p>
-				Además le ofrecemos de manera opcional <b>traslados</b> desde su alojamiento hasta el puerto de embarque y si lo desea, un fantastico <b>menú</b> en uno de los mejores restaurates tradicionales de la Costa Blanca.
-			</p>
-			<p>
-				<b>Sin duda, una forma inmejorable de descubrir la Costa Blanca</b>. Estaremos encantados de acompañarle.
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>
-
+{{>routecontent this}}
 {{>map this}}

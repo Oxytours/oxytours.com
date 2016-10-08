@@ -50,75 +50,9 @@ Thumbnail: r11thumb.jpg
 Map:
 	lat: 38.606249
 	long: -0.190992
+
+content: ./views/pages/es/roots11.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<p>
-				The sleeping lion of <b>Ponoig mountain</b>was so named by <b>Gabriel Miró</b>, the Alicante writer and poet at the start of 20th century. The peaks and curves of this marvellous formation resemble the mane of a magnificent feline: the lions head. Those who venture to discover the mountain which is in effect a true lion formed by <b>peaks, deep ravines and an amazing watchtower peak at 1180 metres</b> in height from where we observe an excellent panorama of the Costa Blanca will not be disappointed.
-			</p>
-			<p>
-				Ponoig is without doubt a unique mountain. Its elevated height coupled with its proximity to the Mediterranean has made it home to a series of distinct habitats that house <b>numerous species of particularly interesting</b> plants and animals. A biodiversity which turns this area into an environmental paradise.
-			</p>
-			<p>
-				The <b>Ponoig trails</b> tell us how its inhabitants lived, how they learnt the medicinal properties of the plants on its slopes and also how they survived the transformation this region has undergone during the last 50 years. The original stone walls are still in evidence today to tell us the story.
-
-			</p>
-			<p>
-				Of all the tales that you will hear perhaps the most delightful will be the silent one that you will feel with your senses: <b>the gastronomy</b>. We take you to a restaurant which will take you on a veritable journey through the <b>area’s traditions, flavours and wealth of produce</b>, respecting the original methods used to create these exceptional dishes. You will be in no doubt as to why the Costa Blanca is famed for its cuisine!
-			</p>
-			<p>
-				After lunch you might wish to extend your day by booking a visit to an <b>excellent bodega</b> in order to sample its exquisite wines and olive oils. This is available at a small extra charge.
-			</p>
-			<p>
-				You won’t regret booking with Oxytours. Seeing is believing.
-			</p>
-		</div>
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Details</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Prices by number of people</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Price includes</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">Price not includes</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>
-
+{{>routecontent this}}
 {{>map this}}

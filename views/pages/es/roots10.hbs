@@ -40,71 +40,9 @@ Thumbnail: r10thumb.jpg
 Map:
 	lat: 38.485604
 	long: -0.525108
+
+content: ./views/pages/es/roots10.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<p>
-				La Costa Blanca reúne un conjunto de hábitats y ambientes muy variados que se suceden desde sus famosas playas y calas en el litoral ,a los bosques frondosos y húmedos de sus montañas. Pero uno de estos ambientes, sin duda el menos desconocido, es también uno de los más valiosos por su valor ambiental, cultural y paisajístico. Es lo que ocurre con el Valle del Montnegre, un auténtico desierto en el centro de la Costa Blanca.
-			</p>
-			<p> 
-				Recorrer el valle del Montnegre es adentrarse en una zona de gran aridez, con un clima muy seco y precipitaciones muy escasas a lo largo del año. Sin embargo, el paisaje desértico que se observa desde sus senderos es de gran belleza. La increíble gama de colores y formas de los estratos presentes en sus barrancos le capturará sorprendiéndolo desde el primer instante.
-			</p>
-			<p>
-				Todo lo que encontramos en esta zona está ligado a las duras condiciones climatológicas. Su vegetación y fauna son únicas en toda la Costa Blanca, así como su geología. Pero hay un elemento que destaca sobre todos los demás, íntimamente relacionado con la historia y los habitantes de este valle: el agua, tan escasa aquí como vital. Durante esta jornada descubrirá por qué el agua fue, y sigue siendo, tan importante en la historia de esta zona de la provincia de Alicante.
-			</p>
-			<p>
-				Y es que durante siglos existió aquí una de las despensas más grandes del mediterráneo español: la Huerta de Alicante, donde crecían todo tipo de hortalizas y verduras, de excelente calidad. Aún hoy en día existen producciones tradicionales que mantienen el recuerdo y el sabor de aquellos tiempos y que se puede comprobar en los platos elaborados con sus productos, y que tendremos oportunidad de degustar al finalizar la mañana en nuestro restaurante seleccionado.
-			</p>
-			<p>
-				Algunas personas consideran que África y sus desiertos no empiezan en Marruecos, tras cruzar el estrecho de Gibraltar, sino en el sur de la Costa Blanca. Acompáñenos y lo descubrirá de nuestra mano.
-			</p>
-		</div>
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>
-
+{{>routecontent this}}
 {{>map this}}

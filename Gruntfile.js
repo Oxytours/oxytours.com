@@ -5,8 +5,7 @@ module.exports = function(grunt) {
         sass: {
             dist: {
                 options: {
-                    style: 'expanded',
-                    sourcemap: 'true'
+                    style: 'expanded'
                 },
                 files: {
                     'static/css/app.css': 'scss/app.scss',
@@ -21,60 +20,43 @@ module.exports = function(grunt) {
                 layout: 'layouts/default.hbs',
                 layoutdir: 'views',
                 helpers: ['node_modules/handlebars-helpers/index.js'],
-                data: 'data/**/*.json'
+                partials: ['views/partials/**/*.hbs'],
+                data: ['data/**/*.json'],
+                flatten: true
             },
             main_es: {
-                options: {
-                    flatten: true,
-                    partials: ['views/partials/es/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
-                },
                 src:   ['views/pages/es/**/*.hbs'],
                 dest:  'static/es/'
             },
             main_en: {
-                options: {
-                    flatten: true,
-                    partials: ['views/partials/en/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
-                },
                 src:   ['views/pages/en/**/*.hbs'],
                 dest:  'static/en/'
             },
             main_fr: {
-                options: {
-                    flatten: true,
-                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/mainMenu.hbs', 'views/partials/header.hbs']
-                },
                 src:   ['views/pages/fr/**/*.hbs'],
                 dest:  'static/fr/'
             },
             mobile_es: {
                 options: {
-                    layout: 'layouts/default_mobile.hbs',
-                    flatten: true,
-                    partials: ['views/partials/es/**/*.hbs', 'views/partials/header_mobile.hbs']
+                    layout: 'layouts/default_mobile.hbs'
                 },
                 src:   ['views/pages/es/**/*.hbs'],
                 dest:  'mobile/es/'
             },
             mobile_en: {
                 options: {
-                    layout: 'layouts/default_mobile.hbs',
-                    flatten: true,
-                    partials: ['views/partials/en/**/*.hbs', 'views/partials/header_mobile.hbs']
+                    layout: 'layouts/default_mobile.hbs'
                 },
                 src:   ['views/pages/en/**/*.hbs'],
                 dest:  'mobile/en/'
             },
             mobile_fr: {
                 options: {
-                    layout: 'layouts/default_mobile.hbs',
-                    flatten: true,
-                    partials: ['views/partials/fr/**/*.hbs', 'views/partials/header_mobile.hbs']
+                    layout: 'layouts/default_mobile.hbs'
                 },
                 src:   ['views/pages/fr/**/*.hbs'],
                 dest:  'mobile/fr/'
             }
-
         },
 
         connect: {
@@ -107,6 +89,12 @@ module.exports = function(grunt) {
 
         clean: {
             all: ['static/es/**/*.html','static/en/**/*.html','static/fr/**/*.html']
+        },
+
+        run: {
+          commands: {
+            exec: 'node deploy desktop && node deploy mobile',
+          }
         }
 
     });
@@ -116,6 +104,10 @@ grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-clean');
 grunt.loadNpmTasks('assemble');
+grunt.loadNpmTasks('grunt-run');
 
 grunt.registerTask('default', ['clean:all','sass','assemble','connect','watch']);
+grunt.registerTask('deploy',  ['sass', 'assemble', 'run']);
+
+
 }

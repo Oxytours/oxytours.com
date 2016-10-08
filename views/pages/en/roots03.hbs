@@ -15,7 +15,7 @@ Slope: 350m
 Schedule:
 - item: "08:30-09:30 Pick up from your accommodation *"
 - item: "10:00 Start guided hike by our Tour leader"
-- item: "11:30 Break for snack" 
+- item: "11:30 Break for snack"
 - item: "14:00 Lunch at our selected restaurant"
 - item: "18:00 Transfer to accommodation of client and end of the journey"
 - item: "* Exact time to be determined depending of your location"
@@ -25,7 +25,7 @@ Included:
 - item: "Full guide service throughout"
 - item: "5 course traditional lunch (set menu)."
 - item: "Mid morning snack"
-- item: "Personal insurance" 
+- item: "Personal insurance"
 
 Notincluded:
 - item: "Visit to the cherry Co-operative (Additional extra. Booking as an option)"
@@ -43,85 +43,9 @@ Thumbnail: r03thumb.jpg
 Map:
 	lat: 38.819224
 	long: -0.221460
+
+content: ./views/pages/es/roots03.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				Located at the western entrance to the valley, the <b>13<sup>th</sup> century castle</b> remains, the last Arab bastion in these mountains, stand the test of time majestically dominating this part of the valley.
-			</p>
-			<p> 
-				Oxytours offers you the possibility to know this area through this itinerary which takes in not only the <b>cherry farms</b> but also the once inhabited <b>Iberian remains of Xarpolar</b>.
-			</p>
-			<p>
-				There are a great deal of elements which allow us to encounter the Valley’s ancient inhabitants, thanks to the <b>chalk ovens</b> or spectacular <b>amphitheatre bench seating</b>. 
-			</p>
-			<p>
-				This area is of great environmental value due to its <b>varied botanical species</b> used in the traditional methods for medicinal or domestic applications.
-			</p>
-						<p>
-				There is no better way to end the morning than speaking about what you have seen and experienced in this wonderful surroundings while tasting the <b>excellent cuisine</b>. We have selected a restaurant which upholds not only artisan traditions but also the quality of produce found in this unique valley.
-			</p>
-			<p>
-				To end the trip journey excursion you might wish to extend your day by booking a visit to a <b>Cherry Co-operative</b>. This is available at a small extra charge. Here we will sample their produce, discovering its social and economic important.
-			</p>
-			<p>
-				Come with us and discover this extraordinary hidden area where you will enjoy <b>spectacular scenery</b> and have the <b>Vizir's castle</b> at your feet, whole Valleys and even the beauty of the Mediterranean Sea in the background. An experience you will never forget.
-			</p>
-			<p>
-				An experience you will never forget.
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Details</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Prices by number of people</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Price includes</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">Price not includes</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-		
-	</div>
-</div>	
-
+{{>routecontent this}}
 {{>map this}}

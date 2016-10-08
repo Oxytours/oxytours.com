@@ -49,86 +49,10 @@ Thumbnail: r01thumb.jpg
 Map:
 	lat: 38.650046
 	long: -0.254044
+
+
+content: ./views/pages/es/roots01.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				Known for being the <b>highest mountain on the Costa Blanca at 1.558 metres</b>, Aitana is one of the best places in the Area to go hiking, enjoying the <b>spectacular views </b> of the Mediterranean and the Guadalest Valley.
-			</p>
-			<p>
-				Walking through Aitana lets you get in touch with your <b>senses such as the silence and distinct colours</b> present in each season. A silence broken only by the sound of water or its numerous species of birds.
-			</p>
-			<p>
-				With our guides you will come to know Aitana as the place with the <b>greatest biodiversity</b> thanks to its height and proximity to the sea. <b>Geology and Botany</b> come together to offer unique formations for your enjoyment.
-			</p>
-			<p>
-				<i>Pas de la Rabosa</i>, this narrow passage leads you another aspect of the mountain where you will be amazed by the <b>unbelievable chasm of Partagat</b>.
-			</p>
-			<p>
-				Learn about how it´s inhabitants lived centuries ago, thanks to the remains of <b>snow wells</b> found among beautiful <b>olive groves with almond and cherry blossom trees</b>.
-			</p>
-			<p>
-				Countryside that produces crops which are made into a multitude of dishes giving the interior Costa Blanca its gastronomic fame. <b>Cuisine exclusive</b> to the mountain region plus <b>handmade aromatic liqueur</b> which you can sample in selected restaurants with Oxytours where the traditions have been maintained will delight you.
-			</p>
-			<p>
-				You might wish to extend your day by booking a visit to an <b>olive oil press</b>. This is available at a small extra charge. Here, we will witness the jewel of the Mediterranean being made into the liquid gold we call olive oil.
-			</p>
-			<p>
-				Oxytours has prepared this route to share with you the incredible ambience of Aitana.
-
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Details</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Prices by number of people</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Price includes</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">Price not includes</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-
-	</div>
-</div>
-
-{{> map this}}
+{{>routecontent this}}
+{{>map this}}

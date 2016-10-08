@@ -47,78 +47,9 @@ Thumbnail: w04thumb.jpg
 Map:
 	lat: 38.639541
 	long: 0.073145
+
+content: ./views/pages/es/wings04.md
 ---
 
-<div class="content">
-	<div class="row">
-		<div class="large-6 column">
-
-			<!-- Description -->
-			<p>
-				El Parque Natural del Penyal d’Ifac, en Calp, es sin duda uno de los simbolos de la Costa Blanca gracias al inconfundible perfil de sus escarpadas paredes junto al mar. Pese a ser uno de los Parques Naturales más visitados de la región, también es uno de los más desconocidos. Con Oxytours usted disfrutará de uno de los entornos más espectaculares de la Costa Blanca al tiempo que descubre sus secretos.
-			</p>
-			<p> 
-				Uno de los principales atractivos de este peñón es la existencia de la Villa medieval de Ifac y cuyos restos conoceremos durante el recorrido. La entrada de la ciudad, su muralla y torres defensivas, la necrópolis y su edificio sin duda más destacado: La iglesia de nuestra señora de los Ángeles. Hoy sus secretos están siendo desenterrados por los arqueólogos, secretos que descubrirá a pie de excavación.
-			</p>
-			<p>
-				Con nuestros guías ascenderá por el sendero hasta un túnel, a 180 metros de altura, y atravesará la montaña continuando hasta su cima (dependiendo del nivel del participante). Un camino en el que encontraremos especies vegetales protegidas de gran valor entre las que destacan la escasísima Silene de Ifac, entre muchas otras. Será desde esta cima, a 332 metros sobre el nivel del mar, donde la Costa Blanca de norte a sur quedará a sus pies y al frente podrá divisar la cercana isla de Ibiza. Un mirador incomparable para entender la transformación sufrida por la provincia de Alicante en los últimos 50 o 60 años convirtiéndola en uno de los principales destinos turísticos de Europa.
-			</p>
-			<p>
-				Y no olvide que si desea terminar la jornada de una manera inmejorable tiene la opción de contratar la comida en un restaurante seleccionado por Oxytours, donde descubrirá la auténtica y tradicional gastronomía de la Costa Blanca. Un establecimiento donde la calidad de los ingredientes, el buen hacer en la cocina y el cuidado y mimo en la presentación de los platos convierten la comida en una experiencia para recordar.
-			</p>
-			<p>
-				Un gran legado cultural y ambiental y unas vistas inmejorables concentrados en las escasas 45 hectáreas de este pequeño Parque Natural, pequeño en extensión pero gigante en posibilidades para ofrecerle una enriquecedora experiencia.
-			</p>
-			<p>
-				¡Anímese a comprobarlo de nuestra mano!
-			</p>
-			<!-- EO Description -->
-
-		</div>
-
-		<div class="large-5 column">
-			<div class="box">
-				<h3>Hoja de ruta</h3>
-				<ul class="route-schedule">
-					{{#each Schedule}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-
-			<div class="box">
-				<h4 class="route-included-title">Precio por persona</h4>
-				<ul>
-					<li>{{PriceVariation}}</li>
-				</ul>			
-			</div>		
-
-			<div class="box">
-				<h4 class="route-included-title">Incluído en el precio</h4>
-				<ul>
-					{{#each Included}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>			
-			</div>
-
-			{{#if Notincluded}}
-			<div class="box">
-				<h4 class="route-included-title">No incluído en el precio</h4>
-				<ul>
-					{{#each Notincluded}}
-					<li>{{item}}</li>
-					{{/each}}
-				</ul>
-			</div>
-			{{/if}}
-			<div class="box">
-				{{> places}}
-			</div>
-
-
-		</div>
-	</div>
-</div>	
-
+{{>routecontent this}}
 {{>map this}}
