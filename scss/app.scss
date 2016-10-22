@@ -89,7 +89,7 @@ cite {
       display: block;
       margin: 1rem 0;
       font-style: normal;
-      font-family: "raleway"; 
+      font-family: "raleway";
       font-weight: 400;
 }
 
@@ -208,6 +208,14 @@ select {
 .topBar-container.fixed .premios {
     display: none;
 }
+
+.route-price-range {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-family: Raleway, sans-serif;
+  padding-left: 10px;
+}
+
 
 @import
 "modules/header",
