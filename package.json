@@ -19,5 +19,9 @@
     "handlebars-helper-aggregate": "^0.1.3",
     "handlebars-helpers": "^0.5.8",
     "helper-aggregate": "^0.1.2"
+  },
+  "scripts": {
+    "start": "grunt",
+    "deploy": "grunt deploy"
   }
 }
