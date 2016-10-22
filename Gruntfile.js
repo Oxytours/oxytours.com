@@ -3,15 +3,14 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
         sass: {
+            options: {
+                sourceMap: true
+            },
             dist: {
-                options: {
-                    style: 'expanded'
-                },
-                files: {
-                    'static/css/app.css': 'scss/app.scss',
-                    'mobile/css/app_mobile.css': 'scss/app_mobile.scss'
-                },
-
+              files: {
+                  'static/css/app.css': 'scss/app.scss',
+                  'mobile/css/app_mobile.css': 'scss/app_mobile.scss'
+              },
             }
         },
 
@@ -99,7 +98,7 @@ module.exports = function(grunt) {
 
     });
 
-grunt.loadNpmTasks('grunt-contrib-sass');
+grunt.loadNpmTasks('grunt-sass');
 grunt.loadNpmTasks('grunt-contrib-connect');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-clean');
