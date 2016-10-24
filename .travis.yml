@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "4"
 install:
-  - npmi -g grunt
-  - npm install
+  - npm i -g grunt
+  - npm i
 script:
     - npm deploy
