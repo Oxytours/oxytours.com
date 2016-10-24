@@ -5,9 +5,9 @@ var args = process.argv.slice(2);
 console.log(process.env);
 
 var config = {
-    username: process.env.USER,
+    username: process.env.OX_USER,
     host: "ftp.oxytours.com",
-    password: process.env.PASS,
+    password: process.env.OX_PASS,
     port: 21,
     localRoot: __dirname + "/static",
     remoteRoot: "/web/",
