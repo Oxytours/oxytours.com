@@ -5,4 +5,4 @@ install:
   - npm i -g grunt
   - npm i
 script:
-    - npm deploy
+    - npm run deploy
