@@ -54,11 +54,27 @@
 
 
 			<div class="header-route-cta header-route-cta--{{tag}} show-for-large-up">
-        <a class="button" href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
+
+        {{#if formlink}}
+          <script>
+            function handleOutboundLinkClicks(event) {
+              ga('send', 'event', {
+                eventCategory: 'outbound-link',
+                eventAction: 'click',
+                eventLabel: {{formtag}}
+              });
+            }
+          </script>
+        {{/if}}
+
+				<a class="button"
+          {{#if formlink}} onclick="handleOutboundLinkClicks(this)" {{/if}}
+          href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
           {{#is lang "en"}} More info and booking {{/is}}
           {{#is lang "fr"}} Plus d'information et réserves {{/is}}
           {{#is lang "es"}} Más información y reservas {{/is}}
 				</a>
+
 				<div class="route-price">
 					{{Price}}
 				</div>
