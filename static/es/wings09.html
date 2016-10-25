@@ -157,20 +157,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--hidden ">
 
-        
-          <script>
-            function handleOutboundLinkClicks(event) {
-              ga('send', 'event', {
-                eventCategory: 'outbound-link',
-                eventAction: 'click',
-                eventLabel: ''
-              });
-            }
-          </script>
-        
-
 				<a class="button"
-           onclick="handleOutboundLinkClicks(this)" 
+           onclick="sendGAEvent(this, 'outbound-link', 'click', '')" 
           href=" https://docs.google.com/forms/d/1OZhGA_PFpjfPSb6HavN4io5hqESGQs5wVsMc1JS5UUI/viewform?c=0&amp;w=1 ">
           
           
@@ -187,31 +175,40 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 
 			</div>
+      
 			<table class="route-properties">
 				<tr>
 					<td>
-						<i class="fa fa-clock-o fa-3x route-item"></i>
+            
+				      <i class="fa fa-clock-o fa-3x route-item"></i>
               
               
                Duración 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
               
               
                Distancia 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-child fa-3x route-item"></i>
               
               
                Dificultad 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-signal fa-3x route-item"></i>
               
               
                Desnivel 
+            
 					</td>
 				</tr>
 				<tr>
@@ -221,6 +218,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 					<td>0/130m</td>
 				</tr>
 			</table>
+      
 		</div>
 
 	</div>
@@ -571,7 +569,6 @@ el misterio de la noche</strong>!</p>
   </div>
 </div>
 
-		<div style="display:none"><img src="http://www.oxytours.com/img/w09thumb.jpg" alt=""></div>
 	</section>
 
 
@@ -580,7 +577,6 @@ el misterio de la noche</strong>!</p>
 	<!-- Scripts -->
 
 	<script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/cookie.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/owl.carousel.min.js"></script>
 	<script src="../js/vendor/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
@@ -623,6 +619,15 @@ el misterio de la noche</strong>!</p>
 			$('#modalOverlay').removeClass('show');
 			$('#modalContent').removeClass('show');
 		};
+
+    // Handles GA event firing from any link in the site
+    function sendGAEvent(event, category, action, label) {
+      ga('send', 'event', {
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+    }
 
 	</script>
 

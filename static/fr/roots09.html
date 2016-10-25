@@ -157,8 +157,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--roots ">
 
-        
-
 				<a class="button"
           
           href=" form.html ">
@@ -177,31 +175,40 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 
 			</div>
+      
 			<table class="route-properties">
 				<tr>
 					<td>
-						<i class="fa fa-clock-o fa-3x route-item"></i>
+            
+				      <i class="fa fa-clock-o fa-3x route-item"></i>
               
                Durée 
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
               
                Distance 
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-child fa-3x route-item"></i>
               
                Difficulté 
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-signal fa-3x route-item"></i>
               
                Dénivelé 
               
+            
 					</td>
 				</tr>
 				<tr>
@@ -211,6 +218,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 					<td>400m</td>
 				</tr>
 			</table>
+      
 		</div>
 
 	</div>
@@ -529,7 +537,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
   </div>
 </div>
 
-		<div style="display:none"><img src="http://www.oxytours.com/img/r09thumb.jpg" alt=""></div>
 	</section>
 
 
@@ -538,7 +545,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 	<!-- Scripts -->
 
 	<script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/cookie.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/owl.carousel.min.js"></script>
 	<script src="../js/vendor/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
@@ -581,6 +587,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 			$('#modalOverlay').removeClass('show');
 			$('#modalContent').removeClass('show');
 		};
+
+    // Handles GA event firing from any link in the site
+    function sendGAEvent(event, category, action, label) {
+      ga('send', 'event', {
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+    }
 
 	</script>
 

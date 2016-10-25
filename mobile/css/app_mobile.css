@@ -5896,6 +5896,8 @@ select {
     background-image: url("../img/prefoot.jpg");
     background-position: bottom;
     background-repeat: no-repeat; }
+  .content a {
+    text-decoration: underline; }
 
 .topBar-container {
   background: transparent;

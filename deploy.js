@@ -2,8 +2,6 @@ var FtpDeploy = require('ftp-deploy');
 var ftpDeploy = new FtpDeploy();
 var args = process.argv.slice(2);
 
-console.log(process.env);
-
 var config = {
     username: process.env.OX_USER,
     host: "ftp.oxytours.com",

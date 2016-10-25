@@ -5626,7 +5626,7 @@ h3 {
   font-weight: normal; }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555566;
   line-height: 1.6;
   margin-top: -0.5rem;
@@ -5744,7 +5744,7 @@ select {
 
 .route-price-range {
   display: inline-block;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   font-family: Raleway, sans-serif;
   padding-left: 10px; }
 
@@ -5862,6 +5862,8 @@ select {
     background-image: url("../img/prefoot.jpg");
     background-position: bottom;
     background-repeat: no-repeat; }
+  .content a {
+    text-decoration: underline; }
 
 .topBar-container {
   background: transparent;
@@ -6141,11 +6143,13 @@ p.copyright {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #000;
+  background: rgba(0, 0, 0, 0.62);
   padding: 20px;
   color: #fff;
   left: 0;
-  z-index: 10; }
+  z-index: 10;
+  font-size: 0.8rem;
+  font-family: sans-serif; }
   .ox-cookies-button {
     background: #fff;
     color: #333;

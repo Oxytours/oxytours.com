@@ -119,20 +119,8 @@
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--{{tag}} ">
 
-        {{#if formlink}}
-          <script>
-            function handleOutboundLinkClicks(event) {
-              ga('send', 'event', {
-                eventCategory: 'outbound-link',
-                eventAction: 'click',
-                eventLabel: '{{formtag}}'
-              });
-            }
-          </script>
-        {{/if}}
-
 				<a class="button"
-          {{#if formlink}} onclick="handleOutboundLinkClicks(this)" {{/if}}
+          {{#if formlink}} onclick="sendGAEvent(this, 'outbound-link', 'click', '{{formtag}}')" {{/if}}
           href="{{#if formlink}} {{formlink}} {{else}} form.html {{/if}}">
           {{#is lang "en"}} More info and booking {{/is}}
           {{#is lang "fr"}} Plus d'information et réserves {{/is}}
@@ -153,31 +141,40 @@
 
 
 			</div>
+      {{#if Length}}
 			<table class="route-properties">
 				<tr>
 					<td>
-						<i class="fa fa-clock-o fa-3x route-item"></i>
+            {{#if Length}}
+				      <i class="fa fa-clock-o fa-3x route-item"></i>
               {{#is lang "en"}} Length {{/is}}
               {{#is lang "fr"}} Durée {{/is}}
               {{#is lang "es"}} Duración {{/is}}
+            {{/if}}
 					</td>
 					<td>
+            {{#if Distance}}
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
               {{#is lang "en"}} Distance {{/is}}
               {{#is lang "fr"}} Distance {{/is}}
               {{#is lang "es"}} Distancia {{/is}}
+            {{/if}}
 					</td>
 					<td>
+            {{#if Difficulty}}
 						<i class="fa fa-child fa-3x route-item"></i>
               {{#is lang "en"}} Difficulty {{/is}}
               {{#is lang "fr"}} Difficulté {{/is}}
               {{#is lang "es"}} Dificultad {{/is}}
+            {{/if}}
 					</td>
 					<td>
+            {{#if Slope}}
 						<i class="fa fa-signal fa-3x route-item"></i>
               {{#is lang "en"}} Slope {{/is}}
               {{#is lang "fr"}} Dénivelé {{/is}}
               {{#is lang "es"}} Desnivel {{/is}}
+            {{/if}}
 					</td>
 				</tr>
 				<tr>
@@ -187,6 +184,7 @@
 					<td>{{Slope}}</td>
 				</tr>
 			</table>
+      {{/if}}
 		</div>
 
 	</div>

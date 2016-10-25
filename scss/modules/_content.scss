@@ -1,6 +1,6 @@
 .content {
 
-	
+
 	padding: 2rem;
 	box-shadow: 0 -10px 70px -40px rgba(0,0,0,1);
 	border-top: 1px solid #BCB8A6;
@@ -10,10 +10,14 @@
 		background-image: url('../img/prefoot.jpg');
 		background-position: bottom;
 		background-repeat: no-repeat;
-		
+
 	}
-	
+
 	.featured {
-		
+
 	}
+
+  a {
+      text-decoration: underline;
+  }
 }

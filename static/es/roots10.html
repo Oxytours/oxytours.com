@@ -153,8 +153,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--roots ">
 
-        
-
 				<a class="button"
           
           href=" form.html ">
@@ -173,31 +171,40 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 
 			</div>
+      
 			<table class="route-properties">
 				<tr>
 					<td>
-						<i class="fa fa-clock-o fa-3x route-item"></i>
+            
+				      <i class="fa fa-clock-o fa-3x route-item"></i>
               
               
                Duración 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
               
               
                Distancia 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-child fa-3x route-item"></i>
               
               
                Dificultad 
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-signal fa-3x route-item"></i>
               
               
                Desnivel 
+            
 					</td>
 				</tr>
 				<tr>
@@ -207,6 +214,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 					<td>120m</td>
 				</tr>
 			</table>
+      
 		</div>
 
 	</div>
@@ -557,7 +565,6 @@ Acompáñenos y lo descubrirá de nuestra mano.</p>
   </div>
 </div>
 
-		<div style="display:none"><img src="http://www.oxytours.com/img/r10thumb.jpg" alt=""></div>
 	</section>
 
 
@@ -566,7 +573,6 @@ Acompáñenos y lo descubrirá de nuestra mano.</p>
 	<!-- Scripts -->
 
 	<script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/cookie.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/owl.carousel.min.js"></script>
 	<script src="../js/vendor/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
@@ -609,6 +615,15 @@ Acompáñenos y lo descubrirá de nuestra mano.</p>
 			$('#modalOverlay').removeClass('show');
 			$('#modalContent').removeClass('show');
 		};
+
+    // Handles GA event firing from any link in the site
+    function sendGAEvent(event, category, action, label) {
+      ga('send', 'event', {
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+    }
 
 	</script>
 

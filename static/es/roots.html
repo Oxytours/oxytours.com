@@ -205,31 +205,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 					
 
-						<div class="column medium-4 large-3 route">
-							<a href="educacion_ambiental.html">
-								<div class="itemCard box">
-
-									<div class="ribbon">
-										<img class="ribbon-icon" src="../img/icon_roots.png" alt="">
-									</div>		
-	
-									<img src="../img/r01thumb.jpg" alt="">
-									<div class="itemCard-content">
-										<p class="itemCard-location">
-											Sierra de Aitana
-										</p>						
-
-										<h4 class="itemCard-title">
-											Educación ambiental
-										</h4>
-									</div>
-									
-								</div>
-							</a>
-						</div>
-
-				
-
 				
 
 					
@@ -766,7 +741,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
   </div>
 </div>
 
-		<div style="display:none"><img src="http://www.oxytours.com/img/" alt=""></div>
 	</section>
 
 
@@ -775,7 +749,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 	<!-- Scripts -->
 
 	<script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/cookie.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/owl.carousel.min.js"></script>
 	<script src="../js/vendor/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
@@ -818,6 +791,15 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 			$('#modalOverlay').removeClass('show');
 			$('#modalContent').removeClass('show');
 		};
+
+    // Handles GA event firing from any link in the site
+    function sendGAEvent(event, category, action, label) {
+      ga('send', 'event', {
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+    }
 
 	</script>
 

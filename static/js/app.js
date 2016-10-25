@@ -21,15 +21,10 @@ $(document).ready(function() {
 		 transitionStyle : "fade"
 		});
 
-	  $.datepicker.setDefaults(
-	    $.extend($.datepicker.regional[''])
-	  );
-	  $('#datepicker').datepicker();
-
+  // language selection
 	$('[data-js-lang]').change(function() {
 		document.location.href= '../' + $(this).val();
 	});
 
 
 });
-

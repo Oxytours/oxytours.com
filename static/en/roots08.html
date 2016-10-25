@@ -153,8 +153,6 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 		<div class="large-5 column">
 			<div class="header-route-cta header-route-cta--roots ">
 
-        
-
 				<a class="button"
           
           href=" form.html ">
@@ -173,31 +171,40 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
 
 			</div>
+      
 			<table class="route-properties">
 				<tr>
 					<td>
-						<i class="fa fa-clock-o fa-3x route-item"></i>
+            
+				      <i class="fa fa-clock-o fa-3x route-item"></i>
                Length 
               
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-arrows-h fa-3x route-item"></i>
                Distance 
               
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-child fa-3x route-item"></i>
                Difficulty 
               
               
+            
 					</td>
 					<td>
+            
 						<i class="fa fa-signal fa-3x route-item"></i>
                Slope 
               
               
+            
 					</td>
 				</tr>
 				<tr>
@@ -207,6 +214,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 					<td>650m</td>
 				</tr>
 			</table>
+      
 		</div>
 
 	</div>
@@ -566,7 +574,6 @@ Costa Blanca. Disfrútelos con Oxytours.</p>
   </div>
 </div>
 
-		<div style="display:none"><img src="http://www.oxytours.com/img/r08thumb.jpg" alt=""></div>
 	</section>
 
 
@@ -575,7 +582,6 @@ Costa Blanca. Disfrútelos con Oxytours.</p>
 	<!-- Scripts -->
 
 	<script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/cookie.js"></script>
 	<script src="../js/vendor/fastclick.js"></script>
 	<script src="../js/vendor/owl.carousel.min.js"></script>
 	<script src="../js/vendor/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
@@ -618,6 +624,15 @@ Costa Blanca. Disfrútelos con Oxytours.</p>
 			$('#modalOverlay').removeClass('show');
 			$('#modalContent').removeClass('show');
 		};
+
+    // Handles GA event firing from any link in the site
+    function sendGAEvent(event, category, action, label) {
+      ga('send', 'event', {
+        eventCategory: category,
+        eventAction: action,
+        eventLabel: label
+      });
+    }
 
 	</script>
 
