@@ -13,9 +13,9 @@ var config = {
 }
 
 var config_mobile = {
-    username: process.env.USER,
+    username: process.env.OX_USER,
     host: "ftp.oxytours.com",
-    password: process.env.PASS,
+    password: process.env.OX_PASS,
     port: 21,
     localRoot: __dirname + "/mobile",
     remoteRoot: "/web/mobile",
