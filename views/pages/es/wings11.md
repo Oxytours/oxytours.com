@@ -4,7 +4,7 @@ Este invierno desde Oxytours te proponemos 3 nuevas rutas por __espacios protegi
 
 Montaña, desierto, salinas, cordones dunares, espartales, pozos de nieve, despoblados moriscos, castillos, flamencos, halcones, collalbas... todo esto y mucho más nos esperan en las rutas de invierno que hemos preparado para vosotr@s. Una buena muestra de la __singularidad__ de nuestra tierra que descubriremos mientras disfrutamos de una __picaeta de productos artesanos__ de la provincia de Alicante con vino de la D.O.P.
 
-Y para agradecerte la confianza, si ya participaste en alguna de nuestras rutas de otoño te ofrecemos un __10% de descuento__ en todas las rutas de invierno.
+Y para agradecerte la confianza, si ya participaste en alguna de nuestras rutas de otoño te ofrecemos __un 10% de descuento__ en todas las rutas de invierno.
 
 Una __experiencia__ enriquecedora, que puedes __regalar__ a los tuyos en estas fiestas con nuestro bono regalo personalizado.
 
