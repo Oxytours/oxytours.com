@@ -92,21 +92,20 @@ module.exports = function (grunt) {
 
         run: {
           commands: {
-            exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/static && ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l mobile -r web/mobile',
-          }
-        }
+            exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/static -v && ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l mobile -r web/mobile -v',
+          },
+        },
 
-    });
+      });
 
-grunt.loadNpmTasks('grunt-sass');
-grunt.loadNpmTasks('grunt-contrib-connect');
-grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-contrib-clean');
-grunt.loadNpmTasks('assemble');
-grunt.loadNpmTasks('grunt-run');
+    grunt.loadNpmTasks('grunt-sass');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('assemble');
+    grunt.loadNpmTasks('grunt-run');
 
-grunt.registerTask('default', ['clean:all','sass','assemble','connect','watch']);
-grunt.registerTask('deploy',  ['sass', 'assemble', 'run']);
+    grunt.registerTask('default', ['clean:all', 'sass', 'assemble', 'connect', 'watch']);
+    grunt.registerTask('deploy',  ['sass', 'assemble', 'run']);
 
-
-}
+  };
