@@ -11,7 +11,7 @@ biodiversity** thanks to its height and proximity to the sea. **Geology and
 Botany** come together to offer unique formations for your enjoyment.
 
 _Pas de la Rabosa_, this narrow passage leads you another aspect of the mountain
-where you will be amazed by the **unbelievable chasm of Partagat**.
+where you will be amazed by **the unbelievable chasm of Partagat**.
 
 Learn about how it´s inhabitants lived centuries ago, thanks to the remains of
 **snow wells** found among beautiful **olive groves with almond and cherry
