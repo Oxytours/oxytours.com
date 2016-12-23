@@ -90,18 +90,14 @@ module.exports = function (grunt) {
             all: ['static/es/**/*.html', 'static/en/**/*.html', 'static/fr/**/*.html'],
           },
 
-        'run-prod': {
-          commands: {
-            exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/static && ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l mobile -r web/mobile',
+        run: {
+          prod: {
+            cmd: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/static && ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l mobile -r web/mobile',
+          },
+          dev: {
+            cmd: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r dev',
           },
         },
-        
-        'run-dev': {
-          commands: {
-            exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r dev',
-          },
-        },
-        
       });
 
     grunt.loadNpmTasks('grunt-sass');
@@ -112,7 +108,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-run');
 
     grunt.registerTask('default', ['clean:all', 'sass', 'assemble', 'connect', 'watch']);
-    grunt.registerTask('deploy-prod',  ['sass', 'assemble', 'run-prod']);
-    grunt.registerTask('deploy-dev',  ['sass', 'assemble', 'run-dev']);   
+    grunt.registerTask('deploy-prod',  ['sass', 'assemble', 'run:prod']);
+    grunt.registerTask('deploy-dev',  ['sass', 'assemble', 'run:dev']);
 
   };
