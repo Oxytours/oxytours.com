@@ -5,4 +5,7 @@ install:
   - npm i -g grunt
   - npm i
 script:
-    - npm run deploy
+  - if [ $TRAVIS_BRANCH == 'master' ];
+    then npm run deploy-prod;
+    else npm run deploy-dev;
+    fi
