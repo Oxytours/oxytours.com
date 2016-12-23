@@ -91,11 +91,13 @@ module.exports = function (grunt) {
           },
 
         run: {
-          commands: {
+          prod: {
             exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/static && ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l mobile -r web/mobile',
           },
+          dev: {
+            exec: 'ftpsync -h ftp.oxytours.com -p 21 -u $OX_USER -s $OX_PASS -l static -r web/dev',
+          },
         },
-
       });
 
     grunt.loadNpmTasks('grunt-sass');
@@ -106,6 +108,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-run');
 
     grunt.registerTask('default', ['clean:all', 'sass', 'assemble', 'connect', 'watch']);
-    grunt.registerTask('deploy',  ['sass', 'assemble', 'run']);
+    grunt.registerTask('deploy-prod',  ['sass', 'assemble', 'run:prod']);
+    grunt.registerTask('deploy-dev',  ['sass', 'assemble', 'run:dev']);
 
   };
