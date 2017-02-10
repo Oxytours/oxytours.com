@@ -64,11 +64,9 @@ $message = '
 
 
 if (mail($to, $subject, $message, $headers, 'Oxytours')) {
-	header("Location: http://www.oxytours.com/en/thanks.html");
+	header("Location: http://www.oxytours.com/static/en/thanks.html");
 	die();
 } else {
 	echo("<p>Email delivery failed…</p>");
 }
 ?>
-
-

@@ -40,21 +40,21 @@ module.exports = function (grunt) {
                     layout: 'layouts/default_mobile.hbs',
                   },
                 src:   ['views/pages/es/**/*.hbs'],
-                dest:  'mobile/es/',
+                dest:  'mobile/static/es/',
               },
             mobile_en: {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
                   },
                 src:   ['views/pages/en/**/*.hbs'],
-                dest:  'mobile/en/',
+                dest:  'mobile/static/en/',
               },
             mobile_fr: {
                 options: {
                     layout: 'layouts/default_mobile.hbs',
                   },
                 src:   ['views/pages/fr/**/*.hbs'],
-                dest:  'mobile/fr/',
+                dest:  'mobile/static/fr/',
               },
           },
 
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
           },
 
         clean: {
-            all: ['static/es/**/*.html', 'static/en/**/*.html', 'static/fr/**/*.html'],
+            all: ['static/es/**/*.html', 'static/en/**/*.html', 'static/fr/**/*.html', 'mobile/static/es/**/*.html', 'mobile/static/en/**/*.html', 'mobile/static/fr/**/*.html'],
           },
 
         run: {
