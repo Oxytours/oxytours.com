@@ -35,4 +35,4 @@ alojamiento hasta el puerto de embarque y si lo desea, un fantastico **menú**
 en un restaurate tradicional de la Costa Blanca.
 
 **Sin duda, una forma inmejorable de descubrir la Costa Blanca**. Estaremos
-**encantados de acompañarle.
+encantados de acompañarle.
