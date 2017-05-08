@@ -13,13 +13,11 @@ praderas de la planta marina _Posidonia oceanica_, vital para el equilibrio
 ecológico de nuestra costa.
 
 A través de esta espectacular ruta en velero descubriremos la apasionante y
-terrible historia de la **piratería** en nuestra costa. En particular los
-ataques de piratas que, como Dragut el Turco, llegaban desde **Argel** hasta
-nuestras playas estableciendo el miedo y el pánico entre sus habitantes durante
-más de **300 años**. Veremos las calas que les brindaron refugio y agua fresca,
-los restos de las **torres vigía** que oteaban el horizonte sin descanso
-preparadas para dar la alarma y la relación de la piratería con la **expulsión
-de moriscos** desde nuestra tierra durante generaciones.
+terrible historia de la **piratería** en nuestra costa. Veremos los restos de
+las **torres vigía** que oteaban el horizonte sin descanso preparadas para dar
+la alarma y nos **bañaremos** en las mismas calas que dieron refugio a las galeotas
+del turco, que establecieron el pánico entre los habitantes de la costa
+durante más de 300 años.
 
 Además tendrá la oportunidad de conocer la avifauna marina de la bahía de Altea
 y Benidorm, donde dependiendo de la época del año será posible avistar
@@ -29,9 +27,12 @@ diferentes especies, muchas de ellas protegidas, como las **Pardelas balear**
 audouinii_), el **Cormorán moñudo** (_Phalacrocorax aristotelis_) o los
 **Alcatraces** (_Morus bassanus_).
 
-Además le ofrecemos de manera opcional **traslados** desde su alojamiento hasta
-el puerto de embarque y si lo desea, un fantastico **menú** en uno de los
-mejores restaurates tradicionales de la Costa Blanca.
+Descubrirá además a qué sabe nuestra tierra gracias al **almuerzo** que prepararemos
+a bordo a base de **productos locales** como embutidos de la montaña, quesos de las
+vegas de Alicante, cocas de paleta y fruta, todo ello acompañado de vino de la
+**DO Alicante**. Además le ofrecemos de manera opcional **traslados** desde su
+alojamiento hasta el puerto de embarque y si lo desea, un fantastico **menú**
+en un restaurate tradicional de la Costa Blanca.
 
 **Sin duda, una forma inmejorable de descubrir la Costa Blanca**. Estaremos
 **encantados de acompañarle.
