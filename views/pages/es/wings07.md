@@ -15,9 +15,9 @@ ecológico de nuestra costa.
 A través de esta espectacular ruta en velero descubriremos la apasionante y
 terrible historia de la **piratería** en nuestra costa. Veremos los restos de
 las **torres vigía** que oteaban el horizonte sin descanso preparadas para dar
-la alarma y nos **bañaremos** en las mismas calas que dieron refugio a las galeotas
-del turco, que establecieron el pánico entre los habitantes de la costa
-durante más de 300 años.
+la alarma y nos **bañaremos** y podremos hacer **snorkel** en las mismas calas
+que dieron refugio a las galeotas del turco, que establecieron el pánico entre
+los habitantes de la costa durante más de 300 años.
 
 Además tendrá la oportunidad de conocer la avifauna marina de la bahía de Altea
 y Benidorm, donde dependiendo de la época del año será posible avistar
