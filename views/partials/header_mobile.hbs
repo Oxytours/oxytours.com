@@ -58,6 +58,7 @@
         {{#if formlink}}
           <script>
             function handleOutboundLinkClicks(event) {
+              fbq('track', 'Lead');
               ga('send', 'event', {
                 eventCategory: 'outbound-link',
                 eventAction: 'click',
