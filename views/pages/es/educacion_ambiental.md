@@ -20,8 +20,8 @@ especiales**, que permitirán adentrarte con tus alumnos, familia o amigos en la
 Naturaleza de nuestra provincia.
 
 Este curso además, como novedad, puedes completar las excursiones con
-actividades diferentes como la **“Gimnasia Natural”**, actividades de
-**multiaventura**, descubrir las **"Aves de tu ciudad"** o los magníficos
+actividades diferentes como las visitas al **“Jardín de Albarda o la Finca Buixcarró”**,
+ descubrir las **"Aves de tu ciudad"** o los magníficos
 lugares que alberga el extenso **“Valle del Vinalopó”**, un ecosistema fluvial
 imprescindible para nuestra provincia.
 
@@ -34,7 +34,7 @@ nuestro futuro.
 ¡Os esperamos !
 
 _Solicita información ampliada sobre la actividad o actividades que te interesen
-por email o teléfono: [hola@oxytours.com](hola@oxytours.com) / 693 701 596_
+por email o teléfono: [info@oxytours.com](info@oxytours.com) / 677 86 56 24_
 
 _No dudes en consultarnos sobre visitas de día completo, organización de
 talleres y charlas o cualquier actividad que deseéis organizar relacionada con

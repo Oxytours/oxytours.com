@@ -5,13 +5,13 @@ __Espacios Naturales__. La noche lo envuelve todo haciendo que miremos a nuestro
 alrededor con otros ojos,  envolviendo de __magia y misterio__ humedales,
 montañas y costa.
 
-Este verano __Oxytours__ te propone visitar los Espacios Naturales de Alicante a través
+Un verano mas __Oxytours__ te propone visitar los Espacios Naturales de Alicante a través
 de __"Miradas de Luna"__, por la noche, para conocer su importancia y descubrir
 sus secretos. Para ello, recorreremos senderos de tres de los Parques Naturales
 de la provincia de __Alicante__, los de __Serra Gelada, Penyal d’Ifac y__
-__Marjal de Pego Oliva__ además de __El Plano de Sax y Xorret de Catí, en Castalla.__
+__Marjal de Pego Oliva__ además de __El Arenal de l'Almorxó en Petrer y Xorret de Catí, en Castalla.__
 
-Dos __montañas litorales y una zona húmeda junto con dos znas de interior__, cada una con su identidad, con su
+Dos __montañas litorales y una zona húmeda junto con dos zonas de interior__, cada una con su identidad, con su
 historia, albergando __valores ambientales y culturales__ de gran importancia y
 que descubriremos durante estas noches de verano poniendo a prueba todos
 nuestros sentidos. Incluido el del gusto, ya que incluimos degustación de vino
